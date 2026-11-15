@@ -38,7 +38,8 @@ h1{font-family:Manrope,sans-serif;font-weight:800;font-size:clamp(34px,5vw,52px)
 p.l{color:#b4c0b8;margin:14px 0 22px;font-size:18px;max-width:600px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
 .chips li{font-size:13px;color:#d6dfd9;border:1px solid rgba(255,255,255,.14);border-radius:99px;padding:5px 12px}
-.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.g{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:700px){.g{grid-template-columns:1fr}}
 a.c{display:flex;flex-direction:column;border-radius:22px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:inherit;text-decoration:none;overflow:hidden;transition:transform .2s,border-color .2s}
 a.c:hover{transform:translateY(-4px);border-color:rgba(190,242,100,.5)}
 a.c img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:top;background:#1a201d;border-bottom:1px solid rgba(255,255,255,.08)}
@@ -65,7 +66,8 @@ footer{margin:56px 0 0;padding:26px 0 50px;border-top:1px solid rgba(255,255,255
   <main>
     <h2 class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)" data-i="projects">Proyectos</h2>
     <div class="g">
-      <a class="c" href="clinica-dental/"><img src="capturas/sonrisa-clara-1024x768.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Captura de la landing page de la clínica dental Sonrisa Clara" data-ia="alt:img3"><div class="bd"><b>Sonrisa Clara <small class="new" data-i="new">Nuevo</small></b><span data-i="c3">Landing page bilingüe para clínica dental: tratamientos, antes y después interactivo, equipo, precios y citas por WhatsApp.</span><div class="tg" data-i="tg3"><em>Salud</em><em>ES / EN</em><em>Citas por WhatsApp</em></div><i data-i="see">Ver proyecto →</i></div></a>
+      <a class="c" href="inmobiliaria/"><img src="capturas/altavista-1024x768.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Captura de la landing page del proyecto inmobiliario Altavista Residencias" data-ia="alt:img4"><div class="bd"><b>Altavista Residencias <small class="new" data-i="new">Nuevo</small></b><span data-i="c4">Landing page bilingüe para departamentos en preventa: tipos con planos, galería ilustrada, amenidades y simulador de cuota mensual.</span><div class="tg" data-i="tg4"><em>Inmobiliaria</em><em>ES / EN</em><em>Simulador de cuota</em></div><i data-i="see">Ver proyecto →</i></div></a>
+      <a class="c" href="clinica-dental/"><img src="capturas/sonrisa-clara-1024x768.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Captura de la landing page de la clínica dental Sonrisa Clara" data-ia="alt:img3"><div class="bd"><b>Sonrisa Clara</b><span data-i="c3">Landing page bilingüe para clínica dental: tratamientos, antes y después interactivo, equipo, precios y citas por WhatsApp.</span><div class="tg" data-i="tg3"><em>Salud</em><em>ES / EN</em><em>Citas por WhatsApp</em></div><i data-i="see">Ver proyecto →</i></div></a>
       <a class="c" href="la-ola-dorada/"><img src="capturas/la-ola-dorada-1024x768.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Captura de la landing page de la cevichería La Ola Dorada" data-ia="alt:img1"><div class="bd"><b>La Ola Dorada</b><span data-i="c1">Landing page para cevichería: menú por categorías, pedido armado y envío directo por WhatsApp.</span><div class="tg" data-i="tg1"><em>Restaurante</em><em>ES / EN</em><em>Pedidos por WhatsApp</em></div><i data-i="see">Ver proyecto →</i></div></a>
       <a class="c" href="agrosurco/"><img src="capturas/agrosurco-1024x768.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Captura de la landing page de insumos agrícolas AgroSurco" data-ia="alt:img2"><div class="bd"><b>AgroSurco</b><span data-i="c2">Landing page para insumos agrícolas: catálogo, planes de asesoría y formulario que envía la solicitud por WhatsApp.</span><div class="tg" data-i="tg2"><em>Agro</em><em>ES / EN</em><em>Formulario a WhatsApp</em></div><i data-i="see">Ver proyecto →</i></div></a>
     </div>
@@ -81,6 +83,9 @@ footer{margin:56px 0 0;padding:26px 0 50px;border-top:1px solid rgba(255,255,255
     lead:'Modern, mobile-friendly landing pages and websites for businesses and entrepreneurs.',
     chips:'<li>Bilingual ES / EN</li><li>WhatsApp orders & bookings</li><li>Basic SEO</li><li>Accessible</li><li>Fast loading</li>',
     projects:'Projects',new:'New',see:'View project →',
+    img4:'Screenshot of the Altavista Residencias real estate landing page',
+    c4:'Bilingual landing page for pre-construction apartments: unit types with floor plans, illustrated gallery, amenities and a monthly payment calculator.',
+    tg4:'<em>Real estate</em><em>ES / EN</em><em>Payment calculator</em>',
     img1:'Screenshot of the La Ola Dorada ceviche bar landing page',img2:'Screenshot of the AgroSurco farm supplies landing page',img3:'Screenshot of the Sonrisa Clara dental clinic landing page',
     c1:'Landing page for a ceviche bar: menu by category, order builder and direct sending via WhatsApp.',
     c2:'Landing page for farm supplies: catalog, advisory plans and a form that sends the request via WhatsApp.',

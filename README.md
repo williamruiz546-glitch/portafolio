@@ -3,6 +3,7 @@
 Landing pages de muestra (negocios ficticios), bilingües ES/EN y adaptadas a celular.
 
 - [Portafolio](https://williamruiz546-glitch.github.io/portafolio/)
+- [Altavista Residencias — inmobiliaria](https://williamruiz546-glitch.github.io/portafolio/inmobiliaria/)
 - [Sonrisa Clara — clínica dental](https://williamruiz546-glitch.github.io/portafolio/clinica-dental/)
 - [La Ola Dorada — cevichería](https://williamruiz546-glitch.github.io/portafolio/la-ola-dorada/)
 - [AgroSurco — insumos agrícolas](https://williamruiz546-glitch.github.io/portafolio/agrosurco/)
