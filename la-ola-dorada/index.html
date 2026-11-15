@@ -3,39 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>La Ola Dorada — Cevichería (muestra)</title>
+<title data-i="metaTitle">La Ola Dorada — Cevichería costeña | Pedidos por WhatsApp (muestra)</title>
+<meta name="description" content="Cevichería costeña con ceviches, encebollados y mariscos frescos. Mira el menú y haz tu pedido a domicilio por WhatsApp. Proyecto de muestra con negocio ficticio." data-ia="content:metaDesc">
+<meta name="theme-color" content="#04141b">
+<link rel="canonical" href="https://williamruiz546-glitch.github.io/portafolio/la-ola-dorada/">
+<link rel="alternate" hreflang="es" href="https://williamruiz546-glitch.github.io/portafolio/la-ola-dorada/?lang=es">
+<link rel="alternate" hreflang="en" href="https://williamruiz546-glitch.github.io/portafolio/la-ola-dorada/?lang=en">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="William Ruiz — Portafolio">
+<meta property="og:title" content="La Ola Dorada — Cevichería costeña (proyecto de muestra)">
+<meta property="og:description" content="Landing page para cevichería: menú por categorías, pedido armado y envío directo por WhatsApp. Bilingüe ES/EN.">
+<meta property="og:url" content="https://williamruiz546-glitch.github.io/portafolio/la-ola-dorada/">
+<meta property="og:image" content="https://williamruiz546-glitch.github.io/portafolio/capturas/la-ola-dorada-1280x769.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="769">
+<meta property="og:image:alt" content="Vista previa de la landing page de La Ola Dorada">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2304141b'/%3E%3Ccircle cx='32' cy='30' r='17' fill='%23f3b94d'/%3E%3Cpath d='M8 44c8-7 16-7 24 0s16 7 24 0v12H8z' fill='%23ff7a59'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+<script>document.documentElement.className+=' js'</script>
 <style>
 :root{
   --ink:#04141b;--deep:#072530;--sea:#0c3a47;--teal:#13606f;
-  --gold:#f3b94d;--gold2:#ffd98a;--coral:#ff7a59;--sand:#f8f1e5;--mute:#9db4ba;
-  --line:rgba(255,255,255,.09);--glass:rgba(255,255,255,.05);
+  --gold:#f3b94d;--gold2:#ffd98a;--coral:#ff7a59;--sand:#f8f1e5;--mute:#a9bfc4;
+  --line:rgba(255,255,255,.12);--glass:rgba(255,255,255,.05);
   --r:22px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{font-family:'Inter',system-ui,sans-serif;background:var(--ink);color:var(--sand);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3{font-family:'Fraunces',serif;line-height:1.05;letter-spacing:-.02em}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.05;letter-spacing:-.02em}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+[hidden]{display:none!important}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--gold2);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--gold2);color:var(--ink);padding:10px 16px;border-radius:10px;font-weight:600}
+.skip:focus{top:12px}
 
 /* demo ribbon */
 .demo{background:linear-gradient(90deg,var(--gold),var(--coral));color:var(--ink);text-align:center;font-size:12px;font-weight:600;padding:7px 12px}
 
 /* nav */
-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(4,20,27,.72);border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-.brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces';font-weight:800;font-size:21px}
-.brand i{width:34px;height:34px;border-radius:11px;background:radial-gradient(circle at 30% 30%,var(--gold2),var(--gold) 45%,var(--coral));display:grid;place-items:center;box-shadow:0 6px 24px -6px rgba(243,185,77,.6)}
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(4,20,27,.85);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:21px}
+.brand i{width:34px;height:34px;border-radius:11px;background:radial-gradient(circle at 30% 30%,var(--gold2),var(--gold) 45%,var(--coral));display:grid;place-items:center;box-shadow:0 6px 24px -6px rgba(243,185,77,.6);font-style:normal}
 .brand span{color:var(--gold)}
-.links{display:flex;gap:30px;font-size:14.5px;color:#cfe0e3}
+.links{display:flex;gap:30px;font-size:14.5px;color:#d6e6e8}
 .links a{position:relative;transition:color .2s}
 .links a:hover{color:#fff}
 .links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--gold);transition:width .25s}
 .links a:hover::after{width:100%}
 .nav-cta{display:flex;gap:10px;align-items:center}
-.burger{display:none;background:none;border:1px solid var(--line);color:#fff;width:42px;height:42px;border-radius:12px;cursor:pointer}
+.lang{display:inline-flex;padding:3px;border-radius:11px;border:1px solid var(--line);background:var(--glass)}
+.lang button{background:none;border:none;color:#d6e6e8;font:600 12.5px 'Inter',sans-serif;padding:7px 9px;border-radius:8px;cursor:pointer;min-width:34px}
+.lang button[aria-pressed="true"]{background:var(--sand);color:var(--ink)}
+.burger{display:none;background:none;border:1px solid var(--line);color:#fff;width:42px;height:42px;border-radius:12px;cursor:pointer;font-size:18px}
 .mobile{display:none;flex-direction:column;gap:4px;padding:10px 24px 20px;border-top:1px solid var(--line)}
 .mobile a{padding:12px 4px;border-bottom:1px solid var(--line)}
 .mobile.open{display:flex}
@@ -51,8 +80,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 
 /* hero */
 .hero{position:relative;padding:90px 0 110px;overflow:hidden;isolation:isolate}
-.hero::before{content:"";position:absolute;inset:-20%;z-index:-2;
-  background:
+.hero{background:
    radial-gradient(40% 50% at 78% 30%,rgba(243,185,77,.22),transparent 70%),
    radial-gradient(45% 55% at 10% 10%,rgba(19,96,111,.55),transparent 70%),
    radial-gradient(50% 60% at 50% 110%,rgba(255,122,89,.18),transparent 70%),
@@ -65,16 +93,16 @@ nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .eyebrow b{background:var(--gold);color:var(--ink);font-size:11px;padding:3px 8px;border-radius:99px;letter-spacing:.04em}
 .hero h1{font-size:clamp(42px,6.4vw,78px);font-weight:800;margin:22px 0 22px}
 .hero h1 em{font-style:italic;font-weight:500;background:linear-gradient(90deg,var(--gold2),var(--coral));-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{font-size:18.5px;color:#bcd0d4;max-width:520px}
+.lead{font-size:18.5px;color:#c6d8dc;max-width:520px}
 .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:34px 0 38px}
 .facts{display:flex;gap:30px;flex-wrap:wrap}
 .facts div{font-size:13.5px;color:var(--mute)}
-.facts strong{display:block;font-family:'Fraunces';font-size:26px;color:#fff;font-weight:700}
+.facts strong{display:block;font-family:'Fraunces',Georgia,serif;font-size:26px;color:#fff;font-weight:700}
 
 .plate{position:relative;aspect-ratio:1/1;border-radius:36px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid var(--line);box-shadow:0 40px 80px -30px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.08);display:grid;place-items:center}
 .plate::before{content:"";position:absolute;inset:14%;border-radius:50%;background:radial-gradient(circle,rgba(243,185,77,.35),transparent 65%);filter:blur(30px)}
 .plate svg{width:82%;position:relative;animation:float 7s ease-in-out infinite}
-.chip{position:absolute;display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:16px;background:rgba(7,37,48,.85);backdrop-filter:blur(10px);border:1px solid var(--line);font-size:13px;box-shadow:0 18px 40px -18px rgba(0,0,0,.7)}
+.chip{position:absolute;display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:16px;background:rgba(7,37,48,.92);border:1px solid var(--line);font-size:13px;box-shadow:0 18px 40px -18px rgba(0,0,0,.7)}
 .chip .dot{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;font-size:16px;background:rgba(243,185,77,.15)}
 .chip small{display:block;color:var(--mute);font-size:11.5px}
 .c1{top:9%;left:-6%;animation:float 6s ease-in-out infinite .5s}
@@ -84,7 +112,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 
 /* marquee */
 .strip{border-block:1px solid var(--line);background:rgba(255,255,255,.02);overflow:hidden}
-.track{display:flex;gap:48px;padding:18px 0;width:max-content;animation:slide 28s linear infinite;color:#c8dadd;font-size:15px}
+.track{display:flex;gap:48px;padding:18px 0;width:max-content;animation:slide 28s linear infinite;color:#d0e0e3;font-size:15px}
 .track span{display:flex;align-items:center;gap:12px;white-space:nowrap}
 .track span::before{content:"✦";color:var(--gold)}
 @keyframes slide{to{transform:translateX(-50%)}}
@@ -94,11 +122,11 @@ section{padding:110px 0}
 .head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap}
 .kicker{color:var(--gold);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
 h2{font-size:clamp(34px,4.6vw,54px);font-weight:700;margin-top:10px;max-width:640px}
-.sub{color:#a9c0c5;max-width:420px}
+.sub{color:#b5cacf;max-width:420px}
 
 /* tabs + menu */
 .tabs{display:inline-flex;gap:6px;padding:6px;border-radius:16px;background:var(--glass);border:1px solid var(--line);margin-bottom:28px;flex-wrap:wrap}
-.tab{background:none;border:none;color:#bcd0d4;font:600 14px 'Inter';padding:10px 16px;border-radius:11px;cursor:pointer;transition:all .2s}
+.tab{background:none;border:none;color:#c6d8dc;font:600 14px 'Inter',sans-serif;padding:10px 16px;border-radius:11px;cursor:pointer;transition:all .2s}
 .tab[aria-selected="true"]{background:var(--sand);color:var(--ink)}
 .menu{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 @media(max-width:760px){.menu{grid-template-columns:1fr}}
@@ -106,29 +134,34 @@ h2{font-size:clamp(34px,4.6vw,54px);font-weight:700;margin-top:10px;max-width:64
 .dish:hover{transform:translateY(-3px);border-color:rgba(243,185,77,.35);background:linear-gradient(180deg,rgba(243,185,77,.08),rgba(255,255,255,.02))}
 .dish .ic{flex:none;width:62px;height:62px;border-radius:18px;display:grid;place-items:center;font-size:28px;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.14),rgba(255,255,255,.03));border:1px solid var(--line)}
 .dish h3{font-size:20px;font-weight:700}
-.dish p{color:#9fb7bc;font-size:14px;margin-top:3px}
+.dish p{color:#adc3c8;font-size:14px;margin-top:3px}
 .dish .row{flex:1;min-width:0}
-.price{font-family:'Fraunces';font-weight:700;font-size:22px;color:var(--gold2);white-space:nowrap}
-.tag{display:inline-block;margin-left:8px;font:600 10.5px 'Inter';letter-spacing:.06em;text-transform:uppercase;color:var(--coral);vertical-align:middle;border:1px solid rgba(255,122,89,.4);padding:2px 7px;border-radius:99px}
+.dish .end{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.price{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:22px;color:var(--gold2);white-space:nowrap}
+.add{width:38px;height:38px;border-radius:12px;border:1px solid rgba(243,185,77,.45);background:rgba(243,185,77,.12);color:var(--gold2);font:700 20px/1 'Inter',sans-serif;cursor:pointer;display:grid;place-items:center;transition:background .2s,transform .2s}
+.add:hover{background:var(--gold);color:var(--ink);transform:scale(1.06)}
+.add.on{background:var(--gold);color:var(--ink)}
+.tag{display:inline-block;margin-left:8px;font:600 10.5px 'Inter',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#ff9a80;vertical-align:middle;border:1px solid rgba(255,122,89,.5);padding:2px 7px;border-radius:99px}
 .panel[hidden]{display:none}
+.hint{margin-top:18px;color:var(--mute);font-size:14px}
 
 /* features bento */
 .bento{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:16px}
 @media(max-width:900px){.bento{grid-template-columns:1fr}}
 .card{position:relative;padding:30px;border-radius:26px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid var(--line);overflow:hidden}
 .card h3{font-size:24px;margin:16px 0 8px}
-.card p{color:#a3bbc0;font-size:15px}
+.card p{color:#b0c6cb;font-size:15px}
 .card .badge{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:rgba(243,185,77,.12);border:1px solid rgba(243,185,77,.25);font-size:22px}
 .card.big{background:radial-gradient(80% 90% at 100% 0%,rgba(19,96,111,.6),transparent 70%),linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015))}
 .card.big .wave{position:absolute;right:-30px;bottom:-30px;width:260px;opacity:.5}
 
 /* steps */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s;list-style:none}
 @media(max-width:820px){.steps{grid-template-columns:1fr}}
 .step{padding:28px;border-radius:24px;border:1px solid var(--line);background:var(--glass)}
-.step::before{counter-increment:s;content:"0" counter(s);font-family:'Fraunces';font-size:44px;font-weight:700;background:linear-gradient(180deg,var(--gold2),rgba(243,185,77,.15));-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:10px}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:'Fraunces',Georgia,serif;font-size:44px;font-weight:700;background:linear-gradient(180deg,var(--gold2),rgba(243,185,77,.35));-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:10px}
 .step h3{font-size:21px;margin-bottom:6px}
-.step p{color:#a3bbc0;font-size:15px}
+.step p{color:#b0c6cb;font-size:15px}
 
 /* visit */
 .visit{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -137,70 +170,112 @@ h2{font-size:clamp(34px,4.6vw,54px);font-weight:700;margin-top:10px;max-width:64
 .inf{display:flex;gap:16px;align-items:flex-start;padding:22px;border-radius:20px;border:1px solid var(--line);background:var(--glass)}
 .inf .badge{flex:none;width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:rgba(243,185,77,.12);font-size:20px}
 .inf b{display:block;font-size:16px;margin-bottom:2px}
-.inf span{color:#a3bbc0;font-size:14.5px}
+.inf span{color:#b0c6cb;font-size:14.5px}
 .map{border-radius:26px;border:1px solid var(--line);overflow:hidden;min-height:300px;background:#0a2c37;position:relative}
 .map svg{width:100%;height:100%;display:block}
 .pin{position:absolute;left:50%;top:46%;transform:translate(-50%,-100%)}
 .pin::after{content:"";position:absolute;left:50%;top:100%;width:16px;height:16px;margin:-6px 0 0 -8px;border-radius:50%;background:rgba(243,185,77,.5);animation:pulse 2s infinite}
 @keyframes pulse{0%{transform:scale(.6);opacity:1}100%{transform:scale(3);opacity:0}}
 
-/* cta */
-.cta{position:relative;overflow:hidden;border-radius:34px;padding:72px 32px;text-align:center;
-  background:radial-gradient(60% 120% at 50% 0%,rgba(243,185,77,.35),transparent 60%),linear-gradient(135deg,#0d4655,#072530 60%);border:1px solid rgba(243,185,77,.25)}
+/* order */
+.cta{position:relative;overflow:hidden;border-radius:34px;padding:56px 40px;
+  background:radial-gradient(60% 120% at 50% 0%,rgba(243,185,77,.3),transparent 60%),linear-gradient(135deg,#0d4655,#072530 60%);border:1px solid rgba(243,185,77,.3)}
+.cta>.kicker,.cta>h2,.cta>.cp{text-align:center}
 .cta h2{margin:10px auto 14px;max-width:700px}
-.cta p{color:#c4d6da;max-width:520px;margin:0 auto 30px}
-.wa{background:#25d366;color:#05261a;box-shadow:0 12px 34px -10px rgba(37,211,102,.7)}
+.cta .cp{color:#d0e0e3;max-width:560px;margin:0 auto 34px}
+.order{display:grid;grid-template-columns:1fr 1.1fr;gap:20px;text-align:left}
+@media(max-width:860px){.order{grid-template-columns:1fr}.cta{padding:44px 18px}}
+.box{background:rgba(4,20,27,.55);border:1px solid var(--line);border-radius:22px;padding:24px}
+.box h3{font-size:22px;margin-bottom:14px}
+.cart{list-style:none;display:grid;gap:10px}
+.cart li{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--line);font-size:14.5px}
+.cart li .nm{flex:1;min-width:0}
+.cart li .sm{color:var(--gold2);font-weight:600;white-space:nowrap}
+@media(max-width:520px){.box{padding:18px}.cart li{flex-wrap:wrap}.cart li .nm{flex-basis:100%}.cart li .sm{margin-left:auto}}
+.qty{display:inline-flex;align-items:center;gap:6px}
+.qty button{width:30px;height:30px;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;font:700 16px/1 'Inter',sans-serif;cursor:pointer}
+.qty output{min-width:18px;text-align:center;font-weight:600}
+.empty{color:var(--mute);font-size:14.5px;padding:14px;border:1px dashed var(--line);border-radius:14px}
+.empty a{color:var(--gold2);text-decoration:underline}
+.total{display:flex;justify-content:space-between;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-weight:600}
+.total b{font-family:'Fraunces',Georgia,serif;font-size:24px;color:var(--gold2)}
+.fine{color:var(--mute);font-size:12.5px;margin-top:8px}
+.fields{display:grid;gap:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:520px){.two{grid-template-columns:1fr}}
+.fl{display:grid;gap:6px;font-size:13.5px;font-weight:600;color:#e6eff1}
+.fl input,.fl select,.fl textarea{font:400 15px 'Inter',sans-serif;padding:12px 13px;border-radius:12px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:#fff;width:100%}
+.fl select option{color:#04141b}
+.fl input::placeholder,.fl textarea::placeholder{color:#93aab0}
+.fl input:focus,.fl select:focus,.fl textarea:focus{outline:none;border-color:var(--gold2);box-shadow:0 0 0 3px rgba(255,217,138,.35)}
+.fl [aria-invalid="true"]{border-color:#ff9a80;box-shadow:0 0 0 3px rgba(255,122,89,.3)}
+fieldset{border:none;display:grid;gap:6px}
+legend{font-size:13.5px;font-weight:600;color:#e6eff1;margin-bottom:6px}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg label{position:relative;cursor:pointer}
+.seg input{position:absolute;opacity:0;width:1px;height:1px}
+.seg span{display:block;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.22);font-size:14px;font-weight:500}
+.seg input:checked+span{background:var(--sand);color:var(--ink);border-color:var(--sand)}
+.seg input:focus-visible+span{outline:3px solid var(--gold2);outline-offset:2px}
+.msg{font-size:14px;font-weight:600;color:#ffb4a1;min-height:1px}
+.msg.ok{color:#9ff0c0}
+.wa{background:#25d366;color:#05261a;box-shadow:0 12px 34px -10px rgba(37,211,102,.7);justify-content:center}
 .wa:hover{transform:translateY(-2px)}
 
-footer{border-top:1px solid var(--line);padding:46px 0 60px;color:var(--mute);font-size:14px}
+footer{border-top:1px solid var(--line);padding:46px 0 90px;color:var(--mute);font-size:14px}
 .foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
 
-/* floating whatsapp */
+/* floating */
 .fab{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 14px 34px -8px rgba(37,211,102,.7);transition:transform .2s}
 .fab:hover{transform:scale(1.08)}
+.cartbar{position:fixed;left:18px;bottom:22px;z-index:60;display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:99px;background:var(--gold2);color:var(--ink);font-weight:700;font-size:14.5px;box-shadow:0 14px 34px -10px rgba(0,0,0,.7);transform:translateY(140%);transition:transform .3s}
+.cartbar.show{transform:none}
 
 /* reveal */
-.rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
-.rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<div class="demo">Proyecto de muestra · negocio ficticio · diseño y desarrollo: William Ruiz</div>
+<a class="skip" href="#main" data-i="skip">Saltar al contenido</a>
+<div class="demo">Proyecto de muestra · negocio ficticio · diseño y desarrollo: William Ruiz<span data-i="demoEn"></span></div>
 
 <header>
   <div class="wrap">
-    <nav>
-      <a href="#" class="brand"><i>🌊</i>La Ola <span>Dorada</span></a>
-      <div class="links"><a href="#menu">Menú</a><a href="#nosotros">Nosotros</a><a href="#pedir">Cómo pedir</a><a href="#visitanos">Visítanos</a></div>
+    <nav aria-label="Principal" data-ia="aria-label:navMain">
+      <a href="#" class="brand" aria-label="La Ola Dorada, inicio" data-ia="aria-label:home"><i aria-hidden="true">🌊</i>La Ola <span>Dorada</span></a>
+      <div class="links"><a href="#menu" data-i="nMenu">Menú</a><a href="#nosotros" data-i="nAbout">Nosotros</a><a href="#pedir" data-i="nHow">Cómo pedir</a><a href="#visitanos" data-i="nVisit">Visítanos</a></div>
       <div class="nav-cta">
-        <a href="#pedido" class="btn btn-gold btn-sm">Pedir ahora</a>
-        <button class="burger" aria-label="Abrir menú" aria-expanded="false" id="burger">☰</button>
+        <a href="#pedido" class="btn btn-gold btn-sm" data-i="orderNow">Pedir ahora</a>
+        <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" aria-pressed="true" lang="es">ES</button><button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button></div>
+        <button class="burger" aria-label="Abrir menú" data-ia="aria-label:openMenu" aria-expanded="false" aria-controls="mobile" id="burger">☰</button>
       </div>
     </nav>
   </div>
-  <div class="mobile" id="mobile"><a href="#menu">Menú</a><a href="#nosotros">Nosotros</a><a href="#pedir">Cómo pedir</a><a href="#visitanos">Visítanos</a><a href="#pedido" class="btn btn-gold" style="justify-content:center;margin-top:10px;border:none">Pedir ahora</a></div>
+  <div class="mobile" id="mobile"><a href="#menu" data-i="nMenu">Menú</a><a href="#nosotros" data-i="nAbout">Nosotros</a><a href="#pedir" data-i="nHow">Cómo pedir</a><a href="#visitanos" data-i="nVisit">Visítanos</a><a href="#pedido" class="btn btn-gold" style="justify-content:center;margin-top:10px;border:none" data-i="orderNow">Pedir ahora</a></div>
 </header>
 
+<main id="main">
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow rv"><b>NUEVO</b> Pesca del día, todos los días</span>
-      <h1 class="rv">El sabor del mar, <em>servido en dorado.</em></h1>
-      <p class="lead rv">Cevichería costeña con recetas de la casa, encebollados contundentes y mariscos frescos. Ven a disfrutarlo o pídelo a domicilio.</p>
-      <div class="ctas rv">
-        <a href="#pedido" class="btn btn-gold">Hacer mi pedido →</a>
-        <a href="#menu" class="btn btn-ghost">Ver el menú</a>
+      <span class="eyebrow"><b data-i="new">NUEVO</b> <span data-i="eyebrow">Pesca del día, todos los días</span></span>
+      <h1 data-i="h1">El sabor del mar, <em>servido en dorado.</em></h1>
+      <p class="lead" data-i="lead">Cevichería costeña con recetas de la casa, encebollados contundentes y mariscos frescos. Ven a disfrutarlo o pídelo a domicilio.</p>
+      <div class="ctas">
+        <a href="#pedido" class="btn btn-gold" data-i="ctaOrder">Hacer mi pedido →</a>
+        <a href="#menu" class="btn btn-ghost" data-i="ctaMenu">Ver el menú</a>
       </div>
-      <div class="facts rv">
-        <div><strong>30 min</strong>entrega promedio</div>
-        <div><strong>100%</strong>mariscos frescos</div>
-        <div><strong>7 días</strong>abiertos a la semana</div>
+      <div class="facts">
+        <div data-i="f1"><strong>30 min</strong>entrega promedio</div>
+        <div data-i="f2"><strong>100%</strong>mariscos frescos</div>
+        <div data-i="f3"><strong>7 días</strong>abiertos a la semana</div>
       </div>
     </div>
     <div class="rv" style="position:relative">
       <div class="plate">
-        <svg viewBox="0 0 320 300" aria-hidden="true">
+        <svg viewBox="0 0 320 300" role="img" aria-label="Ilustración de un plato de ceviche con limón" data-ia="aria-label:plateAlt">
           <defs>
             <radialGradient id="bowl" cx="50%" cy="30%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d9e4e6"/></radialGradient>
             <radialGradient id="broth" cx="50%" cy="40%"><stop offset="0" stop-color="#ffb08f"/><stop offset="1" stop-color="#ff7a59"/></radialGradient>
@@ -220,138 +295,346 @@ footer{border-top:1px solid var(--line);padding:46px 0 60px;color:var(--mute);fo
           <g fill="#f3b94d"><ellipse cx="62" cy="96" rx="22" ry="8" transform="rotate(-20 62 96)"/><ellipse cx="80" cy="74" rx="20" ry="7" transform="rotate(-35 80 74)"/></g>
         </svg>
       </div>
-      <div class="chip c1"><span class="dot">⭐</span><div><b>Ceviche de la casa</b><small>El favorito de la costa</small></div></div>
-      <div class="chip c2"><span class="dot">🛵</span><div><b>Domicilio rápido</b><small>Llega fresco a tu puerta</small></div></div>
+      <div class="chip c1"><span class="dot" aria-hidden="true">⭐</span><div data-i="chip1"><b>Ceviche de la casa</b><small>El favorito de la costa</small></div></div>
+      <div class="chip c2"><span class="dot" aria-hidden="true">🛵</span><div data-i="chip2"><b>Domicilio rápido</b><small>Llega fresco a tu puerta</small></div></div>
     </div>
   </div>
 </section>
 
-<div class="strip" aria-hidden="true"><div class="track">
+<div class="strip" aria-hidden="true"><div class="track" data-i="track">
   <span>Ceviche de camarón</span><span>Encebollado de albacora</span><span>Arroz marinero</span><span>Jugos naturales</span><span>Chifles y canguil</span><span>Bandeja familiar</span>
   <span>Ceviche de camarón</span><span>Encebollado de albacora</span><span>Arroz marinero</span><span>Jugos naturales</span><span>Chifles y canguil</span><span>Bandeja familiar</span>
 </div></div>
 
-<section id="menu">
+<section id="menu" aria-labelledby="menu-t">
   <div class="wrap">
     <div class="head rv">
-      <div><div class="kicker">Nuestro menú</div><h2>Preparado al momento, como en casa.</h2></div>
-      <p class="sub">Elige una categoría. Todos los platos se preparan con mariscos frescos del día.</p>
+      <div><div class="kicker" data-i="mK">Nuestro menú</div><h2 id="menu-t" data-i="mH">Preparado al momento, como en casa.</h2></div>
+      <p class="sub" data-i="mSub">Elige una categoría y toca <b>+</b> para armar tu pedido. Todo se prepara con mariscos frescos del día.</p>
     </div>
-    <div class="tabs rv" role="tablist">
-      <button class="tab" role="tab" aria-selected="true" data-t="ceviches">Ceviches</button>
-      <button class="tab" role="tab" aria-selected="false" data-t="sopas">Sopas</button>
-      <button class="tab" role="tab" aria-selected="false" data-t="fuertes">Platos fuertes</button>
-      <button class="tab" role="tab" aria-selected="false" data-t="bebidas">Bebidas</button>
+    <div class="tabs rv" role="tablist" aria-label="Categorías del menú" data-ia="aria-label:tabsLabel">
+      <button class="tab" role="tab" id="tab-ceviches" aria-controls="ceviches" aria-selected="true" data-t="ceviches" data-i="tCev">Ceviches</button>
+      <button class="tab" role="tab" id="tab-sopas" aria-controls="sopas" aria-selected="false" tabindex="-1" data-t="sopas" data-i="tSop">Sopas</button>
+      <button class="tab" role="tab" id="tab-fuertes" aria-controls="fuertes" aria-selected="false" tabindex="-1" data-t="fuertes" data-i="tFue">Platos fuertes</button>
+      <button class="tab" role="tab" id="tab-bebidas" aria-controls="bebidas" aria-selected="false" tabindex="-1" data-t="bebidas" data-i="tBeb">Bebidas</button>
     </div>
-    <div class="panel" id="ceviches"><div class="menu">
-      <div class="dish rv"><div class="ic">🦐</div><div class="row"><h3>Ceviche de camarón <span class="tag">Top</span></h3><p>Camarón, limón, tomate, cebolla curtida. Con chifles y canguil.</p></div><div class="price">$7.50</div></div>
-      <div class="dish rv"><div class="ic">🐚</div><div class="row"><h3>Ceviche de concha</h3><p>Concha negra con limón, cebolla y cilantro.</p></div><div class="price">$8.50</div></div>
-      <div class="dish rv"><div class="ic">🐟</div><div class="row"><h3>Ceviche de pescado</h3><p>Pescado blanco curtido en limón con ají de la casa.</p></div><div class="price">$6.50</div></div>
-      <div class="dish rv"><div class="ic">🦑</div><div class="row"><h3>Ceviche mixto</h3><p>Camarón, pescado y calamar en un solo plato.</p></div><div class="price">$9.00</div></div>
+    <div class="panel" id="ceviches" role="tabpanel" aria-labelledby="tab-ceviches"><div class="menu">
+      <div class="dish" data-id="cev-cam" data-p="7.50"><div class="ic" aria-hidden="true">🦐</div><div class="row"><h3><span class="dn" data-i="d1">Ceviche de camarón</span> <span class="tag">Top</span></h3><p data-i="d1p">Camarón, limón, tomate, cebolla curtida. Con chifles y canguil.</p></div><div class="end"><div class="price">$7.50</div><button class="add" type="button">+</button></div></div>
+      <div class="dish" data-id="cev-con" data-p="8.50"><div class="ic" aria-hidden="true">🐚</div><div class="row"><h3><span class="dn" data-i="d2">Ceviche de concha</span></h3><p data-i="d2p">Concha negra con limón, cebolla y cilantro.</p></div><div class="end"><div class="price">$8.50</div><button class="add" type="button">+</button></div></div>
+      <div class="dish" data-id="cev-pes" data-p="6.50"><div class="ic" aria-hidden="true">🐟</div><div class="row"><h3><span class="dn" data-i="d3">Ceviche de pescado</span></h3><p data-i="d3p">Pescado blanco curtido en limón con ají de la casa.</p></div><div class="end"><div class="price">$6.50</div><button class="add" type="button">+</button></div></div>
+      <div class="dish" data-id="cev-mix" data-p="9.00"><div class="ic" aria-hidden="true">🦑</div><div class="row"><h3><span class="dn" data-i="d4">Ceviche mixto</span></h3><p data-i="d4p">Camarón, pescado y calamar en un solo plato.</p></div><div class="end"><div class="price">$9.00</div><button class="add" type="button">+</button></div></div>
     </div></div>
-    <div class="panel" id="sopas" hidden><div class="menu">
-      <div class="dish"><div class="ic">🍲</div><div class="row"><h3>Encebollado <span class="tag">Top</span></h3><p>Caldo de albacora con yuca y cebolla curtida.</p></div><div class="price">$4.00</div></div>
-      <div class="dish"><div class="ic">🥣</div><div class="row"><h3>Viche de pescado</h3><p>Sopa espesa de maní, verde y mariscos.</p></div><div class="price">$6.00</div></div>
+    <div class="panel" id="sopas" role="tabpanel" aria-labelledby="tab-sopas" hidden><div class="menu">
+      <div class="dish" data-id="enc" data-p="4.00"><div class="ic" aria-hidden="true">🍲</div><div class="row"><h3><span class="dn" data-i="d5">Encebollado</span> <span class="tag">Top</span></h3><p data-i="d5p">Caldo de albacora con yuca y cebolla curtida.</p></div><div class="end"><div class="price">$4.00</div><button class="add" type="button">+</button></div></div>
+      <div class="dish" data-id="vic" data-p="6.00"><div class="ic" aria-hidden="true">🥣</div><div class="row"><h3><span class="dn" data-i="d6">Viche de pescado</span></h3><p data-i="d6p">Sopa espesa de maní, verde y mariscos.</p></div><div class="end"><div class="price">$6.00</div><button class="add" type="button">+</button></div></div>
     </div></div>
-    <div class="panel" id="fuertes" hidden><div class="menu">
-      <div class="dish"><div class="ic">🍚</div><div class="row"><h3>Arroz marinero</h3><p>Arroz con camarón, calamar, concha y pescado.</p></div><div class="price">$9.00</div></div>
-      <div class="dish"><div class="ic">🍤</div><div class="row"><h3>Camarón apanado</h3><p>Con arroz, menestra y patacones.</p></div><div class="price">$8.00</div></div>
-      <div class="dish"><div class="ic">🐠</div><div class="row"><h3>Pescado frito</h3><p>Pescado entero con patacones y ensalada.</p></div><div class="price">$8.50</div></div>
-      <div class="dish"><div class="ic">🍱</div><div class="row"><h3>Bandeja familiar <span class="tag">4 pers.</span></h3><p>Mixto de ceviches, arroz marinero y patacones.</p></div><div class="price">$28.00</div></div>
+    <div class="panel" id="fuertes" role="tabpanel" aria-labelledby="tab-fuertes" hidden><div class="menu">
+      <div class="dish" data-id="arr" data-p="9.00"><div class="ic" aria-hidden="true">🍚</div><div class="row"><h3><span class="dn" data-i="d7">Arroz marinero</span></h3><p data-i="d7p">Arroz con camarón, calamar, concha y pescado.</p></div><div class="end"><div class="price">$9.00</div><button class="add" type="button">+</button></div></div>
+      <div class="dish" data-id="cap" data-p="8.00"><div class="ic" aria-hidden="true">🍤</div><div class="row"><h3><span class="dn" data-i="d8">Camarón apanado</span></h3><p data-i="d8p">Con arroz, menestra y patacones.</p></div><div class="end"><div class="price">$8.00</div><button class="add" type="button">+</button></div></div>
+      <div class="dish" data-id="pfr" data-p="8.50"><div class="ic" aria-hidden="true">🐠</div><div class="row"><h3><span class="dn" data-i="d9">Pescado frito</span></h3><p data-i="d9p">Pescado entero con patacones y ensalada.</p></div><div class="end"><div class="price">$8.50</div><button class="add" type="button">+</button></div></div>
+      <div class="dish" data-id="ban" data-p="28.00"><div class="ic" aria-hidden="true">🍱</div><div class="row"><h3><span class="dn" data-i="d10">Bandeja familiar</span> <span class="tag" data-i="d10t">4 pers.</span></h3><p data-i="d10p">Mixto de ceviches, arroz marinero y patacones.</p></div><div class="end"><div class="price">$28.00</div><button class="add" type="button">+</button></div></div>
     </div></div>
-    <div class="panel" id="bebidas" hidden><div class="menu">
-      <div class="dish"><div class="ic">🥭</div><div class="row"><h3>Jugo natural</h3><p>Maracuyá, naranjilla, mora o piña.</p></div><div class="price">$1.50</div></div>
-      <div class="dish"><div class="ic">🥥</div><div class="row"><h3>Agua de coco</h3><p>Fría, directo del coco.</p></div><div class="price">$2.00</div></div>
+    <div class="panel" id="bebidas" role="tabpanel" aria-labelledby="tab-bebidas" hidden><div class="menu">
+      <div class="dish" data-id="jug" data-p="1.50"><div class="ic" aria-hidden="true">🥭</div><div class="row"><h3><span class="dn" data-i="d11">Jugo natural</span></h3><p data-i="d11p">Maracuyá, naranjilla, mora o piña.</p></div><div class="end"><div class="price">$1.50</div><button class="add" type="button">+</button></div></div>
+      <div class="dish" data-id="coc" data-p="2.00"><div class="ic" aria-hidden="true">🥥</div><div class="row"><h3><span class="dn" data-i="d12">Agua de coco</span></h3><p data-i="d12p">Fría, directo del coco.</p></div><div class="end"><div class="price">$2.00</div><button class="add" type="button">+</button></div></div>
     </div></div>
+    <p class="hint" data-i="hint">Precios referenciales de ejemplo, en dólares.</p>
   </div>
 </section>
 
-<section id="nosotros" style="padding-top:0">
+<section id="nosotros" style="padding-top:0" aria-labelledby="about-t">
   <div class="wrap">
-    <div class="head rv"><div><div class="kicker">Por qué elegirnos</div><h2>Frescura que se nota en cada bocado.</h2></div></div>
+    <div class="head rv"><div><div class="kicker" data-i="aK">Por qué elegirnos</div><h2 id="about-t" data-i="aH">Frescura que se nota en cada bocado.</h2></div></div>
     <div class="bento">
       <div class="card big rv">
-        <div class="badge">🎣</div>
-        <h3>Directo del puerto</h3>
-        <p>Compramos los mariscos cada mañana, así que lo que llega a tu mesa es lo más fresco del día.</p>
+        <div class="badge" aria-hidden="true">🎣</div>
+        <h3 data-i="a1">Directo del puerto</h3>
+        <p data-i="a1p">Compramos los mariscos cada mañana, así que lo que llega a tu mesa es lo más fresco del día.</p>
         <svg class="wave" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#f3b94d" stroke-width="2"><path d="M0 120 Q50 90 100 120 T200 120"/><path d="M0 145 Q50 115 100 145 T200 145"/><path d="M0 170 Q50 140 100 170 T200 170"/></g></svg>
       </div>
-      <div class="card rv"><div class="badge">👨‍🍳</div><h3>Recetas de la casa</h3><p>Sazón costeña con ají y curtidos preparados por nosotros.</p></div>
-      <div class="card rv"><div class="badge">🧼</div><h3>Higiene garantizada</h3><p>Cocina limpia y procesos cuidados para que comas tranquilo.</p></div>
+      <div class="card rv"><div class="badge" aria-hidden="true">👨‍🍳</div><h3 data-i="a2">Recetas de la casa</h3><p data-i="a2p">Sazón costeña con ají y curtidos preparados por nosotros.</p></div>
+      <div class="card rv"><div class="badge" aria-hidden="true">🧼</div><h3 data-i="a3">Higiene garantizada</h3><p data-i="a3p">Cocina limpia y procesos cuidados para que comas tranquilo.</p></div>
     </div>
   </div>
 </section>
 
-<section id="pedir" style="padding-top:0">
+<section id="pedir" style="padding-top:0" aria-labelledby="how-t">
   <div class="wrap">
-    <div class="head rv"><div><div class="kicker">Pedidos a domicilio</div><h2>Tu antojo, en 3 pasos.</h2></div></div>
-    <div class="steps">
-      <div class="step rv"><h3>Elige tus platos</h3><p>Revisa el menú y decide qué se te antoja hoy.</p></div>
-      <div class="step rv"><h3>Escríbenos por WhatsApp</h3><p>Envíanos tu pedido y tu dirección. Te confirmamos al instante.</p></div>
-      <div class="step rv"><h3>Recíbelo caliente</h3><p>Lo llevamos a tu puerta en unos 30 minutos.</p></div>
-    </div>
+    <div class="head rv"><div><div class="kicker" data-i="sK">Pedidos a domicilio</div><h2 id="how-t" data-i="sH">Tu antojo, en 3 pasos.</h2></div></div>
+    <ol class="steps">
+      <li class="step rv"><h3 data-i="s1">Elige tus platos</h3><p data-i="s1p">Revisa el menú y toca + en lo que se te antoja hoy.</p></li>
+      <li class="step rv"><h3 data-i="s2">Envíalo por WhatsApp</h3><p data-i="s2p">Completa tus datos y te abrimos WhatsApp con el pedido ya escrito.</p></li>
+      <li class="step rv"><h3 data-i="s3">Recíbelo caliente</h3><p data-i="s3p">Lo llevamos a tu puerta en unos 30 minutos.</p></li>
+    </ol>
   </div>
 </section>
 
-<section id="visitanos" style="padding-top:0">
+<section id="visitanos" style="padding-top:0" aria-labelledby="visit-t">
   <div class="wrap">
-    <div class="head rv"><div><div class="kicker">Visítanos</div><h2>Te esperamos con la mesa lista.</h2></div></div>
+    <div class="head rv"><div><div class="kicker" data-i="vK">Visítanos</div><h2 id="visit-t" data-i="vH">Te esperamos con la mesa lista.</h2></div></div>
     <div class="visit">
       <div class="info">
-        <div class="inf rv"><span class="badge">🕗</span><div><b>Horario</b><span>Lunes a domingo · 7:30 a 16:00</span></div></div>
-        <div class="inf rv"><span class="badge">📍</span><div><b>Dirección</b><span>Av. del Malecón y calle Primera (dirección de ejemplo)</span></div></div>
-        <div class="inf rv"><span class="badge">🛵</span><div><b>Domicilio</b><span>Entregas dentro de la ciudad en 30–40 minutos</span></div></div>
-        <div class="inf rv"><span class="badge">💳</span><div><b>Formas de pago</b><span>Efectivo, transferencia y tarjeta</span></div></div>
+        <div class="inf rv"><span class="badge" aria-hidden="true">🕗</span><div data-i="v1"><b>Horario</b><span>Lunes a domingo · 7:30 a 16:00</span></div></div>
+        <div class="inf rv"><span class="badge" aria-hidden="true">📍</span><div data-i="v2"><b>Dirección</b><span>Av. del Malecón y calle Primera (dirección de ejemplo)</span></div></div>
+        <div class="inf rv"><span class="badge" aria-hidden="true">🛵</span><div data-i="v3"><b>Domicilio</b><span>Entregas dentro de la ciudad en 30–40 minutos</span></div></div>
+        <div class="inf rv"><span class="badge" aria-hidden="true">💳</span><div data-i="v4"><b>Formas de pago</b><span>Efectivo, transferencia y tarjeta</span></div></div>
       </div>
-      <div class="map rv" aria-hidden="true">
-        <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice">
+      <div class="map rv" role="img" aria-label="Mapa ilustrativo: el local está junto al malecón, frente al mar" data-ia="aria-label:mapAlt">
+        <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
           <rect width="400" height="320" fill="#0a2c37"/>
           <path d="M0 230 Q120 200 220 240 T400 220 V320 H0Z" fill="#0f4b5b"/>
           <g stroke="#164c5a" stroke-width="10" fill="none" stroke-linecap="round"><path d="M-10 90 H410"/><path d="M-10 170 H410"/><path d="M90 -10 V240"/><path d="M250 -10 V240"/><path d="M330 -10 L170 240"/></g>
           <g stroke="#1d6070" stroke-width="2" fill="none" stroke-dasharray="6 8"><path d="M-10 90 H410"/><path d="M-10 170 H410"/></g>
           <g fill="#11404c"><rect x="110" y="20" width="120" height="55" rx="8"/><rect x="270" y="20" width="110" height="55" rx="8"/><rect x="10" y="105" width="65" height="50" rx="8"/><rect x="110" y="105" width="120" height="50" rx="8"/></g>
         </svg>
-        <div class="pin"><svg width="44" height="56" viewBox="0 0 44 56"><path d="M22 0C10 0 0 10 0 22c0 16 22 34 22 34s22-18 22-34C44 10 34 0 22 0z" fill="#f3b94d"/><circle cx="22" cy="21" r="8" fill="#04141b"/></svg></div>
+        <div class="pin" aria-hidden="true"><svg width="44" height="56" viewBox="0 0 44 56"><path d="M22 0C10 0 0 10 0 22c0 16 22 34 22 34s22-18 22-34C44 10 34 0 22 0z" fill="#f3b94d"/><circle cx="22" cy="21" r="8" fill="#04141b"/></svg></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="pedido" style="padding-top:0">
+<section id="pedido" style="padding-top:0" aria-labelledby="order-t">
   <div class="wrap">
     <div class="cta rv">
-      <div class="kicker">¿Se te antojó?</div>
-      <h2>Pide hoy y recíbelo fresco en tu casa.</h2>
-      <p>Escríbenos por WhatsApp, te confirmamos el pedido y lo llevamos caliente a tu puerta.</p>
-      <a class="btn wa" href="https://wa.me/" target="_blank" rel="noopener">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
-        Pedir por WhatsApp
-      </a>
+      <div class="kicker" data-i="oK">¿Se te antojó?</div>
+      <h2 id="order-t" data-i="oH">Arma tu pedido y envíalo por WhatsApp.</h2>
+      <p class="cp" data-i="oP">Revisa tus platos, completa tus datos y te abrimos WhatsApp con el pedido ya escrito. Solo tienes que tocar enviar.</p>
+      <form class="order" id="orderForm" novalidate>
+        <div class="box">
+          <h3 data-i="cartH">Tu pedido</h3>
+          <ul class="cart" id="cart" aria-live="polite"></ul>
+          <p class="empty" id="empty" data-i="empty">Aún no agregas platos. <a href="#menu">Ve al menú</a> y toca <b>+</b>.</p>
+          <div class="total"><span data-i="totalL">Total referencial</span><b id="total">$0.00</b></div>
+          <p class="fine" data-i="fine">El precio final y el costo de envío se confirman por WhatsApp.</p>
+        </div>
+        <div class="box fields">
+          <div class="two">
+            <label class="fl"><span data-i="lName">Nombre *</span><input name="cname" id="o-name" required autocomplete="name" placeholder="Tu nombre" data-ia="placeholder:phName"></label>
+            <label class="fl"><span data-i="lPhone">Teléfono</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="09xx xxx xxx" data-ia="placeholder:phPhone"></label>
+          </div>
+          <fieldset>
+            <legend data-i="lMode">¿Cómo lo quieres?</legend>
+            <div class="seg">
+              <label><input type="radio" name="mode" value="delivery" checked><span data-i="mDel">A domicilio</span></label>
+              <label><input type="radio" name="mode" value="pickup"><span data-i="mPick">Retiro en el local</span></label>
+            </div>
+          </fieldset>
+          <label class="fl" id="addrWrap"><span data-i="lAddr">Dirección de entrega *</span><input name="addr" id="o-addr" autocomplete="street-address" placeholder="Calle, número y referencia" data-ia="placeholder:phAddr"></label>
+          <label class="fl"><span data-i="lPay">Forma de pago</span><select name="pay" id="o-pay"><option value="cash" data-i="pCash">Efectivo</option><option value="transfer" data-i="pTr">Transferencia</option><option value="card" data-i="pCard">Tarjeta</option></select></label>
+          <label class="fl"><span data-i="lNotes">Notas (opcional)</span><textarea name="notes" rows="2" placeholder="Sin cebolla, poco ají, timbre dañado..." data-ia="placeholder:phNotes"></textarea></label>
+          <p class="msg" id="oMsg" role="status" aria-live="polite"></p>
+          <button class="btn wa" type="submit">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
+            <span data-i="send">Pedir por WhatsApp</span>
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap foot">
-    <a href="#" class="brand"><i>🌊</i>La Ola <span>Dorada</span></a>
-    <span>© La Ola Dorada · marca ficticia de demostración</span>
+    <a href="#" class="brand" aria-label="La Ola Dorada, volver arriba" data-ia="aria-label:top"><i aria-hidden="true">🌊</i>La Ola <span>Dorada</span></a>
+    <span data-i="foot">© La Ola Dorada · marca ficticia de demostración</span>
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="#05261a"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
+<a class="cartbar" id="cartbar" href="#pedido" tabindex="-1" aria-hidden="true"><span aria-hidden="true">🧺</span><span id="cbText"></span></a>
+<a class="fab" id="fab" href="https://wa.me/" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-ia="aria-label:fab">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#05261a" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
 </a>
 
 <script>
 (function(){
+  /* Número de WhatsApp del negocio (formato internacional, solo dígitos, ej. 593991234567).
+     Vacío = WhatsApp abre el mensaje listo y deja elegir el contacto (negocio ficticio). */
+  var WA_NUMBER='';
+  function waLink(text){return 'https://wa.me/'+WA_NUMBER+(text?'?text='+encodeURIComponent(text):'');}
+
+  var EN={
+    metaTitle:'La Ola Dorada — Coastal ceviche bar | Order on WhatsApp (sample)',
+    metaDesc:'Coastal ceviche bar with ceviches, encebollado soup and fresh seafood. See the menu and order delivery via WhatsApp. Sample project with a fictional business.',
+    skip:'Skip to content',demoEn:' · Sample project, fictional business',navMain:'Main',home:'La Ola Dorada, home',top:'La Ola Dorada, back to top',
+    nMenu:'Menu',nAbout:'About',nHow:'How to order',nVisit:'Visit us',orderNow:'Order now',openMenu:'Open menu',
+    new:'NEW',eyebrow:'Catch of the day, every day',h1:'The taste of the sea, <em>served in gold.</em>',
+    lead:'Coastal ceviche bar with house recipes, hearty encebollado and fresh seafood. Come and enjoy it or get it delivered.',
+    ctaOrder:'Place my order →',ctaMenu:'See the menu',
+    f1:'<strong>30 min</strong>average delivery',f2:'<strong>100%</strong>fresh seafood',f3:'<strong>7 days</strong>open every week',
+    plateAlt:'Illustration of a ceviche bowl with lime',
+    chip1:'<b>House ceviche</b><small>The coast’s favorite</small>',chip2:'<b>Fast delivery</b><small>Arrives fresh at your door</small>',
+    track:'<span>Shrimp ceviche</span><span>Tuna encebollado</span><span>Seafood rice</span><span>Fresh juices</span><span>Plantain chips &amp; popcorn</span><span>Family platter</span><span>Shrimp ceviche</span><span>Tuna encebollado</span><span>Seafood rice</span><span>Fresh juices</span><span>Plantain chips &amp; popcorn</span><span>Family platter</span>',
+    mK:'Our menu',mH:'Made to order, just like home.',mSub:'Pick a category and tap <b>+</b> to build your order. Everything is made with the day’s fresh seafood.',
+    tabsLabel:'Menu categories',tCev:'Ceviches',tSop:'Soups',tFue:'Main dishes',tBeb:'Drinks',
+    d1:'Shrimp ceviche',d1p:'Shrimp, lime, tomato, pickled onion. Served with plantain chips and popcorn.',
+    d2:'Black clam ceviche',d2p:'Black clams with lime, onion and cilantro.',
+    d3:'Fish ceviche',d3p:'White fish cured in lime with our house chili.',
+    d4:'Mixed ceviche',d4p:'Shrimp, fish and squid in one dish.',
+    d5:'Encebollado',d5p:'Albacore tuna broth with cassava and pickled onion.',
+    d6:'Fish viche',d6p:'Thick peanut and green plantain soup with seafood.',
+    d7:'Seafood rice',d7p:'Rice with shrimp, squid, clams and fish.',
+    d8:'Breaded shrimp',d8p:'With rice, beans and fried plantains.',
+    d9:'Fried fish',d9p:'Whole fish with fried plantains and salad.',
+    d10:'Family platter',d10t:'4 ppl',d10p:'Assorted ceviches, seafood rice and fried plantains.',
+    d11:'Fresh juice',d11p:'Passion fruit, naranjilla, blackberry or pineapple.',
+    d12:'Coconut water',d12p:'Ice cold, straight from the coconut.',
+    hint:'Sample reference prices, in US dollars.',
+    aK:'Why choose us',aH:'Freshness you can taste in every bite.',
+    a1:'Straight from the port',a1p:'We buy seafood every morning, so what reaches your table is the freshest of the day.',
+    a2:'House recipes',a2p:'Coastal seasoning with chili and pickles made in-house.',
+    a3:'Guaranteed hygiene',a3p:'A clean kitchen and careful processes so you can eat with peace of mind.',
+    sK:'Home delivery',sH:'Your craving, in 3 steps.',
+    s1:'Pick your dishes',s1p:'Browse the menu and tap + on whatever you’re craving today.',
+    s2:'Send it on WhatsApp',s2p:'Fill in your details and we open WhatsApp with your order already written.',
+    s3:'Get it hot',s3p:'We bring it to your door in about 30 minutes.',
+    vK:'Visit us',vH:'Your table is ready and waiting.',
+    v1:'<b>Opening hours</b><span>Monday to Sunday · 7:30 am to 4:00 pm</span>',
+    v2:'<b>Address</b><span>Malecón Ave. & First St. (sample address)</span>',
+    v3:'<b>Delivery</b><span>Citywide delivery in 30–40 minutes</span>',
+    v4:'<b>Payment methods</b><span>Cash, bank transfer and card</span>',
+    mapAlt:'Illustrated map: the restaurant is by the boardwalk, facing the sea',
+    oK:'Craving it?',oH:'Build your order and send it on WhatsApp.',
+    oP:'Check your dishes, fill in your details and we’ll open WhatsApp with your order already written. Just tap send.',
+    cartH:'Your order',empty:'No dishes yet. <a href="#menu">Go to the menu</a> and tap <b>+</b>.',totalL:'Estimated total',
+    fine:'Final price and delivery fee are confirmed on WhatsApp.',
+    lName:'Name *',phName:'Your name',lPhone:'Phone',phPhone:'Your phone number',lMode:'How do you want it?',mDel:'Delivery',mPick:'Pick up at the restaurant',
+    lAddr:'Delivery address *',phAddr:'Street, number and landmark',lPay:'Payment method',pCash:'Cash',pTr:'Bank transfer',pCard:'Card',
+    lNotes:'Notes (optional)',phNotes:'No onion, mild chili, doorbell broken...',send:'Order on WhatsApp',
+    fab:'Message us on WhatsApp',foot:'© La Ola Dorada · fictional demo brand'
+  };
+  var JS={
+    es:{add:'Agregar',more:'Agregar uno más de',less:'Quitar uno de',items:'platos',item:'plato',see:'Ver pedido',
+      eCart:'Agrega al menos un plato desde el menú.',eName:'Escribe tu nombre.',eAddr:'Escribe la dirección de entrega.',
+      ok:'¡Listo! Abrimos WhatsApp con tu pedido. Si no se abrió, revisa que tu navegador permita ventanas emergentes.',
+      hi:'¡Hola, La Ola Dorada! Quiero hacer un pedido:',total:'Total referencial',name:'Nombre',phone:'Teléfono',mode:'Entrega',
+      delivery:'A domicilio',pickup:'Retiro en el local',addr:'Dirección',pay:'Pago',notes:'Notas',cash:'Efectivo',transfer:'Transferencia',card:'Tarjeta',
+      fabMsg:'¡Hola, La Ola Dorada! Quisiera información sobre el menú y los pedidos a domicilio.'},
+    en:{add:'Add',more:'Add one more',less:'Remove one',items:'items',item:'item',see:'View order',
+      eCart:'Add at least one dish from the menu.',eName:'Please enter your name.',eAddr:'Please enter the delivery address.',
+      ok:'Done! We opened WhatsApp with your order. If it didn’t open, check that your browser allows pop-ups.',
+      hi:'Hi, La Ola Dorada! I’d like to place an order:',total:'Estimated total',name:'Name',phone:'Phone',mode:'Delivery',
+      delivery:'Home delivery',pickup:'Pick up at the restaurant',addr:'Address',pay:'Payment',notes:'Notes',cash:'Cash',transfer:'Bank transfer',card:'Card',
+      fabMsg:'Hi, La Ola Dorada! I’d like some information about the menu and home delivery.'}
+  };
+  var LANG='es';
+  function t(k){return JS[LANG][k];}
+
+  function applyLang(l){
+    LANG=l;document.documentElement.lang=l;
+    document.querySelectorAll('[data-i]').forEach(function(el){
+      if(el._es===undefined)el._es=el.innerHTML;
+      var v=EN[el.getAttribute('data-i')];el.innerHTML=(l==='en'&&v!=null)?v:el._es;});
+    document.querySelectorAll('[data-ia]').forEach(function(el){
+      el._esa=el._esa||{};
+      el.getAttribute('data-ia').split('|').forEach(function(p){var a=p.split(':'),at=a[0],v=EN[a[1]];
+        if(!(at in el._esa))el._esa[at]=el.getAttribute(at);
+        el.setAttribute(at,(l==='en'&&v!=null)?v:el._esa[at]);});});
+    document.querySelectorAll('[data-lang]').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-lang')===l));});
+    try{localStorage.setItem('lang',l);}catch(e){}
+    renderCart();
+    document.getElementById('fab').href=waLink(t('fabMsg'));
+  }
+  document.querySelectorAll('[data-lang]').forEach(function(b){b.addEventListener('click',function(){applyLang(b.getAttribute('data-lang'));});});
+
+  /* menú móvil */
   var b=document.getElementById('burger'),m=document.getElementById('mobile');
-  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'✕':'☰';});
-  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.textContent='☰';b.setAttribute('aria-expanded','false');});});
-  document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){
-    document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected','false');});
-    t.setAttribute('aria-selected','true');
-    document.querySelectorAll('.panel').forEach(function(p){p.hidden=p.id!==t.dataset.t;});
-  });});
+  function closeMenu(){m.classList.remove('open');b.textContent='☰';b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.textContent=o?'✕':'☰';});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open')){closeMenu();b.focus();}});
+
+  /* pestañas accesibles */
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function selectTab(tb,focus){
+    tabs.forEach(function(x){var on=x===tb;x.setAttribute('aria-selected',String(on));x.tabIndex=on?0:-1;});
+    document.querySelectorAll('.panel').forEach(function(p){p.hidden=p.id!==tb.getAttribute('data-t');});
+    if(focus)tb.focus();
+  }
+  tabs.forEach(function(tb,i){
+    tb.addEventListener('click',function(){selectTab(tb);});
+    tb.addEventListener('keydown',function(e){
+      var n=null;if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];else if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];
+      else if(e.key==='Home')n=tabs[0];else if(e.key==='End')n=tabs[tabs.length-1];
+      if(n){e.preventDefault();selectTab(n,true);}
+    });
+  });
+
+  /* carrito */
+  var cart={},order=[],cartN=0,inOrder=false;
+  if('IntersectionObserver' in window){new IntersectionObserver(function(en){inOrder=en[0].isIntersecting;document.getElementById('cartbar').classList.toggle('show',cartN>0&&!inOrder);}).observe(document.getElementById('pedido'));}
+  var dishes={};
+  document.querySelectorAll('.dish').forEach(function(d){
+    var id=d.getAttribute('data-id');dishes[id]=d;
+    d.querySelector('.add').addEventListener('click',function(){change(id,1);});
+  });
+  function dname(id){return dishes[id].querySelector('.dn').textContent.trim();}
+  function price(id){return parseFloat(dishes[id].getAttribute('data-p'));}
+  function money(n){return '$'+n.toFixed(2);}
+  function change(id,d){
+    cart[id]=(cart[id]||0)+d;
+    if(cart[id]<=0){delete cart[id];order=order.filter(function(x){return x!==id;});}
+    else if(order.indexOf(id)<0)order.push(id);
+    renderCart();
+  }
+  function renderCart(){
+    var ul=document.getElementById('cart'),tot=0,n=0;ul.innerHTML='';
+    order.forEach(function(id){
+      var q=cart[id],s=q*price(id);tot+=s;n+=q;
+      var li=document.createElement('li');
+      li.innerHTML='<span class="nm"></span><span class="qty"><button type="button" class="mi">−</button><output>'+q+'</output><button type="button" class="pl">+</button></span><span class="sm">'+money(s)+'</span>';
+      li.querySelector('.nm').textContent=dname(id);
+      var mi=li.querySelector('.mi'),pl=li.querySelector('.pl');
+      mi.setAttribute('aria-label',t('less')+' '+dname(id));pl.setAttribute('aria-label',t('more')+' '+dname(id));
+      mi.addEventListener('click',function(){change(id,-1);});pl.addEventListener('click',function(){change(id,1);});
+      ul.appendChild(li);
+    });
+    document.getElementById('empty').hidden=n>0;
+    document.getElementById('total').textContent=money(tot);
+    Object.keys(dishes).forEach(function(id){
+      var a=dishes[id].querySelector('.add'),q=cart[id]||0;
+      a.classList.toggle('on',q>0);a.textContent=q>0?q:'+';
+      a.setAttribute('aria-label',t('add')+' '+dname(id)+(q?' ('+q+')':''));
+    });
+    var cb=document.getElementById('cartbar');
+    cartN=n;cb.classList.toggle('show',n>0&&!inOrder);
+    document.getElementById('cbText').textContent=t('see')+' · '+n+' '+(n===1?t('item'):t('items'))+' · '+money(tot);
+    if(n>0){cb.removeAttribute('aria-hidden');cb.removeAttribute('tabindex');}else{cb.setAttribute('aria-hidden','true');cb.tabIndex=-1;}
+    return tot;
+  }
+
+  /* formulario de pedido -> WhatsApp */
+  var f=document.getElementById('orderForm'),msg=document.getElementById('oMsg'),addrWrap=document.getElementById('addrWrap');
+  function mode(){return f.querySelector('input[name=mode]:checked').value;}
+  f.querySelectorAll('input[name=mode]').forEach(function(r){r.addEventListener('change',function(){addrWrap.hidden=mode()!=='delivery';});});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var E=f.elements,name=E.cname.value.trim(),addr=E.addr.value.trim(),err=null,focus=null;
+    E.cname.setAttribute('aria-invalid',String(!name));
+    E.addr.setAttribute('aria-invalid',String(mode()==='delivery'&&!addr));
+    if(!order.length){err=t('eCart');focus=document.querySelector('.tab[aria-selected=true]');}
+    else if(!name){err=t('eName');focus=E.cname;}
+    else if(mode()==='delivery'&&!addr){err=t('eAddr');focus=E.addr;}
+    if(err){msg.className='msg';msg.textContent=err;if(focus)focus.focus();return;}
+    var L=[t('hi'),''],tot=0;
+    order.forEach(function(id){var s=cart[id]*price(id);tot+=s;L.push('• '+cart[id]+' x '+dname(id)+' — '+money(s));});
+    L.push('',t('total')+': '+money(tot),'',t('name')+': '+name);
+    if(E.phone.value.trim())L.push(t('phone')+': '+E.phone.value.trim());
+    L.push(t('mode')+': '+t(mode()));
+    if(mode()==='delivery')L.push(t('addr')+': '+addr);
+    L.push(t('pay')+': '+t(E.pay.value));
+    if(E.notes.value.trim())L.push(t('notes')+': '+E.notes.value.trim());
+    var url=waLink(L.join('\n'));
+    var w=window.open(url,'_blank');if(w){try{w.opener=null;}catch(x){}}else{location.href=url;}
+    msg.className='msg ok';msg.textContent=t('ok');
+  });
+
+  /* idioma inicial: ?lang= > preferencia guardada > idioma del navegador */
+  var q=(location.search.match(/[?&]lang=(es|en)/)||[])[1],s=null;
+  try{s=localStorage.getItem('lang');}catch(e){}
+  applyLang(q||s||((navigator.language||'es').toLowerCase().indexOf('en')===0?'en':'es'));
+
+  /* animación al hacer scroll */
   var els=document.querySelectorAll('.rv');
   if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
   var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});

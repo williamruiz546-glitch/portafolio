@@ -3,21 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AgroSurco — Insumos agrícolas (muestra)</title>
+<title data-i="metaTitle">AgroSurco — Insumos agrícolas y asesoría técnica en finca (muestra)</title>
+<meta name="description" content="Insumos agrícolas con asesoría de un técnico agrónomo: fertilizantes, semillas, control fitosanitario y riego. Agenda tu visita por WhatsApp. Proyecto de muestra con negocio ficticio." data-ia="content:metaDesc">
+<meta name="theme-color" content="#0b2a18">
+<link rel="canonical" href="https://williamruiz546-glitch.github.io/portafolio/agrosurco/">
+<link rel="alternate" hreflang="es" href="https://williamruiz546-glitch.github.io/portafolio/agrosurco/?lang=es">
+<link rel="alternate" hreflang="en" href="https://williamruiz546-glitch.github.io/portafolio/agrosurco/?lang=en">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="William Ruiz — Portafolio">
+<meta property="og:title" content="AgroSurco — Insumos agrícolas (proyecto de muestra)">
+<meta property="og:description" content="Landing page para insumos agrícolas: catálogo, planes de asesoría y formulario que envía la solicitud por WhatsApp. Bilingüe ES/EN.">
+<meta property="og:url" content="https://williamruiz546-glitch.github.io/portafolio/agrosurco/">
+<meta property="og:image" content="https://williamruiz546-glitch.github.io/portafolio/capturas/agrosurco-1280x769.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="769">
+<meta property="og:image:alt" content="Vista previa de la landing page de AgroSurco">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2316a34a'/%3E%3Cpath d='M32 54V30' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M32 30c0-12 9-20 22-20 0 13-9 20-22 20z' fill='%23bef264'/%3E%3Cpath d='M32 38c0-10-8-16-22-16 0 11 8 16 22 16z' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap"></noscript>
+<script>document.documentElement.className+=' js'</script>
 <style>
 :root{
-  --bg:#f6f8f3;--ink:#0d1a12;--soft:#4d5d52;--mute:#7a8a7f;
+  --bg:#f6f8f3;--ink:#0d1a12;--soft:#465549;--mute:#5c6b60;
   --g9:#0b2a18;--g7:#14532d;--g6:#16a34a;--g5:#22c55e;--lime:#bef264;--earth:#a16207;
   --line:#e2e8dd;--card:#ffffff;--r:20px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 h1,h2,h3{font-family:'Manrope',sans-serif;letter-spacing:-.03em;line-height:1.08}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid #15803d;outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--g9);color:#fff;padding:10px 16px;border-radius:10px;font-weight:600}
+.skip:focus{top:12px}
+.lang{display:inline-flex;padding:3px;border-radius:11px;border:1px solid var(--line);background:#fff}
+.lang button{background:none;border:none;color:var(--soft);font:600 12.5px 'Inter',sans-serif;padding:7px 9px;border-radius:8px;cursor:pointer;min-width:34px}
+.lang button[aria-pressed="true"]{background:var(--g9);color:#fff}
+.right{display:flex;align-items:center;gap:10px}
 .demo{background:var(--g9);color:#d9f99d;text-align:center;font-size:12px;font-weight:500;padding:7px 12px}
 
 /* nav */
@@ -71,7 +100,7 @@ nav{height:68px;display:flex;align-items:center;justify-content:space-between}
 .kpi{border:1px solid var(--line);border-radius:14px;padding:12px}
 .kpi small{color:var(--mute);font-size:11.5px}
 .kpi b{display:block;font-family:'Manrope';font-size:20px}
-.kpi i{font-style:normal;font-size:11.5px;color:var(--g6);font-weight:600}
+.kpi i{font-style:normal;font-size:11.5px;color:#15803d;font-weight:600}
 .chart{border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:14px}
 .chart small{color:var(--mute);font-size:12px}
 .chart svg{width:100%;height:110px;display:block;margin-top:6px}
@@ -92,7 +121,7 @@ nav{height:68px;display:flex;align-items:center;justify-content:space-between}
 section{padding:104px 0}
 .head{max-width:640px;margin-bottom:44px}
 .head.center{text-align:center;margin-left:auto;margin-right:auto}
-.kick{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--g6)}
+.kick{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#15803d}
 h2{font-size:clamp(32px,4.4vw,50px);font-weight:800;margin:10px 0 14px}
 .head p{color:var(--soft);font-size:17px}
 
@@ -125,7 +154,7 @@ h2{font-size:clamp(32px,4.4vw,50px);font-weight:800;margin:10px 0 14px}
 @media(max-width:900px){.plans{grid-template-columns:1fr}}
 .plan{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;display:flex;flex-direction:column}
 .plan.hot{border:2px solid var(--g6);box-shadow:0 30px 60px -34px rgba(22,163,74,.6);position:relative}
-.plan.hot::before{content:"Más elegido";position:absolute;top:-13px;left:30px;background:var(--g6);color:#fff;font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px}
+.plan .hotl{position:absolute;top:-13px;left:30px;background:#15803d;color:#fff;font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px}
 .plan h3{font-size:21px}
 .plan .d{color:var(--soft);font-size:14.5px;margin:6px 0 18px}
 .plan ul{list-style:none;display:grid;gap:10px;margin-bottom:26px;flex:1}
@@ -138,16 +167,21 @@ h2{font-size:clamp(32px,4.4vw,50px);font-weight:800;margin:10px 0 14px}
 details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:10px}
 summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:20px;color:var(--g6);transition:transform .2s}
+summary::after{content:"+";font-size:20px;color:#15803d;transition:transform .2s}
 details[open] summary::after{transform:rotate(45deg)}
 details p{color:var(--soft);font-size:15px;margin-top:10px}
 form{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 30px 60px -40px rgba(11,42,24,.4);display:grid;gap:16px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:520px){.two{grid-template-columns:1fr}}
 label{font-size:13.5px;font-weight:600;display:grid;gap:7px}
+form h3{font-size:22px}
 input,select,textarea{font:400 15px 'Inter';padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#fafcf8;color:var(--ink);transition:border-color .2s,box-shadow .2s;width:100%}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--g5);box-shadow:0 0 0 4px rgba(34,197,94,.15);background:#fff}
-.err{border-color:#ef4444!important}
+input,select,textarea{border-color:#c9d3c3}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#15803d;box-shadow:0 0 0 4px rgba(21,128,61,.25);background:#fff}
+[aria-invalid="true"]{border-color:#dc2626!important;box-shadow:0 0 0 3px rgba(220,38,38,.18)}
+.msg{font-size:14px;font-weight:600;color:#b91c1c}
+.wa{background:#25d366;color:#05261a;box-shadow:0 10px 26px -12px rgba(37,211,102,.8)}
+.wa:hover{transform:translateY(-2px);background:#2fe074}
 .ok{display:none;align-items:center;gap:10px;background:#dcfce7;color:var(--g7);padding:14px;border-radius:12px;font-weight:600;font-size:14.5px}
 .ok.show{display:flex}
 .note{font-size:12.5px;color:var(--mute);text-align:center}
@@ -155,46 +189,51 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--g5);box-
 footer{border-top:1px solid var(--line);padding:44px 0 56px;color:var(--mute);font-size:14px}
 .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 
-.rv{opacity:0;transform:translateY(20px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
-.rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+.js .rv{opacity:0;transform:translateY(20px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<div class="demo">Proyecto de muestra · negocio ficticio · diseño y desarrollo: William Ruiz</div>
+<a class="skip" href="#main" data-i="skip">Saltar al contenido</a>
+<div class="demo">Proyecto de muestra · negocio ficticio · diseño y desarrollo: William Ruiz<span data-i="demoEn"></span></div>
 
 <header>
-  <div class="wrap"><nav>
-    <a href="#" class="brand"><span class="logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M12 21V11"/><path d="M12 11C12 6 15.5 3 21 3c0 5.5-3.5 8-9 8z" fill="#bef264" stroke="none"/><path d="M12 14C12 10 9 7.5 3 7.5c0 4.5 3 6.5 9 6.5z" fill="#fff" stroke="none"/></svg></span>AgroSurco</a>
-    <div class="links"><a href="#productos">Productos</a><a href="#proceso">Cómo trabajamos</a><a href="#planes">Planes</a><a href="#faq">Preguntas</a></div>
-    <div class="nav-cta"><a href="#asesoria" class="btn btn-pri btn-sm">Agendar visita</a></div>
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <div class="wrap"><nav aria-label="Principal" data-ia="aria-label:navMain">
+    <a href="#" class="brand" aria-label="AgroSurco, inicio" data-ia="aria-label:home"><span class="logo" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M12 21V11"/><path d="M12 11C12 6 15.5 3 21 3c0 5.5-3.5 8-9 8z" fill="#bef264" stroke="none"/><path d="M12 14C12 10 9 7.5 3 7.5c0 4.5 3 6.5 9 6.5z" fill="#fff" stroke="none"/></svg></span>AgroSurco</a>
+    <div class="links"><a href="#productos" data-i="nProd">Productos</a><a href="#proceso" data-i="nHow">Cómo trabajamos</a><a href="#planes" data-i="nPlans">Planes</a><a href="#faq" data-i="nFaq">Preguntas</a></div>
+    <div class="right">
+      <div class="nav-cta"><a href="#asesoria" class="btn btn-pri btn-sm" data-i="book">Agendar visita</a></div>
+      <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" aria-pressed="true" lang="es">ES</button><button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button></div>
+      <button class="burger" id="burger" aria-label="Abrir menú" data-ia="aria-label:openMenu" aria-expanded="false" aria-controls="mobile">☰</button>
+    </div>
   </nav></div>
-  <div class="mobile" id="mobile"><a href="#productos">Productos</a><a href="#proceso">Cómo trabajamos</a><a href="#planes">Planes</a><a href="#faq">Preguntas</a><a href="#asesoria" class="btn btn-pri" style="margin-top:10px;border:none">Agendar visita</a></div>
+  <div class="mobile" id="mobile"><a href="#productos" data-i="nProd">Productos</a><a href="#proceso" data-i="nHow">Cómo trabajamos</a><a href="#planes" data-i="nPlans">Planes</a><a href="#faq" data-i="nFaq">Preguntas</a><a href="#asesoria" class="btn btn-pri" style="margin-top:10px;border:none" data-i="book">Agendar visita</a></div>
 </header>
 
+<main id="main">
 <section class="hero">
   <div class="wrap hgrid">
     <div>
-      <span class="pill rv"><b>Nuevo</b> Asesoría técnica gratis en tu primera visita</span>
-      <h1 class="rv">Más producción por hectárea, <span>menos gasto</span> en tu finca.</h1>
-      <p class="lead rv">Insumos agrícolas con la recomendación de un técnico agrónomo. Te decimos qué aplicar, cuánto y cuándo, según tu cultivo y tu suelo.</p>
-      <div class="ctas rv"><a href="#asesoria" class="btn btn-pri">Pedir visita técnica →</a><a href="#productos" class="btn btn-sec">Ver productos</a></div>
-      <div class="stats rv">
-        <div><strong>+300</strong><span>productos disponibles</span></div>
-        <div><strong>48 h</strong><span>entrega en finca</span></div>
-        <div><strong>$0</strong><span>primera visita</span></div>
+      <span class="pill"><b data-i="new">Nuevo</b> <span data-i="pill">Asesoría técnica gratis en tu primera visita</span></span>
+      <h1 data-i="h1">Más producción por hectárea, <span>menos gasto</span> en tu finca.</h1>
+      <p class="lead" data-i="lead">Insumos agrícolas con la recomendación de un técnico agrónomo. Te decimos qué aplicar, cuánto y cuándo, según tu cultivo y tu suelo.</p>
+      <div class="ctas"><a href="#asesoria" class="btn btn-pri" data-i="cta1">Pedir visita técnica →</a><a href="#productos" class="btn btn-sec" data-i="cta2">Ver productos</a></div>
+      <div class="stats">
+        <div data-i="st1"><strong>+300</strong><span>productos disponibles</span></div>
+        <div data-i="st2"><strong>48 h</strong><span>entrega en finca</span></div>
+        <div data-i="st3"><strong>$0</strong><span>primera visita</span></div>
       </div>
     </div>
     <div class="rv" style="position:relative">
-      <div class="dash" aria-label="Ejemplo de reporte de finca">
-        <div class="dtop"><div><b>Lote 3 · Banano</b><small>Reporte de seguimiento (ejemplo)</small></div><span class="live">En seguimiento</span></div>
+      <div class="dash" role="img" aria-label="Ejemplo de reporte de finca: lote de banano de 12,5 hectáreas con vigor foliar de 82% y rendimiento en aumento" data-ia="aria-label:dashAlt">
+        <div class="dtop"><div><b data-i="dT">Lote 3 · Banano</b><small data-i="dS">Reporte de seguimiento (ejemplo)</small></div><span class="live" data-i="live">En seguimiento</span></div>
         <div class="kpis">
-          <div class="kpi"><small>Hectáreas</small><b>12,5</b><i>Lote activo</i></div>
-          <div class="kpi"><small>Vigor foliar</small><b>82%</b><i>▲ 9% vs. mes ant.</i></div>
-          <div class="kpi"><small>Próx. aplicación</small><b>5 días</b><i>Fertilización</i></div>
+          <div class="kpi" data-i="k1"><small>Hectáreas</small><b>12,5</b><i>Lote activo</i></div>
+          <div class="kpi" data-i="k2"><small>Vigor foliar</small><b>82%</b><i>▲ 9% vs. mes ant.</i></div>
+          <div class="kpi" data-i="k3"><small>Próx. aplicación</small><b>5 días</b><i>Fertilización</i></div>
         </div>
-        <div class="chart"><small>Rendimiento estimado (cajas/ha/semana)</small>
+        <div class="chart"><small data-i="chart">Rendimiento estimado (cajas/ha/semana)</small>
           <svg viewBox="0 0 300 110" preserveAspectRatio="none" aria-hidden="true">
             <defs><linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22c55e" stop-opacity=".35"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></linearGradient></defs>
             <g stroke="#eef2ea"><path d="M0 27H300M0 55H300M0 83H300"/></g>
@@ -204,95 +243,187 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;color:var(--mute);fo
           </svg>
         </div>
         <div class="recs">
-          <div class="rec"><span class="ic">🧪</span>Aplicar potasio foliar<em>Semana 46</em></div>
-          <div class="rec"><span class="ic">🛡️</span>Monitoreo de sigatoka<em>Cada 7 días</em></div>
+          <div class="rec"><span class="ic" aria-hidden="true">🧪</span><span data-i="r1">Aplicar potasio foliar</span><em data-i="r1w">Semana 46</em></div>
+          <div class="rec"><span class="ic" aria-hidden="true">🛡️</span><span data-i="r2">Monitoreo de sigatoka</span><em data-i="r2w">Cada 7 días</em></div>
         </div>
       </div>
-      <div class="float"><span style="font-size:20px">🌱</span><div><b>Plan entregado</b><small>Dosis y fechas por escrito</small></div></div>
+      <div class="float"><span style="font-size:20px" aria-hidden="true">🌱</span><div data-i="fl"><b>Plan entregado</b><small>Dosis y fechas por escrito</small></div></div>
     </div>
   </div>
 </section>
 
-<div class="crops"><div class="wrap"><small>Trabajamos con:</small><span>🍌 Banano</span><span>🍫 Cacao</span><span>🌽 Maíz</span><span>🌾 Arroz</span><span>☕ Café</span><span>🥭 Frutales</span></div></div>
+<div class="crops"><div class="wrap" data-i="crops"><small>Trabajamos con:</small><span>🍌 Banano</span><span>🍫 Cacao</span><span>🌽 Maíz</span><span>🌾 Arroz</span><span>☕ Café</span><span>🥭 Frutales</span></div></div>
 
-<section id="productos">
+<section id="productos" aria-labelledby="prod-t">
   <div class="wrap">
-    <div class="head rv"><div class="kick">Catálogo</div><h2>Todo lo que necesita tu cultivo, en un solo lugar.</h2><p>Productos de calidad con la dosis y el momento de aplicación explicados de forma clara.</p></div>
+    <div class="head rv"><div class="kick" data-i="pK">Catálogo</div><h2 id="prod-t" data-i="pH">Todo lo que necesita tu cultivo, en un solo lugar.</h2><p data-i="pP">Productos de calidad con la dosis y el momento de aplicación explicados de forma clara.</p></div>
     <div class="grid4">
-      <div class="prod rv"><div class="ic">🧪</div><h3>Fertilizantes</h3><p>Edáficos y foliares para cada etapa del cultivo, según tu análisis de suelo.</p><a href="#asesoria">Consultar →</a></div>
-      <div class="prod rv"><div class="ic">🌾</div><h3>Semillas certificadas</h3><p>Variedades adaptadas a costa y sierra con buena germinación.</p><a href="#asesoria">Consultar →</a></div>
-      <div class="prod rv"><div class="ic">🛡️</div><h3>Control fitosanitario</h3><p>Manejo de plagas y enfermedades con dosis y frecuencia explicadas.</p><a href="#asesoria">Consultar →</a></div>
-      <div class="prod rv"><div class="ic">💧</div><h3>Riego y equipos</h3><p>Aspersores, mangueras, bombas de mochila y equipo de protección.</p><a href="#asesoria">Consultar →</a></div>
+      <div class="prod rv"><div class="ic" aria-hidden="true">🧪</div><h3 data-i="p1">Fertilizantes</h3><p data-i="p1p">Edáficos y foliares para cada etapa del cultivo, según tu análisis de suelo.</p><a href="#asesoria" data-i="ask">Consultar →</a></div>
+      <div class="prod rv"><div class="ic" aria-hidden="true">🌾</div><h3 data-i="p2">Semillas certificadas</h3><p data-i="p2p">Variedades adaptadas a costa y sierra con buena germinación.</p><a href="#asesoria" data-i="ask">Consultar →</a></div>
+      <div class="prod rv"><div class="ic" aria-hidden="true">🛡️</div><h3 data-i="p3">Control fitosanitario</h3><p data-i="p3p">Manejo de plagas y enfermedades con dosis y frecuencia explicadas.</p><a href="#asesoria" data-i="ask">Consultar →</a></div>
+      <div class="prod rv"><div class="ic" aria-hidden="true">💧</div><h3 data-i="p4">Riego y equipos</h3><p data-i="p4p">Aspersores, mangueras, bombas de mochila y equipo de protección.</p><a href="#asesoria" data-i="ask">Consultar →</a></div>
     </div>
   </div>
 </section>
 
-<section id="proceso" style="padding-top:0">
+<section id="proceso" style="padding-top:0" aria-labelledby="proc-t">
   <div class="wrap">
     <div class="band rv">
-      <div class="kick">Cómo trabajamos</div>
-      <h2>Tu plan de manejo en 3 pasos.</h2>
-      <p style="color:#a7c4b2;max-width:520px">Nada de comprar a ciegas: primero entendemos tu finca y luego te recomendamos.</p>
+      <div class="kick" data-i="bK">Cómo trabajamos</div>
+      <h2 id="proc-t" data-i="bH">Tu plan de manejo en 3 pasos.</h2>
+      <p style="color:#b5d0bf;max-width:520px" data-i="bP">Nada de comprar a ciegas: primero entendemos tu finca y luego te recomendamos.</p>
       <div class="steps">
-        <div class="step"><div class="n">1</div><h3>Visita a tu finca</h3><p>Revisamos el cultivo, el suelo y los problemas que estás viendo.</p></div>
-        <div class="step"><div class="n">2</div><h3>Plan por escrito</h3><p>Qué aplicar, en qué dosis y en qué fechas, con un costo estimado.</p></div>
-        <div class="step"><div class="n">3</div><h3>Entrega y seguimiento</h3><p>Llevamos los insumos y volvemos para revisar los resultados.</p></div>
+        <div class="step"><div class="n" aria-hidden="true">1</div><h3 data-i="s1">Visita a tu finca</h3><p data-i="s1p">Revisamos el cultivo, el suelo y los problemas que estás viendo.</p></div>
+        <div class="step"><div class="n" aria-hidden="true">2</div><h3 data-i="s2">Plan por escrito</h3><p data-i="s2p">Qué aplicar, en qué dosis y en qué fechas, con un costo estimado.</p></div>
+        <div class="step"><div class="n" aria-hidden="true">3</div><h3 data-i="s3">Entrega y seguimiento</h3><p data-i="s3p">Llevamos los insumos y volvemos para revisar los resultados.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="planes" style="padding-top:0">
+<section id="planes" style="padding-top:0" aria-labelledby="plan-t">
   <div class="wrap">
-    <div class="head center rv"><div class="kick">Planes de asesoría</div><h2>Acompañamiento a la medida de tu finca.</h2><p>Elige cuánto apoyo técnico necesitas. Todos incluyen la primera visita sin costo.</p></div>
+    <div class="head center rv"><div class="kick" data-i="plK">Planes de asesoría</div><h2 id="plan-t" data-i="plH">Acompañamiento a la medida de tu finca.</h2><p data-i="plP">Elige cuánto apoyo técnico necesitas. Todos incluyen la primera visita sin costo.</p></div>
     <div class="plans">
-      <div class="plan rv"><h3>Visita puntual</h3><p class="d">Para resolver un problema específico.</p><ul><li>1 visita técnica</li><li>Diagnóstico del cultivo</li><li>Recomendación por escrito</li></ul><a href="#asesoria" class="btn btn-sec">Solicitar</a></div>
-      <div class="plan hot rv"><h3>Plan de temporada</h3><p class="d">Para todo un ciclo de producción.</p><ul><li>Visitas mensuales</li><li>Plan de fertilización completo</li><li>Calendario de aplicaciones</li><li>Soporte por WhatsApp</li></ul><a href="#asesoria" class="btn btn-pri">Solicitar</a></div>
-      <div class="plan rv"><h3>Acompañamiento</h3><p class="d">Para fincas que quieren crecer.</p><ul><li>Visitas quincenales</li><li>Reportes de rendimiento</li><li>Análisis de suelo incluido</li></ul><a href="#asesoria" class="btn btn-sec">Solicitar</a></div>
+      <div class="plan rv"><h3 data-i="pl1">Visita puntual</h3><p class="d" data-i="pl1d">Para resolver un problema específico.</p><ul data-i="pl1l"><li>1 visita técnica</li><li>Diagnóstico del cultivo</li><li>Recomendación por escrito</li></ul><a href="#asesoria" class="btn btn-sec" data-plan="puntual" data-i="req">Solicitar</a></div>
+      <div class="plan hot rv"><span class="hotl" data-i="hot">Más elegido</span><h3 data-i="pl2">Plan de temporada</h3><p class="d" data-i="pl2d">Para todo un ciclo de producción.</p><ul data-i="pl2l"><li>Visitas mensuales</li><li>Plan de fertilización completo</li><li>Calendario de aplicaciones</li><li>Soporte por WhatsApp</li></ul><a href="#asesoria" class="btn btn-pri" data-plan="temporada" data-i="req">Solicitar</a></div>
+      <div class="plan rv"><h3 data-i="pl3">Acompañamiento</h3><p class="d" data-i="pl3d">Para fincas que quieren crecer.</p><ul data-i="pl3l"><li>Visitas quincenales</li><li>Reportes de rendimiento</li><li>Análisis de suelo incluido</li></ul><a href="#asesoria" class="btn btn-sec" data-plan="acompanamiento" data-i="req">Solicitar</a></div>
     </div>
   </div>
 </section>
 
-<section id="asesoria" style="padding-top:0">
+<section id="asesoria" style="padding-top:0" aria-labelledby="form-t">
   <div class="wrap split">
     <div id="faq">
-      <div class="head rv" style="margin-bottom:28px"><div class="kick">Agenda tu visita</div><h2>Hablemos de tu cultivo.</h2><p>Déjanos tus datos y un técnico te contactará para coordinar la visita.</p></div>
-      <details class="rv"><summary>¿La primera visita realmente es gratis?</summary><p>Sí. Revisamos tu cultivo y te damos una recomendación sin compromiso de compra.</p></details>
-      <details class="rv"><summary>¿A qué zonas llegan?</summary><p>Atendemos fincas dentro de la provincia. Consúltanos por tu ubicación exacta.</p></details>
-      <details class="rv"><summary>¿Necesito un análisis de suelo?</summary><p>No es obligatorio para empezar, pero lo recomendamos para ajustar mejor las dosis.</p></details>
-      <details class="rv"><summary>¿Cómo pago los insumos?</summary><p>Efectivo, transferencia o tarjeta, al momento de la entrega.</p></details>
+      <div class="head rv" style="margin-bottom:28px"><div class="kick" data-i="fK">Agenda tu visita</div><h2 id="form-t" data-i="fH">Hablemos de tu cultivo.</h2><p data-i="fP">Déjanos tus datos y te abrimos WhatsApp con la solicitud ya escrita para coordinar la visita con un técnico.</p></div>
+      <details class="rv"><summary data-i="q1">¿La primera visita realmente es gratis?</summary><p data-i="a1">Sí. Revisamos tu cultivo y te damos una recomendación sin compromiso de compra.</p></details>
+      <details class="rv"><summary data-i="q2">¿A qué zonas llegan?</summary><p data-i="a2">Atendemos fincas dentro de la provincia. Consúltanos por tu ubicación exacta.</p></details>
+      <details class="rv"><summary data-i="q3">¿Necesito un análisis de suelo?</summary><p data-i="a3">No es obligatorio para empezar, pero lo recomendamos para ajustar mejor las dosis.</p></details>
+      <details class="rv"><summary data-i="q4">¿Cómo pago los insumos?</summary><p data-i="a4">Efectivo, transferencia o tarjeta, al momento de la entrega.</p></details>
     </div>
-    <form id="f" class="rv" novalidate>
+    <form id="f" class="rv" novalidate aria-labelledby="f-t">
+      <h3 id="f-t" data-i="fT">Solicitud de visita técnica</h3>
       <div class="two">
-        <label>Nombre<input name="n" required placeholder="Tu nombre"></label>
-        <label>Teléfono<input name="t" required inputmode="tel" placeholder="09xx xxx xxx"></label>
+        <label><span data-i="lN">Nombre *</span><input name="n" id="f-n" required autocomplete="name" placeholder="Tu nombre" data-ia="placeholder:phN"></label>
+        <label><span data-i="lT">Teléfono *</span><input name="t" id="f-t2" required type="tel" autocomplete="tel" inputmode="tel" placeholder="09xx xxx xxx"></label>
       </div>
       <div class="two">
-        <label>Cultivo<select name="c"><option>Banano</option><option>Cacao</option><option>Maíz</option><option>Arroz</option><option>Café</option><option>Otro</option></select></label>
-        <label>Hectáreas<input name="h" type="number" min="0" step="0.5" placeholder="Ej. 5"></label>
+        <label><span data-i="lC">Cultivo</span><select name="c"><option value="banano" data-i="c1">Banano</option><option value="cacao" data-i="c2">Cacao</option><option value="maiz" data-i="c3">Maíz</option><option value="arroz" data-i="c4">Arroz</option><option value="cafe" data-i="c5">Café</option><option value="otro" data-i="c6">Otro</option></select></label>
+        <label><span data-i="lH">Hectáreas</span><input name="h" type="number" min="0" step="0.5" inputmode="decimal" placeholder="Ej. 5" data-ia="placeholder:phH"></label>
       </div>
-      <label>¿Qué problema estás viendo?<textarea name="p" rows="4" placeholder="Hojas amarillas, plagas, bajo rendimiento..."></textarea></label>
-      <button class="btn btn-pri" type="submit">Enviar solicitud</button>
-      <div class="ok" id="ok">✅ ¡Solicitud recibida! (demo) En un sitio real llegaría por WhatsApp o correo.</div>
-      <p class="note">Respondemos en menos de 24 horas.</p>
+      <div class="two">
+        <label><span data-i="lZ">Ubicación de la finca</span><input name="z" autocomplete="address-level2" placeholder="Cantón o recinto" data-ia="placeholder:phZ"></label>
+        <label><span data-i="lP">Plan de interés</span><select name="pl"><option value="ninguno" data-i="o0">Aún no sé</option><option value="puntual" data-i="pl1">Visita puntual</option><option value="temporada" data-i="pl2">Plan de temporada</option><option value="acompanamiento" data-i="pl3">Acompañamiento</option></select></label>
+      </div>
+      <label><span data-i="lQ">¿Qué problema estás viendo?</span><textarea name="p" rows="4" placeholder="Hojas amarillas, plagas, bajo rendimiento..." data-ia="placeholder:phQ"></textarea></label>
+      <p class="msg" id="fmsg" role="status" aria-live="polite"></p>
+      <button class="btn wa" type="submit"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg><span data-i="send">Enviar solicitud por WhatsApp</span></button>
+      <div class="ok" id="ok" role="status" data-i="okMsg">✅ ¡Listo! Abrimos WhatsApp con tu solicitud. Solo toca enviar.</div>
+      <p class="note" data-i="note">Respondemos en menos de 24 horas. * Campos obligatorios.</p>
     </form>
   </div>
 </section>
+</main>
 
-<footer><div class="wrap foot"><a href="#" class="brand"><span class="logo"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 11C12 6 15.5 3 21 3c0 5.5-3.5 8-9 8z" fill="#bef264"/><path d="M12 14C12 10 9 7.5 3 7.5c0 4.5 3 6.5 9 6.5z" fill="#fff"/><path d="M12 21V11" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></span>AgroSurco</a><span>© AgroSurco · marca ficticia de demostración</span></div></footer>
+<footer><div class="wrap foot"><a href="#" class="brand" aria-label="AgroSurco, volver arriba" data-ia="aria-label:top"><span class="logo" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 11C12 6 15.5 3 21 3c0 5.5-3.5 8-9 8z" fill="#bef264"/><path d="M12 14C12 10 9 7.5 3 7.5c0 4.5 3 6.5 9 6.5z" fill="#fff"/><path d="M12 21V11" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></span>AgroSurco</a><span data-i="foot">© AgroSurco · marca ficticia de demostración</span></div></footer>
 
 <script>
 (function(){
+  /* Número de WhatsApp del negocio (formato internacional, solo dígitos, ej. 593991234567).
+     Vacío = WhatsApp abre el mensaje listo y deja elegir el contacto (negocio ficticio). */
+  var WA_NUMBER='';
+  function waLink(text){return 'https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(text);}
+
+  var EN={
+    metaTitle:'AgroSurco — Farm supplies & on-site agronomy advice (sample)',
+    metaDesc:'Farm supplies backed by an agronomist: fertilizers, seeds, crop protection and irrigation. Book your farm visit via WhatsApp. Sample project with a fictional business.',
+    skip:'Skip to content',demoEn:' · Sample project, fictional business',navMain:'Main',home:'AgroSurco, home',top:'AgroSurco, back to top',
+    nProd:'Products',nHow:'How we work',nPlans:'Plans',nFaq:'FAQ',book:'Book a visit',openMenu:'Open menu',
+    new:'New',pill:'Free technical advice on your first visit',h1:'More yield per hectare, <span>less spending</span> on your farm.',
+    lead:'Farm supplies with a recommendation from an agronomist. We tell you what to apply, how much and when, based on your crop and your soil.',
+    cta1:'Request a farm visit →',cta2:'See products',
+    st1:'<strong>300+</strong><span>products available</span>',st2:'<strong>48 h</strong><span>on-farm delivery</span>',st3:'<strong>$0</strong><span>first visit</span>',
+    dashAlt:'Sample farm report: 12.5-hectare banana plot with 82% leaf vigor and rising yield',
+    dT:'Plot 3 · Banana',dS:'Follow-up report (sample)',live:'Being monitored',
+    k1:'<small>Hectares</small><b>12.5</b><i>Active plot</i>',k2:'<small>Leaf vigor</small><b>82%</b><i>▲ 9% vs. last month</i>',k3:'<small>Next application</small><b>5 days</b><i>Fertilization</i>',
+    chart:'Estimated yield (boxes/ha/week)',r1:'Apply foliar potassium',r1w:'Week 46',r2:'Black sigatoka monitoring',r2w:'Every 7 days',
+    fl:'<b>Plan delivered</b><small>Doses and dates in writing</small>',
+    crops:'<small>We work with:</small><span>🍌 Banana</span><span>🍫 Cocoa</span><span>🌽 Corn</span><span>🌾 Rice</span><span>☕ Coffee</span><span>🥭 Fruit trees</span>',
+    pK:'Catalog',pH:'Everything your crop needs, in one place.',pP:'Quality products with the dose and timing explained clearly.',
+    p1:'Fertilizers',p1p:'Soil and foliar products for every crop stage, based on your soil test.',
+    p2:'Certified seeds',p2p:'Varieties adapted to coast and highlands with strong germination.',
+    p3:'Crop protection',p3p:'Pest and disease control with doses and frequency explained.',
+    p4:'Irrigation & equipment',p4p:'Sprinklers, hoses, backpack sprayers and protective gear.',ask:'Ask about it →',
+    bK:'How we work',bH:'Your crop plan in 3 steps.',bP:'No more buying blindly: first we understand your farm, then we recommend.',
+    s1:'Farm visit',s1p:'We check the crop, the soil and the problems you’re seeing.',
+    s2:'Written plan',s2p:'What to apply, at what dose and on which dates, with an estimated cost.',
+    s3:'Delivery & follow-up',s3p:'We deliver the supplies and come back to check the results.',
+    plK:'Advisory plans',plH:'Support tailored to your farm.',plP:'Choose how much technical support you need. Every plan includes a free first visit.',
+    pl1:'One-time visit',pl1d:'To solve a specific problem.',pl1l:'<li>1 technical visit</li><li>Crop diagnosis</li><li>Written recommendation</li>',
+    hot:'Most popular',pl2:'Season plan',pl2d:'For a full production cycle.',pl2l:'<li>Monthly visits</li><li>Complete fertilization plan</li><li>Application calendar</li><li>WhatsApp support</li>',
+    pl3:'Ongoing support',pl3d:'For farms that want to grow.',pl3l:'<li>Visits every two weeks</li><li>Yield reports</li><li>Soil analysis included</li>',req:'Request',
+    fK:'Book your visit',fH:'Let’s talk about your crop.',fP:'Leave your details and we’ll open WhatsApp with your request already written so you can schedule a visit with an agronomist.',
+    q1:'Is the first visit really free?',a1:'Yes. We check your crop and give you a recommendation with no obligation to buy.',
+    q2:'Which areas do you cover?',a2:'We serve farms within the province. Ask us about your exact location.',
+    q3:'Do I need a soil test?',a3:'It’s not required to get started, but we recommend it to fine-tune the doses.',
+    q4:'How do I pay for supplies?',a4:'Cash, bank transfer or card, upon delivery.',
+    fT:'Farm visit request',lN:'Name *',phN:'Your name',lT:'Phone *',lC:'Crop',c1:'Banana',c2:'Cocoa',c3:'Corn',c4:'Rice',c5:'Coffee',c6:'Other',
+    lH:'Hectares',phH:'e.g. 5',lZ:'Farm location',phZ:'Town or area',lP:'Plan of interest',o0:'Not sure yet',
+    lQ:'What problem are you seeing?',phQ:'Yellow leaves, pests, low yield...',send:'Send request via WhatsApp',
+    okMsg:'✅ Done! We opened WhatsApp with your request. Just tap send.',note:'We reply within 24 hours. * Required fields.',
+    foot:'© AgroSurco · fictional demo brand'
+  };
+  var JS={
+    es:{eN:'Escribe tu nombre.',eT:'Escribe un teléfono válido.',hi:'¡Hola, AgroSurco! Quiero agendar una visita técnica.',name:'Nombre',phone:'Teléfono',crop:'Cultivo',ha:'Hectáreas',zone:'Ubicación',plan:'Plan de interés',prob:'Problema'},
+    en:{eN:'Please enter your name.',eT:'Please enter a valid phone number.',hi:'Hi, AgroSurco! I’d like to book a farm visit.',name:'Name',phone:'Phone',crop:'Crop',ha:'Hectares',zone:'Location',plan:'Plan of interest',prob:'Problem'}
+  };
+  var LANG='es';function t(k){return JS[LANG][k];}
+  function applyLang(l){
+    LANG=l;document.documentElement.lang=l;
+    document.querySelectorAll('[data-i]').forEach(function(el){
+      if(el._es===undefined)el._es=el.innerHTML;
+      var v=EN[el.getAttribute('data-i')];el.innerHTML=(l==='en'&&v!=null)?v:el._es;});
+    document.querySelectorAll('[data-ia]').forEach(function(el){
+      el._esa=el._esa||{};
+      el.getAttribute('data-ia').split('|').forEach(function(p){var a=p.split(':'),at=a[0],v=EN[a[1]];
+        if(!(at in el._esa))el._esa[at]=el.getAttribute(at);
+        el.setAttribute(at,(l==='en'&&v!=null)?v:el._esa[at]);});});
+    document.querySelectorAll('[data-lang]').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-lang')===l));});
+    try{localStorage.setItem('lang',l);}catch(e){}
+  }
+  document.querySelectorAll('[data-lang]').forEach(function(b){b.addEventListener('click',function(){applyLang(b.getAttribute('data-lang'));});});
+
   var b=document.getElementById('burger'),m=document.getElementById('mobile');
-  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'✕':'☰';});
-  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.textContent='☰';b.setAttribute('aria-expanded','false');});});
-  var f=document.getElementById('f');
+  function closeMenu(){m.classList.remove('open');b.textContent='☰';b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.textContent=o?'✕':'☰';});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open')){closeMenu();b.focus();}});
+
+  var f=document.getElementById('f'),E=f.elements,msg=document.getElementById('fmsg'),ok=document.getElementById('ok');
+  /* los botones "Solicitar" de los planes preseleccionan el plan */
+  document.querySelectorAll('[data-plan]').forEach(function(a){a.addEventListener('click',function(){E.pl.value=a.getAttribute('data-plan');});});
+  function optText(sel){return sel.options[sel.selectedIndex].textContent.trim();}
   f.addEventListener('submit',function(e){
-    e.preventDefault();var bad=false;
-    f.querySelectorAll('[required]').forEach(function(i){var v=!i.value.trim();i.classList.toggle('err',v);if(v)bad=true;});
-    if(bad)return;
-    document.getElementById('ok').classList.add('show');f.reset();
+    e.preventDefault();ok.classList.remove('show');
+    var n=E.n.value.trim(),ph=E.t.value.trim(),badT=ph.replace(/\D/g,'').length<7,first=null;
+    E.n.setAttribute('aria-invalid',String(!n));E.t.setAttribute('aria-invalid',String(badT));
+    if(!n){msg.textContent=t('eN');first=E.n;}else if(badT){msg.textContent=t('eT');first=E.t;}
+    if(first){first.focus();return;}
+    msg.textContent='';
+    var L=[t('hi'),'',t('name')+': '+n,t('phone')+': '+ph,t('crop')+': '+optText(E.c)];
+    if(E.h.value)L.push(t('ha')+': '+E.h.value);
+    if(E.z.value.trim())L.push(t('zone')+': '+E.z.value.trim());
+    if(E.pl.value!=='ninguno')L.push(t('plan')+': '+optText(E.pl));
+    if(E.p.value.trim())L.push(t('prob')+': '+E.p.value.trim());
+    var url=waLink(L.join('\n'));
+    var w=window.open(url,'_blank');if(w){try{w.opener=null;}catch(x){}}else{location.href=url;}
+    ok.classList.add('show');
   });
+
+  var q=(location.search.match(/[?&]lang=(es|en)/)||[])[1],s=null;
+  try{s=localStorage.getItem('lang');}catch(e){}
+  applyLang(q||s||((navigator.language||'es').toLowerCase().indexOf('en')===0?'en':'es'));
+
   var els=document.querySelectorAll('.rv');
   if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
   var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
