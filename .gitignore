@@ -2,3 +2,5 @@
 */.taste-skill/
 .impeccable/
 shots/
+__pycache__/
+*.pyc
