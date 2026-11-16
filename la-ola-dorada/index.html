@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i="metaTitle">La Ola Dorada — Cevichería costeña | Pedidos por WhatsApp (muestra)</title>
 <meta name="description" content="Cevichería costeña con ceviches, encebollados y mariscos frescos. Mira el menú y haz tu pedido a domicilio por WhatsApp. Proyecto de muestra con negocio ficticio." data-ia="content:metaDesc">
-<meta name="theme-color" content="#04141b">
+<meta name="theme-color" content="#0b2e4f">
 <link rel="canonical" href="https://williamruiz546-glitch.github.io/portafolio/la-ola-dorada/">
 <link rel="alternate" hreflang="es" href="https://williamruiz546-glitch.github.io/portafolio/la-ola-dorada/?lang=es">
 <link rel="alternate" hreflang="en" href="https://williamruiz546-glitch.github.io/portafolio/la-ola-dorada/?lang=en">
@@ -21,251 +21,316 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2304141b'/%3E%3Ccircle cx='32' cy='30' r='17' fill='%23f3b94d'/%3E%3Cpath d='M8 44c8-7 16-7 24 0s16 7 24 0v12H8z' fill='%23ff7a59'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%230b2e4f'/%3E%3Ccircle cx='32' cy='30' r='14' fill='%23f2c230'/%3E%3Cpath d='M4 38c5-5 10-5 14 0s9 5 14 0 9-5 14 0 9 5 14 0v4a28 28 0 0 1-56 0z' fill='%23c7361f'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Karla:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Karla:wght@400;600;700&display=swap"></noscript>
 <script>document.documentElement.className+=' js'</script>
 <style>
+/* La Ola Dorada — rótulo pintado + pizarra de menú.
+   Papel crema, azul océano, rojo ají, amarillo limón. */
 :root{
-  --ink:#04141b;--deep:#072530;--sea:#0c3a47;--teal:#13606f;
-  --gold:#f3b94d;--gold2:#ffd98a;--coral:#ff7a59;--sand:#f8f1e5;--mute:#a9bfc4;
-  --line:rgba(255,255,255,.12);--glass:rgba(255,255,255,.05);
-  --r:22px;
+  --paper:#f6eedd;--paper2:#ece0c4;--card:#fffaf0;
+  --ocean:#0b2e4f;--board:#0d3354;--deep:#071f36;--sea:#1f6f8b;
+  --aji:#c7361f;--aji2:#a92b17;--limon:#f2c230;--chalk:#dfe8ee;--chalk2:#a9bccb;
+  --ink:#0b2e4f;--mute:#435a6e;--line:#0b2e4f26;
+  --wood:#8a5a33;
+  --disp:'Big Shoulders Display','Arial Narrow',sans-serif;
+  --body:'Karla',system-ui,sans-serif;
+  --gut:clamp(16px,4vw,32px);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--ink);color:var(--sand);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.05;letter-spacing:-.02em}
+html{scroll-behavior:smooth;scroll-padding-top:84px;scrollbar-color:var(--ocean) var(--paper2);accent-color:var(--aji)}
+body{font-family:var(--body);font-size:16.5px;background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;caret-color:var(--aji)}
+::selection{background:var(--limon);color:var(--ocean)}
+h1,h2,h3{font-family:var(--disp);line-height:.95;letter-spacing:-.005em;font-weight:900;text-wrap:balance}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gut)}
 [hidden]{display:none!important}
 .sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-:focus-visible{outline:3px solid var(--gold2);outline-offset:3px;border-radius:6px}
-.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--gold2);color:var(--ink);padding:10px 16px;border-radius:10px;font-weight:600}
+:focus-visible{outline:3px solid var(--aji);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--limon);color:var(--ocean);padding:10px 16px;border-radius:8px;font-weight:700}
 .skip:focus{top:12px}
+.i{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.price,.total b,.cart .sm,.qty output{font-variant-numeric:tabular-nums}
 
-/* demo ribbon */
-.demo{background:linear-gradient(90deg,var(--gold),var(--coral));color:var(--ink);text-align:center;font-size:12px;font-weight:600;padding:7px 12px}
+/* franja de muestra */
+.demo{background:var(--ocean);color:var(--paper);text-align:center;font-size:12.5px;font-weight:600;padding:7px 12px;letter-spacing:.01em}
 
 /* nav */
-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(4,20,27,.85);border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
-.brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:21px}
-.brand i{width:34px;height:34px;border-radius:11px;background:radial-gradient(circle at 30% 30%,var(--gold2),var(--gold) 45%,var(--coral));display:grid;place-items:center;box-shadow:0 6px 24px -6px rgba(243,185,77,.6);font-style:normal}
-.brand span{color:var(--gold)}
-.links{display:flex;gap:30px;font-size:14.5px;color:#d6e6e8}
-.links a{position:relative;transition:color .2s}
-.links a:hover{color:#fff}
-.links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--gold);transition:width .25s}
-.links a:hover::after{width:100%}
+header{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:3px double var(--ocean)}
+nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:900;font-size:27px;text-transform:uppercase;letter-spacing:.01em;line-height:1;color:var(--ocean);min-height:44px}
+.brand svg{width:40px;height:40px;flex:none}
+.brand span{color:var(--aji)}
+.links{display:flex;gap:28px;font-size:15.5px;font-weight:700}
+.links a{position:relative;padding:10px 0}
+.links a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:3px;background:var(--aji);transform:scaleX(0);transform-origin:left;transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+.links a:hover::after{transform:none}
 .nav-cta{display:flex;gap:10px;align-items:center}
-.lang{display:inline-flex;padding:3px;border-radius:11px;border:1px solid var(--line);background:var(--glass)}
-.lang button{background:none;border:none;color:#d6e6e8;font:600 12.5px 'Inter',sans-serif;padding:7px 9px;border-radius:8px;cursor:pointer;min-width:34px}
-.lang button[aria-pressed="true"]{background:var(--sand);color:var(--ink)}
-.burger{display:none;background:none;border:1px solid var(--line);color:#fff;width:42px;height:42px;border-radius:12px;cursor:pointer;font-size:18px}
-.mobile{display:none;flex-direction:column;gap:4px;padding:10px 24px 20px;border-top:1px solid var(--line)}
-.mobile a{padding:12px 4px;border-bottom:1px solid var(--line)}
+.lang{display:inline-flex;border:2px solid var(--ocean);border-radius:8px;overflow:hidden}
+.lang button{background:none;border:none;color:var(--ocean);font:700 13px var(--body);min-width:44px;min-height:44px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ocean);color:var(--paper)}
+.burger{display:none;background:none;border:2px solid var(--ocean);width:46px;height:44px;border-radius:8px;cursor:pointer;place-items:center}
+.burger i{display:block;width:20px;height:2.5px;background:var(--ocean);border-radius:2px;box-shadow:0 -6px 0 var(--ocean),0 6px 0 var(--ocean);transition:transform .2s}
+.burger[aria-expanded="true"] i{box-shadow:none;transform:rotate(45deg)}
+.burger[aria-expanded="true"] i::after{content:"";display:block;width:20px;height:2.5px;background:var(--ocean);border-radius:2px;transform:rotate(-90deg)}
+.mobile{display:none;flex-direction:column;padding:6px var(--gut) 20px;border-top:1px solid var(--line);background:var(--paper)}
+.mobile a{padding:13px 2px;border-bottom:1px dashed var(--line);font-weight:700;font-size:17px}
 .mobile.open{display:flex}
-@media(max-width:860px){.links,.nav-cta .btn-sm{display:none}.burger{display:grid;place-items:center}}
+@media(max-width:880px){.links,.nav-cta .btn-sm{display:none}.burger{display:grid}}
+@media(max-width:400px){.brand{font-size:22px;gap:8px}.brand svg{width:34px;height:34px}nav,.nav-cta{gap:8px}}
+@media(max-width:340px){.brand{font-size:20px;gap:6px}.brand svg{width:30px;height:30px}}
 
-/* buttons */
-.btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15.5px;padding:15px 24px;border-radius:14px;border:none;cursor:pointer;transition:transform .2s,box-shadow .25s,background .25s;font-family:inherit}
-.btn-gold{background:linear-gradient(180deg,var(--gold2),var(--gold));color:var(--ink);box-shadow:0 10px 30px -10px rgba(243,185,77,.7),inset 0 1px 0 rgba(255,255,255,.5)}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(243,185,77,.85)}
-.btn-ghost{background:var(--glass);color:#fff;border:1px solid var(--line)}
-.btn-ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
-.btn-sm{padding:10px 16px;font-size:14px;border-radius:12px}
+/* botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 16px/1.1 var(--body);padding:16px 24px;min-height:52px;border-radius:10px;border:2px solid transparent;cursor:pointer;transition:transform .18s cubic-bezier(.2,.8,.2,1),background .2s,color .2s;text-align:center}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+.btn .i{font-size:20px}
+.btn-aji{background:var(--aji);color:#fff}
+.btn-aji:hover{background:var(--aji2)}
+.btn-line{border-color:var(--ocean);color:var(--ocean)}
+.btn-line:hover{background:var(--ocean);color:var(--paper)}
+.btn-sm{padding:10px 16px;min-height:44px;font-size:14.5px}
 
 /* hero */
-.hero{position:relative;padding:90px 0 110px;overflow:hidden;isolation:isolate}
-.hero{background:
-   radial-gradient(40% 50% at 78% 30%,rgba(243,185,77,.22),transparent 70%),
-   radial-gradient(45% 55% at 10% 10%,rgba(19,96,111,.55),transparent 70%),
-   radial-gradient(50% 60% at 50% 110%,rgba(255,122,89,.18),transparent 70%),
-   linear-gradient(180deg,var(--deep),var(--ink))}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.35;
-  background-image:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px);background-size:26px 26px;
-  -webkit-mask-image:radial-gradient(70% 70% at 50% 40%,#000,transparent);mask-image:radial-gradient(70% 70% at 50% 40%,#000,transparent)}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 8px;border-radius:99px;background:var(--glass);border:1px solid var(--line);font-size:13px;color:#d6e6e8}
-.eyebrow b{background:var(--gold);color:var(--ink);font-size:11px;padding:3px 8px;border-radius:99px;letter-spacing:.04em}
-.hero h1{font-size:clamp(42px,6.4vw,78px);font-weight:800;margin:22px 0 22px}
-.hero h1 em{font-style:italic;font-weight:500;background:linear-gradient(90deg,var(--gold2),var(--coral));-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{font-size:18.5px;color:#c6d8dc;max-width:520px}
-.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:34px 0 38px}
-.facts{display:flex;gap:30px;flex-wrap:wrap}
-.facts div{font-size:13.5px;color:var(--mute)}
-.facts strong{display:block;font-family:'Fraunces',Georgia,serif;font-size:26px;color:#fff;font-weight:700}
+.hero{position:relative;padding:64px 0 84px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(54px,8.6vw,104px);text-transform:uppercase;line-height:.88;color:var(--ocean);text-shadow:3px 3px 0 var(--limon),6px 6px 0 var(--aji)}
+.hero h1 em{display:block;font-style:normal;color:var(--aji);text-shadow:3px 3px 0 var(--limon),6px 6px 0 var(--ocean)}
+.lead{font-size:19px;color:var(--mute);max-width:33em;margin-top:28px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:32px 0 36px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ocean);border-bottom:2px solid var(--ocean);max-width:540px}
+.facts div{min-width:0;padding:12px 12px 12px 0;font-size:14px;color:var(--mute);line-height:1.3}
+.facts div+div{padding-left:12px;border-left:1px dashed var(--ocean)}
+.facts strong{display:block;font-family:var(--disp);font-weight:900;font-size:30px;line-height:1;color:var(--aji);margin-bottom:2px}
+@media(max-width:400px){.facts div{font-size:12.5px}.facts strong{font-size:25px}}
+.art{position:relative;max-width:560px;width:100%;justify-self:center}
+.art .dish-art{display:block;width:100%;height:auto}
+.stamp{position:absolute;top:-2%;left:-4%;width:31%;transform:rotate(-14deg);color:var(--aji)}
+.stamp text{font:800 15px var(--disp);letter-spacing:.06em;text-transform:uppercase;fill:currentColor}
+.tagc{position:absolute;display:flex;align-items:center;gap:10px;padding:10px 14px 10px 10px;background:var(--card);border:2px solid var(--ocean);border-radius:8px;font-size:14px;line-height:1.25;box-shadow:0 10px 24px -14px rgba(7,31,54,.55)}
+.tagc .i{font-size:30px;color:var(--aji);background:var(--paper);border-radius:6px;padding:4px;width:38px;height:38px}
+.tagc small{display:block;color:var(--mute);font-size:12.5px}
+.c1{top:6%;right:-2%;transform:rotate(3deg)}
+.c2{bottom:4%;left:0;transform:rotate(-2deg)}
+@media(max-width:940px){.hero{padding:44px 0 64px}.hero-grid{grid-template-columns:1fr;gap:40px}.art{max-width:470px}.c1{right:0}.stamp{left:0}}
+/* momento único: el plato llega a la mesa */
+.js .dish-art{animation:serve 1.1s cubic-bezier(.16,1,.3,1) both}
+.js .stamp{animation:stampin .9s cubic-bezier(.16,1,.3,1) .35s both}
+@keyframes serve{from{transform:translateY(18px) rotate(-5deg) scale(.95)}to{transform:none}}
+@keyframes stampin{from{transform:rotate(-40deg) scale(1.25);opacity:0}to{transform:rotate(-14deg);opacity:1}}
 
-.plate{position:relative;aspect-ratio:1/1;border-radius:36px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid var(--line);box-shadow:0 40px 80px -30px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.08);display:grid;place-items:center}
-.plate::before{content:"";position:absolute;inset:14%;border-radius:50%;background:radial-gradient(circle,rgba(243,185,77,.35),transparent 65%);filter:blur(30px)}
-.plate svg{width:82%;position:relative;animation:float 7s ease-in-out infinite}
-.chip{position:absolute;display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:16px;background:rgba(7,37,48,.92);border:1px solid var(--line);font-size:13px;box-shadow:0 18px 40px -18px rgba(0,0,0,.7)}
-.chip .dot{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;font-size:16px;background:rgba(243,185,77,.15)}
-.chip small{display:block;color:var(--mute);font-size:11.5px}
-.c1{top:9%;left:-6%;animation:float 6s ease-in-out infinite .5s}
-.c2{bottom:10%;right:-5%;animation:float 6.5s ease-in-out infinite 1s}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-@media(max-width:900px){.hero{padding:56px 0 80px}.hero-grid{grid-template-columns:1fr;gap:48px}.plate{max-width:440px;margin:0 auto;width:100%}.c1{left:2%}.c2{right:2%}}
-
-/* marquee */
-.strip{border-block:1px solid var(--line);background:rgba(255,255,255,.02);overflow:hidden}
-.track{display:flex;gap:48px;padding:18px 0;width:max-content;animation:slide 28s linear infinite;color:#d0e0e3;font-size:15px}
-.track span{display:flex;align-items:center;gap:12px;white-space:nowrap}
-.track span::before{content:"✦";color:var(--gold)}
+/* franja del menú */
+.strip{background:var(--aji);color:var(--paper);overflow:hidden;border-block:3px solid var(--ocean)}
+.track{display:flex;gap:28px;padding:13px 0;width:max-content;animation:slide 40s linear infinite;font:800 22px/1 var(--disp);text-transform:uppercase;letter-spacing:.03em}
+.strip:hover .track{animation-play-state:paused}
+.track span{display:flex;align-items:center;gap:28px;white-space:nowrap}
+.track span::after{content:"";width:34px;height:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 12'%3E%3Cpath d='M1 8c4-6 8-6 11 0s8 6 11 0 7-6 10 0' fill='none' stroke='%23f2c230' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain}
 @keyframes slide{to{transform:translateX(-50%)}}
 
-/* sections */
-section{padding:110px 0}
-.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap}
-.kicker{color:var(--gold);font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
-h2{font-size:clamp(34px,4.6vw,54px);font-weight:700;margin-top:10px;max-width:640px}
-.sub{color:#b5cacf;max-width:420px}
+/* secciones */
+section{padding:96px 0}
+h2{font-size:clamp(38px,5.4vw,64px);color:var(--ocean)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px 40px;margin-bottom:40px;flex-wrap:wrap}
+.head h2{max-width:13em}
+.sub{color:var(--mute);max-width:26em}
 
-/* tabs + menu */
-.tabs{display:inline-flex;gap:6px;padding:6px;border-radius:16px;background:var(--glass);border:1px solid var(--line);margin-bottom:28px;flex-wrap:wrap}
-.tab{background:none;border:none;color:#c6d8dc;font:600 14px 'Inter',sans-serif;padding:10px 16px;border-radius:11px;cursor:pointer;transition:all .2s}
-.tab[aria-selected="true"]{background:var(--sand);color:var(--ink)}
-.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-@media(max-width:760px){.menu{grid-template-columns:1fr}}
-.dish{display:flex;gap:18px;align-items:center;padding:20px;border-radius:var(--r);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--line);transition:transform .25s,border-color .25s,background .25s}
-.dish:hover{transform:translateY(-3px);border-color:rgba(243,185,77,.35);background:linear-gradient(180deg,rgba(243,185,77,.08),rgba(255,255,255,.02))}
-.dish .ic{flex:none;width:62px;height:62px;border-radius:18px;display:grid;place-items:center;font-size:28px;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.14),rgba(255,255,255,.03));border:1px solid var(--line)}
-.dish h3{font-size:20px;font-weight:700}
-.dish p{color:#adc3c8;font-size:14px;margin-top:3px}
-.dish .row{flex:1;min-width:0}
-.dish .end{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
-.price{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:22px;color:var(--gold2);white-space:nowrap}
-.add{width:38px;height:38px;border-radius:12px;border:1px solid rgba(243,185,77,.45);background:rgba(243,185,77,.12);color:var(--gold2);font:700 20px/1 'Inter',sans-serif;cursor:pointer;display:grid;place-items:center;transition:background .2s,transform .2s}
-.add:hover{background:var(--gold);color:var(--ink);transform:scale(1.06)}
-.add.on{background:var(--gold);color:var(--ink)}
-.tag{display:inline-block;margin-left:8px;font:600 10.5px 'Inter',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#ff9a80;vertical-align:middle;border:1px solid rgba(255,122,89,.5);padding:2px 7px;border-radius:99px}
-.panel[hidden]{display:none}
-.hint{margin-top:18px;color:var(--mute);font-size:14px}
+/* pizarra */
+.menu-s{padding:80px 0 96px}
+.board{position:relative;background:var(--board);color:var(--chalk);border:12px solid var(--wood);border-radius:10px;padding:48px clamp(18px,4.5vw,56px) 36px;box-shadow:0 30px 50px -30px rgba(7,31,54,.7),inset 0 0 0 2px #6d4325}
+.board::before{content:"";position:absolute;inset:14px;border:1.5px dashed #ffffff26;border-radius:4px;pointer-events:none}
+.board h2{color:var(--paper)}
+.board h2 b{color:var(--limon);font-weight:900}
+.board .sub{color:var(--chalk2)}
+.board .sub b{color:var(--limon)}
+@media(max-width:520px){.board{border-width:8px;padding:30px 14px 22px}.board::before{inset:6px}.ln .dots{display:none}.ln{justify-content:space-between}}
+.tabs{display:flex;gap:4px 22px;margin-bottom:22px;flex-wrap:wrap;border-bottom:2px solid #ffffff2e}
+.tab{position:relative;background:none;border:none;color:var(--chalk2);font:800 22px/1 var(--disp);text-transform:uppercase;letter-spacing:.03em;padding:12px 2px 14px;min-height:48px;cursor:pointer;transition:color .2s}
+.tab::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:4px;background:var(--limon);border-radius:2px;transform:scaleX(0);transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+.tab:hover{color:var(--paper)}
+.tab[aria-selected="true"]{color:var(--limon)}
+.tab[aria-selected="true"]::after{transform:none}
+.tab:focus-visible{outline-color:var(--limon)}
+.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px}
+@media(max-width:860px){.menu{grid-template-columns:1fr}}
+.dish{display:grid;grid-template-columns:46px 1fr 46px;gap:16px;align-items:center;padding:18px 6px;border-bottom:1.5px dashed #ffffff30;transition:background .2s;border-radius:4px}
+.dish:hover{background:#ffffff0a}
+.dish .ic{width:46px;height:46px;display:grid;place-items:center;color:var(--limon);border:1.5px solid #f2c23066;border-radius:50%}
+.dish .ic .i{font-size:28px;stroke-width:1.7}
+.dish .row{min-width:0}
+.ln{display:flex;align-items:baseline;gap:8px}
+.dish h3{font:700 18px/1.25 var(--body);color:var(--paper);letter-spacing:0}
+.ln .dots{flex:1;min-width:14px;border-bottom:2.5px dotted #dfe8ee59;transform:translateY(-4px)}
+.price{font:900 27px/1 var(--disp);color:var(--limon);white-space:nowrap}
+.dish p{color:var(--chalk2);font-size:14.5px;margin-top:4px;line-height:1.45}
+.tag{display:inline-block;margin-left:6px;font:700 11px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--aji);vertical-align:3px;padding:4px 7px 3px;border-radius:4px;white-space:nowrap}
+.add{width:46px;height:46px;border-radius:50%;border:2px solid var(--limon);background:transparent;color:var(--limon);font:700 22px/1 var(--body);cursor:pointer;display:grid;place-items:center;transition:background .2s,color .2s,transform .18s}
+.add:hover{background:var(--limon);color:var(--board);transform:scale(1.06)}
+.add:active{transform:scale(.94)}
+.add.on{background:var(--limon);color:var(--board);font-size:19px}
+.add:focus-visible{outline-color:var(--limon)}
+@media(max-width:420px){.dish{grid-template-columns:1fr 46px;gap:12px}.dish .ic{display:none}}
+.hint{display:flex;align-items:center;gap:10px;margin-top:26px;color:var(--chalk2);font-size:14.5px}
+.hint .i{font-size:20px;color:var(--limon)}
 
-/* features bento */
-.bento{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:16px}
-@media(max-width:900px){.bento{grid-template-columns:1fr}}
-.card{position:relative;padding:30px;border-radius:26px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid var(--line);overflow:hidden}
-.card h3{font-size:24px;margin:16px 0 8px}
-.card p{color:#b0c6cb;font-size:15px}
-.card .badge{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:rgba(243,185,77,.12);border:1px solid rgba(243,185,77,.25);font-size:22px}
-.card.big{background:radial-gradient(80% 90% at 100% 0%,rgba(19,96,111,.6),transparent 70%),linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015))}
-.card.big .wave{position:absolute;right:-30px;bottom:-30px;width:260px;opacity:.5}
+/* nosotros */
+.about{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 44px;list-style:none}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+.about li{border-top:3px solid var(--ocean);padding-top:22px}
+.about .ico{width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:var(--limon);color:var(--ocean);margin-bottom:16px}
+.about .ico .i{font-size:32px}
+.about h3{font-size:31px;color:var(--ocean);margin-bottom:8px}
+.about p{color:var(--mute);max-width:30em}
+.about li:first-child .ico{background:var(--aji);color:var(--paper)}
 
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s;list-style:none}
-@media(max-width:820px){.steps{grid-template-columns:1fr}}
-.step{padding:28px;border-radius:24px;border:1px solid var(--line);background:var(--glass)}
-.step::before{counter-increment:s;content:"0" counter(s);font-family:'Fraunces',Georgia,serif;font-size:44px;font-weight:700;background:linear-gradient(180deg,var(--gold2),rgba(243,185,77,.35));-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:10px}
-.step h3{font-size:21px;margin-bottom:6px}
-.step p{color:#b0c6cb;font-size:15px}
+/* pasos */
+.steps-s{background:var(--limon);border-block:3px solid var(--ocean)}
+.steps-s h2{color:var(--ocean)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s;list-style:none}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+.step{position:relative;padding:26px 24px 28px;background:var(--paper);border:2px solid var(--ocean);border-radius:10px}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--aji);color:#fff;font:900 34px/1 var(--disp);margin-bottom:16px}
+.step h3{font-size:30px;margin-bottom:6px}
+.step p{color:var(--mute)}
 
-/* visit */
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:820px){.visit{grid-template-columns:1fr}}
-.info{display:grid;gap:12px}
-.inf{display:flex;gap:16px;align-items:flex-start;padding:22px;border-radius:20px;border:1px solid var(--line);background:var(--glass)}
-.inf .badge{flex:none;width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:rgba(243,185,77,.12);font-size:20px}
-.inf b{display:block;font-size:16px;margin-bottom:2px}
-.inf span{color:#b0c6cb;font-size:14.5px}
-.map{border-radius:26px;border:1px solid var(--line);overflow:hidden;min-height:300px;background:#0a2c37;position:relative}
-.map svg{width:100%;height:100%;display:block}
-.pin{position:absolute;left:50%;top:46%;transform:translate(-50%,-100%)}
-.pin::after{content:"";position:absolute;left:50%;top:100%;width:16px;height:16px;margin:-6px 0 0 -8px;border-radius:50%;background:rgba(243,185,77,.5);animation:pulse 2s infinite}
+/* visítanos */
+.visit{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:stretch}
+@media(max-width:860px){.visit{grid-template-columns:1fr}}
+.info{display:grid;align-content:start}
+.inf{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1.5px dashed var(--line)}
+.inf:first-child{border-top:3px solid var(--ocean)}
+.inf>.i{font-size:30px;color:var(--aji);margin-top:2px}
+.inf b{display:block;font:900 24px/1.05 var(--disp);color:var(--ocean);margin-bottom:3px}
+.inf span{color:var(--mute)}
+.map{border:2px solid var(--ocean);border-radius:10px;overflow:hidden;min-height:320px;background:var(--paper2);position:relative}
+.map svg{width:100%;height:100%;display:block;position:absolute;inset:0}
+.pin{position:absolute;left:52%;top:44%;transform:translate(-50%,-100%);width:46px;height:58px}
+.pin svg{position:static}
+.pin::after{content:"";position:absolute;left:50%;top:100%;width:18px;height:18px;margin:-7px 0 0 -9px;border-radius:50%;background:#c7361f80;animation:pulse 2.2s infinite}
 @keyframes pulse{0%{transform:scale(.6);opacity:1}100%{transform:scale(3);opacity:0}}
 
-/* order */
-.cta{position:relative;overflow:hidden;border-radius:34px;padding:56px 40px;
-  background:radial-gradient(60% 120% at 50% 0%,rgba(243,185,77,.3),transparent 60%),linear-gradient(135deg,#0d4655,#072530 60%);border:1px solid rgba(243,185,77,.3)}
-.cta>.kicker,.cta>h2,.cta>.cp{text-align:center}
-.cta h2{margin:10px auto 14px;max-width:700px}
-.cta .cp{color:#d0e0e3;max-width:560px;margin:0 auto 34px}
-.order{display:grid;grid-template-columns:1fr 1.1fr;gap:20px;text-align:left}
-@media(max-width:860px){.order{grid-template-columns:1fr}.cta{padding:44px 18px}}
-.box{background:rgba(4,20,27,.55);border:1px solid var(--line);border-radius:22px;padding:24px}
-.box h3{font-size:22px;margin-bottom:14px}
-.cart{list-style:none;display:grid;gap:10px}
-.cart li{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--line);font-size:14.5px}
-.cart li .nm{flex:1;min-width:0}
-.cart li .sm{color:var(--gold2);font-weight:600;white-space:nowrap}
-@media(max-width:520px){.box{padding:18px}.cart li{flex-wrap:wrap}.cart li .nm{flex-basis:100%}.cart li .sm{margin-left:auto}}
-.qty{display:inline-flex;align-items:center;gap:6px}
-.qty button{width:30px;height:30px;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;font:700 16px/1 'Inter',sans-serif;cursor:pointer}
-.qty output{min-width:18px;text-align:center;font-weight:600}
-.empty{color:var(--mute);font-size:14.5px;padding:14px;border:1px dashed var(--line);border-radius:14px}
-.empty a{color:var(--gold2);text-decoration:underline}
-.total{display:flex;justify-content:space-between;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-weight:600}
-.total b{font-family:'Fraunces',Georgia,serif;font-size:24px;color:var(--gold2)}
-.fine{color:var(--mute);font-size:12.5px;margin-top:8px}
-.fields{display:grid;gap:14px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+/* pedido */
+.order-s{background:var(--ocean);color:var(--paper)}
+.order-s h2{color:var(--paper);max-width:14em}
+.order-s .cp{color:var(--chalk);max-width:34em;margin-top:16px}
+.order-s .head{margin-bottom:36px;display:block}
+.order{display:grid;grid-template-columns:.95fr 1.05fr;gap:24px;align-items:start;color:var(--ink)}
+@media(max-width:880px){.order{grid-template-columns:1fr}}
+.ticket{background:var(--card);padding:26px 24px 40px;border-radius:8px 8px 0 0;
+  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/18px 100%;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/18px 100%}
+.ticket h3,.fields h3{font-size:32px;margin-bottom:14px;color:var(--ocean)}
+.ticket h3{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:2px solid var(--ocean)}
+.ticket h3 .i{font-size:28px;color:var(--aji)}
+.cart{list-style:none;display:grid}
+.cart li{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1.5px dashed var(--line);font-size:15.5px}
+.cart li .nm{flex:1;min-width:0;font-weight:700}
+.cart li .sm{font-weight:700;white-space:nowrap;min-width:62px;text-align:right}
+
+.qty{display:inline-flex;align-items:center;gap:4px}
+.qty button{width:44px;height:44px;border-radius:50%;border:2px solid var(--ocean);background:transparent;color:var(--ocean);font:700 20px/1 var(--body);cursor:pointer;transition:background .2s,color .2s}
+.qty button:hover{background:var(--ocean);color:var(--paper)}
+.qty output{min-width:24px;text-align:center;font-weight:700}
+.empty{color:var(--mute);font-size:15px;padding:14px;border:1.5px dashed #0b2e4f59;border-radius:6px;margin-top:4px}
+.empty a{color:var(--aji);text-decoration:underline;text-underline-offset:3px;font-weight:700}
+.total{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:14px;padding-top:12px;border-top:2px solid var(--ocean);font-weight:700}
+.total b{font:900 34px/1 var(--disp);color:var(--aji)}
+.fine{color:var(--mute);font-size:13.5px;margin-top:8px}
+.fields{display:grid;gap:16px;background:var(--paper);border-radius:8px;padding:26px 24px}
+@media(max-width:520px){.ticket,.fields{padding-inline:16px}.cart li{flex-wrap:wrap}.cart li .nm{flex-basis:100%}.cart li .sm{margin-left:auto}}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:520px){.two{grid-template-columns:1fr}}
-.fl{display:grid;gap:6px;font-size:13.5px;font-weight:600;color:#e6eff1}
-.fl input,.fl select,.fl textarea{font:400 15px 'Inter',sans-serif;padding:12px 13px;border-radius:12px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:#fff;width:100%}
-.fl select option{color:#04141b}
-.fl input::placeholder,.fl textarea::placeholder{color:#93aab0}
-.fl input:focus,.fl select:focus,.fl textarea:focus{outline:none;border-color:var(--gold2);box-shadow:0 0 0 3px rgba(255,217,138,.35)}
-.fl [aria-invalid="true"]{border-color:#ff9a80;box-shadow:0 0 0 3px rgba(255,122,89,.3)}
+.fl{display:grid;gap:6px;font-size:14px;font-weight:700;color:var(--ocean)}
+.fl input,.fl select,.fl textarea{font:400 16px var(--body);padding:12px 13px;min-height:48px;border-radius:8px;border:1.5px solid #6b7f91;background:var(--card);color:var(--ink);width:100%}
+.fl input::placeholder,.fl textarea::placeholder{color:#5f7385}
+.fl input:focus,.fl select:focus,.fl textarea:focus{outline:none;border-color:var(--ocean);box-shadow:0 0 0 3px #f2c230}
+.fl [aria-invalid="true"]{border-color:var(--aji);box-shadow:0 0 0 3px #c7361f40}
 fieldset{border:none;display:grid;gap:6px}
-legend{font-size:13.5px;font-weight:600;color:#e6eff1;margin-bottom:6px}
+legend{font-size:14px;font-weight:700;color:var(--ocean);margin-bottom:6px}
 .seg{display:flex;gap:8px;flex-wrap:wrap}
 .seg label{position:relative;cursor:pointer}
 .seg input{position:absolute;opacity:0;width:1px;height:1px}
-.seg span{display:block;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.22);font-size:14px;font-weight:500}
-.seg input:checked+span{background:var(--sand);color:var(--ink);border-color:var(--sand)}
-.seg input:focus-visible+span{outline:3px solid var(--gold2);outline-offset:2px}
-.msg{font-size:14px;font-weight:600;color:#ffb4a1;min-height:1px}
-.msg.ok{color:#9ff0c0}
-.wa{background:#25d366;color:#05261a;box-shadow:0 12px 34px -10px rgba(37,211,102,.7);justify-content:center}
-.wa:hover{transform:translateY(-2px)}
+.seg span{display:flex;align-items:center;min-height:46px;padding:10px 16px;border-radius:8px;border:2px solid var(--ocean);font-size:15px;font-weight:700;color:var(--ocean);transition:background .2s,color .2s}
+.seg input:checked+span{background:var(--ocean);color:var(--paper)}
+.seg input:focus-visible+span{outline:3px solid var(--aji);outline-offset:2px}
+.msg{font-size:14.5px;font-weight:700;color:var(--aji2);min-height:1px}
+.msg.ok{color:#1d6b3a}
+.wa{background:#25d366;color:#05261a;width:100%}
+.wa:hover{background:#1fc05c}
 
-footer{border-top:1px solid var(--line);padding:46px 0 90px;color:var(--mute);font-size:14px}
-.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+/* pie */
+footer{background:var(--deep);color:var(--chalk2);padding:56px 0 110px;font-size:14.5px}
+.foot{display:grid;gap:18px}
+footer .brand{font-size:clamp(46px,11vw,132px);gap:clamp(12px,2vw,24px);color:var(--paper);text-shadow:4px 4px 0 var(--aji);flex-wrap:wrap;line-height:.9}
+footer .brand span{color:var(--limon)}
+footer .brand svg{width:clamp(48px,9vw,110px);height:auto}
 
-/* floating */
-.fab{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 14px 34px -8px rgba(37,211,102,.7);transition:transform .2s}
-.fab:hover{transform:scale(1.08)}
-.cartbar{position:fixed;left:18px;bottom:22px;z-index:60;display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:99px;background:var(--gold2);color:var(--ink);font-weight:700;font-size:14.5px;box-shadow:0 14px 34px -10px rgba(0,0,0,.7);transform:translateY(140%);transition:transform .3s}
+/* flotantes */
+.fab{position:fixed;right:16px;bottom:16px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 26px -10px rgba(7,31,54,.6);transition:transform .2s}
+.fab:hover{transform:scale(1.07)}
+.cartbar{position:fixed;left:16px;bottom:20px;z-index:60;display:flex;align-items:center;gap:8px;min-height:50px;padding:10px 18px 10px 14px;border-radius:99px;background:var(--ocean);color:var(--limon);border:2px solid var(--limon);font-weight:700;font-size:14.5px;box-shadow:0 12px 26px -10px rgba(7,31,54,.7);transform:translateY(160%);transition:transform .3s cubic-bezier(.2,.8,.2,1);max-width:calc(100vw - 104px)}
+.cartbar .i{font-size:22px}
 .cartbar.show{transform:none}
+#cbText{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:360px){.cartbar{font-size:13px;padding-right:12px}}
 
-/* reveal */
-.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
-.js .rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="logo" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#0b2e4f"/><circle cx="20" cy="19" r="9" fill="#f2c230"/><path d="M2.5 24c3-3 6-3 8.7 0s6 3 8.8 0 6-3 8.8 0 5.5 3 8.7 0A17.6 17.6 0 0 1 2.5 24z" fill="#c7361f"/><path d="M6 30c2.4-2 4.6-2 7 0s4.6 2 7 0 4.6-2 7 0 4.6 2 7 0" fill="none" stroke="#f6eedd" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-shrimp" viewBox="0 0 32 32"><path d="M23 6c-7-1-14 3-14 10 0 5 3 8 8 8h1"/><path d="M14 10l2 4M10.5 14.5l4 1M11 20l3.5-2"/><path d="M18 24l3-3M18 24l3 3"/><path d="M23 6c3 0 4 3 2 5-1.5 1-3 1-4.5.5M24 7l5-3M25 9l4 1"/></symbol>
+  <symbol id="i-shell" viewBox="0 0 32 32"><path d="M16 27L5 14.5C6 8 11 5 16 5s10 3 11 9.5z"/><path d="M16 27l-6-19M16 27V5M16 27l6-19"/><path d="M12 28h8"/></symbol>
+  <symbol id="i-fish" viewBox="0 0 32 32"><path d="M3 16c4-6 12-8 18-4l6-4v16l-6-4c-6 4-14 2-18-4z"/><path d="M9 15h.01"/><path d="M13 12c1.3 2.6 1.3 5.4 0 8"/></symbol>
+  <symbol id="i-squid" viewBox="0 0 32 32"><path d="M16 3l7 9v7H9v-7z"/><path d="M13.5 14h.01M18.5 14h.01"/><path d="M11 19c0 4-2 6-3 9M14 19c0 4-1 6-1 9M18 19c0 4 1 6 1 9M21 19c0 4 2 6 3 9"/></symbol>
+  <symbol id="i-bowl" viewBox="0 0 32 32"><path d="M3 15h26a13 11 0 0 1-26 0z"/><path d="M11 27h10"/><path d="M11 4c-2 2 2 4 0 7M16 3c-2 2 2 4 0 7M21 4c-2 2 2 4 0 7"/></symbol>
+  <symbol id="i-viche" viewBox="0 0 32 32"><path d="M3 15h26a13 11 0 0 1-26 0z"/><path d="M11 27h10"/><path d="M19 15l7-10"/><ellipse cx="27" cy="4" rx="2" ry="3" transform="rotate(35 27 4)"/><path d="M8 19c2 1 4 1 6 0"/></symbol>
+  <symbol id="i-rice" viewBox="0 0 32 32"><path d="M2 23h28"/><path d="M6 23a10 9 0 0 1 20 0"/><path d="M10 27h12"/><path d="M12 17h.01M16 15h.01M20 18h.01M15 19h.01"/></symbol>
+  <symbol id="i-fried" viewBox="0 0 32 32"><path d="M21 6c-6.5-1-12 3-12 9 0 4.5 3 7.5 7.5 7.5"/><path d="M16.5 22.5l2.5-2.5M16.5 22.5l2.5 2.5"/><path d="M13 11h.01M11.5 16h.01M14 19h.01M16 14h.01"/><path d="M3 27h26"/></symbol>
+  <symbol id="i-grill" viewBox="0 0 32 32"><path d="M3 16c4-6 12-8 18-4l6-4v16l-6-4c-6 4-14 2-18-4z"/><path d="M8 15h.01"/><path d="M14 11l-3 9M19 11.5l-3 8.5"/></symbol>
+  <symbol id="i-platter" viewBox="0 0 32 32"><path d="M2 18c0 4 6 7 14 7s14-3 14-7z"/><path d="M7 18c1-4 4-5 6-2M14 18c1-5 5-6 8-3M21 18c1-2 3-3 5-1"/><path d="M16 7v3M12 8l1 2.5M20 8l-1 2.5"/></symbol>
+  <symbol id="i-juice" viewBox="0 0 32 32"><path d="M8 9h16l-2 19H10z"/><path d="M18 9l3-6h3"/><path d="M9 14h14"/></symbol>
+  <symbol id="i-coco" viewBox="0 0 32 32"><circle cx="15" cy="18" r="11"/><path d="M12 14h.01M16 13h.01M14 17h.01"/><path d="M19 11l4-8h3"/></symbol>
+  <symbol id="i-boat" viewBox="0 0 32 32"><path d="M3 20h26l-4 5H7z"/><path d="M15 20V4"/><path d="M15 5l9 12h-9"/><path d="M3 29c2.7-2 5.3-2 8 0s5.3 2 8 0 5.3-2 8 0"/></symbol>
+  <symbol id="i-aji" viewBox="0 0 32 32"><path d="M9.5 10.5c-4 6-2.5 15 5 18 4 1.6 9 1.4 12.5-.5-6.5-2.5-10.5-8.5-11.5-17.5z"/><path d="M8.5 11c2-2.5 5.5-2.5 7.5 0"/><path d="M12.3 8.8c0-2.6 1.6-4.6 4.7-5.6"/></symbol>
+  <symbol id="i-clean" viewBox="0 0 32 32"><path d="M16 3c4 6 9 10 9 16a9 9 0 0 1-18 0c0-6 5-10 9-16z"/><path d="M12 19l3 3 5-6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="M16 9v7l5 3"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 32 32"><path d="M16 29s9-8 9-15a9 9 0 0 0-18 0c0 7 9 15 9 15z"/><circle cx="16" cy="14" r="3"/></symbol>
+  <symbol id="i-moto" viewBox="0 0 32 32"><circle cx="8" cy="23" r="3.5"/><circle cx="24" cy="23" r="3.5"/><path d="M11.5 23h9l2-8h-6M22.5 15l-2-6h-3"/><path d="M3 10h9v6H3z"/></symbol>
+  <symbol id="i-card" viewBox="0 0 32 32"><rect x="3" y="7" width="26" height="18" rx="3"/><path d="M3 12h26M8 20h5"/></symbol>
+  <symbol id="i-basket" viewBox="0 0 32 32"><path d="M3 12h26l-3 14H6z"/><path d="M10 12l5-8M22 12l-5-8"/><path d="M12 16v6M16 16v6M20 16v6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 32 32"><path d="M16 4l3.5 7 7.5 1-5.5 5.5 1.5 7.5-7-3.5-7 3.5 1.5-7.5L5 12l7.5-1z"/></symbol>
+  <symbol id="i-chalk" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="M16 10v7M16 21.5h.01"/></symbol>
+</svg>
 <a class="skip" href="#main" data-i="skip">Saltar al contenido</a>
 <div class="demo">Proyecto de muestra · negocio ficticio · diseño y desarrollo: William Ruiz<span data-i="demoEn"></span></div>
 
 <header>
   <div class="wrap">
     <nav aria-label="Principal" data-ia="aria-label:navMain">
-      <a href="#" class="brand" aria-label="La Ola Dorada, inicio" data-ia="aria-label:home"><i aria-hidden="true">🌊</i>La Ola <span>Dorada</span></a>
+      <a href="#" class="brand" aria-label="La Ola Dorada, inicio" data-ia="aria-label:home"><svg aria-hidden="true"><use href="#logo"/></svg>La Ola <span>Dorada</span></a>
       <div class="links"><a href="#menu" data-i="nMenu">Menú</a><a href="#nosotros" data-i="nAbout">Nosotros</a><a href="#pedir" data-i="nHow">Cómo pedir</a><a href="#visitanos" data-i="nVisit">Visítanos</a></div>
       <div class="nav-cta">
-        <a href="#pedido" class="btn btn-gold btn-sm" data-i="orderNow">Pedir ahora</a>
+        <a href="#pedido" class="btn btn-aji btn-sm" data-i="orderNow">Pedir ahora</a>
         <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" aria-pressed="true" lang="es">ES</button><button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button></div>
-        <button class="burger" aria-label="Abrir menú" data-ia="aria-label:openMenu" aria-expanded="false" aria-controls="mobile" id="burger">☰</button>
+        <button class="burger" aria-label="Abrir menú" data-ia="aria-label:openMenu" aria-expanded="false" aria-controls="mobile" id="burger"><i></i></button>
       </div>
     </nav>
   </div>
-  <div class="mobile" id="mobile"><a href="#menu" data-i="nMenu">Menú</a><a href="#nosotros" data-i="nAbout">Nosotros</a><a href="#pedir" data-i="nHow">Cómo pedir</a><a href="#visitanos" data-i="nVisit">Visítanos</a><a href="#pedido" class="btn btn-gold" style="justify-content:center;margin-top:10px;border:none" data-i="orderNow">Pedir ahora</a></div>
+  <div class="mobile" id="mobile"><a href="#menu" data-i="nMenu">Menú</a><a href="#nosotros" data-i="nAbout">Nosotros</a><a href="#pedir" data-i="nHow">Cómo pedir</a><a href="#visitanos" data-i="nVisit">Visítanos</a><a href="#pedido" class="btn btn-aji" style="margin-top:14px" data-i="orderNow">Pedir ahora</a></div>
 </header>
 
 <main id="main">
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow"><b data-i="new">NUEVO</b> <span data-i="eyebrow">Pesca del día, todos los días</span></span>
       <h1 data-i="h1">El sabor del mar, <em>servido en dorado.</em></h1>
       <p class="lead" data-i="lead">Cevichería costeña con recetas de la casa, encebollados contundentes y mariscos frescos. Ven a disfrutarlo o pídelo a domicilio.</p>
       <div class="ctas">
-        <a href="#pedido" class="btn btn-gold" data-i="ctaOrder">Hacer mi pedido →</a>
-        <a href="#menu" class="btn btn-ghost" data-i="ctaMenu">Ver el menú</a>
+        <a href="#pedido" class="btn btn-aji" data-i="ctaOrder">Hacer mi pedido →</a>
+        <a href="#menu" class="btn btn-line" data-i="ctaMenu">Ver el menú</a>
       </div>
       <div class="facts">
         <div data-i="f1"><strong>30 min</strong>entrega promedio</div>
@@ -273,30 +338,50 @@ footer{border-top:1px solid var(--line);padding:46px 0 90px;color:var(--mute);fo
         <div data-i="f3"><strong>7 días</strong>abiertos a la semana</div>
       </div>
     </div>
-    <div class="rv" style="position:relative">
-      <div class="plate">
-        <svg viewBox="0 0 320 300" role="img" aria-label="Ilustración de un plato de ceviche con limón" data-ia="aria-label:plateAlt">
-          <defs>
-            <radialGradient id="bowl" cx="50%" cy="30%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d9e4e6"/></radialGradient>
-            <radialGradient id="broth" cx="50%" cy="40%"><stop offset="0" stop-color="#ffb08f"/><stop offset="1" stop-color="#ff7a59"/></radialGradient>
-            <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3f59b"/><stop offset="1" stop-color="#9ccc3d"/></linearGradient>
-          </defs>
-          <ellipse cx="160" cy="250" rx="120" ry="18" fill="#000" opacity=".25"/>
-          <path d="M40 150 Q160 300 280 150 Z" fill="url(#bowl)"/>
-          <ellipse cx="160" cy="150" rx="120" ry="34" fill="#eef4f5"/>
-          <ellipse cx="160" cy="152" rx="108" ry="27" fill="url(#broth)"/>
-          <g fill="#ffd2c2"><path d="M98 146c8-14 30-14 34 0-8 8-26 8-34 0z"/><path d="M148 140c8-15 32-15 36 0-9 9-27 9-36 0z"/><path d="M196 150c7-12 26-12 30 0-7 7-23 7-30 0z"/></g>
-          <g fill="#ff9b7f" opacity=".7"><path d="M106 145c6-6 16-6 20 0"/><path d="M156 139c6-7 18-7 22 0"/></g>
-          <g fill="#8e3fb0"><rect x="130" y="156" width="16" height="5" rx="2.5" transform="rotate(-12 138 158)"/><rect x="186" y="160" width="14" height="5" rx="2.5" transform="rotate(14 193 162)"/><rect x="92" y="158" width="12" height="4" rx="2" /></g>
-          <g fill="#3e9b3c"><circle cx="122" cy="166" r="3.5"/><circle cx="176" cy="152" r="3"/><circle cx="214" cy="146" r="3.5"/><circle cx="146" cy="148" r="2.5"/></g>
-          <g fill="#ff5a3c"><circle cx="112" cy="156" r="4"/><circle cx="200" cy="164" r="4"/></g>
-          <circle cx="252" cy="78" r="38" fill="url(#lime)"/><circle cx="252" cy="78" r="30" fill="#f0fbc8"/>
-          <g stroke="#b8db62" stroke-width="3"><path d="M252 50v56M224 78h56M232 58l40 40M272 58l-40 40"/></g>
-          <g fill="#f3b94d"><ellipse cx="62" cy="96" rx="22" ry="8" transform="rotate(-20 62 96)"/><ellipse cx="80" cy="74" rx="20" ry="7" transform="rotate(-35 80 74)"/></g>
-        </svg>
-      </div>
-      <div class="chip c1"><span class="dot" aria-hidden="true">⭐</span><div data-i="chip1"><b>Ceviche de la casa</b><small>El favorito de la costa</small></div></div>
-      <div class="chip c2"><span class="dot" aria-hidden="true">🛵</span><div data-i="chip2"><b>Domicilio rápido</b><small>Llega fresco a tu puerta</small></div></div>
+    <div class="art">
+      <svg class="dish-art" viewBox="0 0 400 380" role="img" aria-label="Ilustración de un plato de ceviche con limón" data-ia="aria-label:plateAlt">
+        <defs>
+          <clipPath id="sunc"><circle cx="200" cy="178" r="160"/></clipPath>
+          <g id="sh"><path d="M0 0c-16-2-26 10-22 22 3 8 13 10 20 4" fill="none" stroke="#ffb59e" stroke-width="11" stroke-linecap="round"/><path d="M-8-3l-2 10M-19 4l7 6M-22 16l9 0M-17 26l5-6" stroke="#e8735a" stroke-width="2" stroke-linecap="round"/><path d="M-2 27l10-5-1 11z" fill="#f2704f"/></g>
+          <path id="leaf" d="M0 0c4-7 11-7 13 0-4 5-9 5-13 0z" fill="#3d8b3d"/>
+        </defs>
+        <circle cx="200" cy="178" r="160" fill="#f2c230"/>
+        <circle cx="200" cy="178" r="172" fill="none" stroke="#c7361f" stroke-width="3.5" stroke-dasharray="1 13" stroke-linecap="round"/>
+        <g clip-path="url(#sunc)">
+          <path d="M20 236q21-14 42 0t42 0 42 0 42 0 42 0 42 0 42 0 42 0 42 0V400H20z" fill="#1f6f8b"/>
+          <path d="M0 262q21-14 42 0t42 0 42 0 42 0 42 0 42 0 42 0 42 0 42 0 42 0V400H0z" fill="#0b2e4f"/>
+          <path d="M40 300q14-9 28 0t28 0M250 292q14-9 28 0t28 0" fill="none" stroke="#f6eedd" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+        </g>
+        <ellipse cx="200" cy="334" rx="150" ry="13" fill="#0b2e4f" opacity=".22"/>
+        <path d="M48 205C56 292 120 326 200 326S344 292 352 205z" fill="#fbf6ea"/>
+        <path d="M62 246c28 46 78 62 138 62s110-16 138-62" fill="none" stroke="#1b4f7a" stroke-width="9"/>
+        <path d="M78 268c26 34 70 46 122 46s96-12 122-46" fill="none" stroke="#c7361f" stroke-width="3" stroke-dasharray="10 7"/>
+        <ellipse cx="200" cy="205" rx="152" ry="44" fill="#fbf6ea" stroke="#1b4f7a" stroke-width="6"/>
+        <ellipse cx="200" cy="208" rx="134" ry="34" fill="#ef8a5f"/>
+        <ellipse cx="172" cy="200" rx="74" ry="13" fill="#f7a985" opacity=".85"/>
+        <use href="#sh" transform="translate(146 192) rotate(-28) scale(.95)"/>
+        <use href="#sh" transform="translate(214 186) rotate(-6)"/>
+        <use href="#sh" transform="translate(276 204) rotate(24) scale(.9)"/>
+        <use href="#sh" transform="translate(112 214) rotate(-60) scale(.85)"/>
+        <g fill="none" stroke="#9e3f7b" stroke-width="3.2" stroke-linecap="round"><path d="M128 222q12-10 26 0"/><path d="M188 226q14-9 28 2"/><path d="M236 216q10-8 22 0"/><path d="M168 196q10-7 20 0"/></g>
+        <g fill="#d8352a"><rect x="156" y="214" width="9" height="9" rx="2" transform="rotate(14 160 218)"/><rect x="226" y="200" width="9" height="9" rx="2"/><rect x="258" y="222" width="8" height="8" rx="2" transform="rotate(-18 262 226)"/><rect x="96" y="204" width="8" height="8" rx="2"/></g>
+        <use href="#leaf" transform="translate(178 210) rotate(-20)"/><use href="#leaf" transform="translate(246 196) rotate(30)"/><use href="#leaf" transform="translate(120 200) rotate(10)"/><use href="#leaf" transform="translate(296 214) rotate(-35)"/>
+        <g transform="translate(332 176) rotate(28)"><path d="M-32 0a32 32 0 0 0 64 0z" fill="#8fb832"/><path d="M-26 0a26 26 0 0 0 52 0z" fill="#e8f4b0"/><path d="M0 2v22M0 2L-16 18M0 2l16 16" stroke="#b9d75e" stroke-width="2.5"/></g>
+        <g transform="translate(70 168) rotate(-24)"><path d="M-26 0a26 26 0 0 0 52 0z" fill="#8fb832"/><path d="M-21 0a21 21 0 0 0 42 0z" fill="#e8f4b0"/><path d="M0 2v18M0 2L-13 15M0 2l13 13" stroke="#b9d75e" stroke-width="2.2"/></g>
+        <path d="M30 310c4 28 30 42 64 42s60-14 64-42z" fill="#c7361f"/>
+        <ellipse cx="94" cy="310" rx="64" ry="16" fill="#e04a2f" stroke="#a92b17" stroke-width="3"/>
+        <g fill="#f4d35e" stroke="#d29a22" stroke-width="2"><ellipse cx="66" cy="300" rx="20" ry="8" transform="rotate(-18 66 300)"/><ellipse cx="96" cy="296" rx="21" ry="8" transform="rotate(8 96 296)"/><ellipse cx="80" cy="309" rx="19" ry="7" transform="rotate(-4 80 309)"/></g>
+        <g fill="#fffaf0" stroke="#d9c79c" stroke-width="1.6"><circle cx="122" cy="304" r="6"/><circle cx="131" cy="309" r="5.5"/><circle cx="116" cy="312" r="5"/><circle cx="126" cy="298" r="4.5"/></g>
+      </svg>
+      <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="56" fill="#f6eedd" stroke="currentColor" stroke-width="3"/>
+        <circle cx="60" cy="60" r="35" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path id="ring" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0" fill="none"/>
+        <text><textPath href="#ring" textLength="272" lengthAdjust="spacing" data-i="stamp">Pesca del día · todos los días ·</textPath></text>
+        <use href="#i-fish" x="40" y="40" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="tagc c1"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><div data-i="chip1"><b>Ceviche de la casa</b><small>El favorito de la costa</small></div></div>
+      <div class="tagc c2"><svg class="i" aria-hidden="true"><use href="#i-moto"/></svg><div data-i="chip2"><b>Domicilio rápido</b><small>Llega fresco a tu puerta</small></div></div>
     </div>
   </div>
 </section>
@@ -306,142 +391,143 @@ footer{border-top:1px solid var(--line);padding:46px 0 90px;color:var(--mute);fo
   <span>Ceviche de camarón</span><span>Encebollado de albacora</span><span>Arroz marinero</span><span>Jugos naturales</span><span>Chifles y canguil</span><span>Bandeja familiar</span>
 </div></div>
 
-<section id="menu" aria-labelledby="menu-t">
+<section id="menu" class="menu-s" aria-labelledby="menu-t">
   <div class="wrap">
-    <div class="head rv">
-      <div><div class="kicker" data-i="mK">Nuestro menú</div><h2 id="menu-t" data-i="mH">Preparado al momento, como en casa.</h2></div>
-      <p class="sub" data-i="mSub">Elige una categoría y toca <b>+</b> para armar tu pedido. Todo se prepara con mariscos frescos del día.</p>
-    </div>
-    <div class="tabs rv" role="tablist" aria-label="Categorías del menú" data-ia="aria-label:tabsLabel">
-      <button class="tab" role="tab" id="tab-ceviches" aria-controls="ceviches" aria-selected="true" data-t="ceviches" data-i="tCev">Ceviches</button>
-      <button class="tab" role="tab" id="tab-sopas" aria-controls="sopas" aria-selected="false" tabindex="-1" data-t="sopas" data-i="tSop">Sopas</button>
-      <button class="tab" role="tab" id="tab-fuertes" aria-controls="fuertes" aria-selected="false" tabindex="-1" data-t="fuertes" data-i="tFue">Platos fuertes</button>
-      <button class="tab" role="tab" id="tab-bebidas" aria-controls="bebidas" aria-selected="false" tabindex="-1" data-t="bebidas" data-i="tBeb">Bebidas</button>
-    </div>
-    <div class="panel" id="ceviches" role="tabpanel" aria-labelledby="tab-ceviches"><div class="menu">
-      <div class="dish" data-id="cev-cam" data-p="7.50"><div class="ic" aria-hidden="true">🦐</div><div class="row"><h3><span class="dn" data-i="d1">Ceviche de camarón</span> <span class="tag">Top</span></h3><p data-i="d1p">Camarón, limón, tomate, cebolla curtida. Con chifles y canguil.</p></div><div class="end"><div class="price">$7.50</div><button class="add" type="button">+</button></div></div>
-      <div class="dish" data-id="cev-con" data-p="8.50"><div class="ic" aria-hidden="true">🐚</div><div class="row"><h3><span class="dn" data-i="d2">Ceviche de concha</span></h3><p data-i="d2p">Concha negra con limón, cebolla y cilantro.</p></div><div class="end"><div class="price">$8.50</div><button class="add" type="button">+</button></div></div>
-      <div class="dish" data-id="cev-pes" data-p="6.50"><div class="ic" aria-hidden="true">🐟</div><div class="row"><h3><span class="dn" data-i="d3">Ceviche de pescado</span></h3><p data-i="d3p">Pescado blanco curtido en limón con ají de la casa.</p></div><div class="end"><div class="price">$6.50</div><button class="add" type="button">+</button></div></div>
-      <div class="dish" data-id="cev-mix" data-p="9.00"><div class="ic" aria-hidden="true">🦑</div><div class="row"><h3><span class="dn" data-i="d4">Ceviche mixto</span></h3><p data-i="d4p">Camarón, pescado y calamar en un solo plato.</p></div><div class="end"><div class="price">$9.00</div><button class="add" type="button">+</button></div></div>
-    </div></div>
-    <div class="panel" id="sopas" role="tabpanel" aria-labelledby="tab-sopas" hidden><div class="menu">
-      <div class="dish" data-id="enc" data-p="4.00"><div class="ic" aria-hidden="true">🍲</div><div class="row"><h3><span class="dn" data-i="d5">Encebollado</span> <span class="tag">Top</span></h3><p data-i="d5p">Caldo de albacora con yuca y cebolla curtida.</p></div><div class="end"><div class="price">$4.00</div><button class="add" type="button">+</button></div></div>
-      <div class="dish" data-id="vic" data-p="6.00"><div class="ic" aria-hidden="true">🥣</div><div class="row"><h3><span class="dn" data-i="d6">Viche de pescado</span></h3><p data-i="d6p">Sopa espesa de maní, verde y mariscos.</p></div><div class="end"><div class="price">$6.00</div><button class="add" type="button">+</button></div></div>
-    </div></div>
-    <div class="panel" id="fuertes" role="tabpanel" aria-labelledby="tab-fuertes" hidden><div class="menu">
-      <div class="dish" data-id="arr" data-p="9.00"><div class="ic" aria-hidden="true">🍚</div><div class="row"><h3><span class="dn" data-i="d7">Arroz marinero</span></h3><p data-i="d7p">Arroz con camarón, calamar, concha y pescado.</p></div><div class="end"><div class="price">$9.00</div><button class="add" type="button">+</button></div></div>
-      <div class="dish" data-id="cap" data-p="8.00"><div class="ic" aria-hidden="true">🍤</div><div class="row"><h3><span class="dn" data-i="d8">Camarón apanado</span></h3><p data-i="d8p">Con arroz, menestra y patacones.</p></div><div class="end"><div class="price">$8.00</div><button class="add" type="button">+</button></div></div>
-      <div class="dish" data-id="pfr" data-p="8.50"><div class="ic" aria-hidden="true">🐠</div><div class="row"><h3><span class="dn" data-i="d9">Pescado frito</span></h3><p data-i="d9p">Pescado entero con patacones y ensalada.</p></div><div class="end"><div class="price">$8.50</div><button class="add" type="button">+</button></div></div>
-      <div class="dish" data-id="ban" data-p="28.00"><div class="ic" aria-hidden="true">🍱</div><div class="row"><h3><span class="dn" data-i="d10">Bandeja familiar</span> <span class="tag" data-i="d10t">4 pers.</span></h3><p data-i="d10p">Mixto de ceviches, arroz marinero y patacones.</p></div><div class="end"><div class="price">$28.00</div><button class="add" type="button">+</button></div></div>
-    </div></div>
-    <div class="panel" id="bebidas" role="tabpanel" aria-labelledby="tab-bebidas" hidden><div class="menu">
-      <div class="dish" data-id="jug" data-p="1.50"><div class="ic" aria-hidden="true">🥭</div><div class="row"><h3><span class="dn" data-i="d11">Jugo natural</span></h3><p data-i="d11p">Maracuyá, naranjilla, mora o piña.</p></div><div class="end"><div class="price">$1.50</div><button class="add" type="button">+</button></div></div>
-      <div class="dish" data-id="coc" data-p="2.00"><div class="ic" aria-hidden="true">🥥</div><div class="row"><h3><span class="dn" data-i="d12">Agua de coco</span></h3><p data-i="d12p">Fría, directo del coco.</p></div><div class="end"><div class="price">$2.00</div><button class="add" type="button">+</button></div></div>
-    </div></div>
-    <p class="hint" data-i="hint">Precios referenciales de ejemplo, en dólares.</p>
-  </div>
-</section>
-
-<section id="nosotros" style="padding-top:0" aria-labelledby="about-t">
-  <div class="wrap">
-    <div class="head rv"><div><div class="kicker" data-i="aK">Por qué elegirnos</div><h2 id="about-t" data-i="aH">Frescura que se nota en cada bocado.</h2></div></div>
-    <div class="bento">
-      <div class="card big rv">
-        <div class="badge" aria-hidden="true">🎣</div>
-        <h3 data-i="a1">Directo del puerto</h3>
-        <p data-i="a1p">Compramos los mariscos cada mañana, así que lo que llega a tu mesa es lo más fresco del día.</p>
-        <svg class="wave" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#f3b94d" stroke-width="2"><path d="M0 120 Q50 90 100 120 T200 120"/><path d="M0 145 Q50 115 100 145 T200 145"/><path d="M0 170 Q50 140 100 170 T200 170"/></g></svg>
+    <div class="board">
+      <div class="head">
+        <h2 id="menu-t" data-i="mH">Preparado al momento, <b>como en casa.</b></h2>
+        <p class="sub" data-i="mSub">Elige una categoría y toca <b>+</b> para armar tu pedido. Todo se prepara con mariscos frescos del día.</p>
       </div>
-      <div class="card rv"><div class="badge" aria-hidden="true">👨‍🍳</div><h3 data-i="a2">Recetas de la casa</h3><p data-i="a2p">Sazón costeña con ají y curtidos preparados por nosotros.</p></div>
-      <div class="card rv"><div class="badge" aria-hidden="true">🧼</div><h3 data-i="a3">Higiene garantizada</h3><p data-i="a3p">Cocina limpia y procesos cuidados para que comas tranquilo.</p></div>
+      <div class="tabs" role="tablist" aria-label="Categorías del menú" data-ia="aria-label:tabsLabel">
+        <button class="tab" role="tab" id="tab-ceviches" aria-controls="ceviches" aria-selected="true" data-t="ceviches" data-i="tCev">Ceviches</button>
+        <button class="tab" role="tab" id="tab-sopas" aria-controls="sopas" aria-selected="false" tabindex="-1" data-t="sopas" data-i="tSop">Sopas</button>
+        <button class="tab" role="tab" id="tab-fuertes" aria-controls="fuertes" aria-selected="false" tabindex="-1" data-t="fuertes" data-i="tFue">Platos fuertes</button>
+        <button class="tab" role="tab" id="tab-bebidas" aria-controls="bebidas" aria-selected="false" tabindex="-1" data-t="bebidas" data-i="tBeb">Bebidas</button>
+      </div>
+      <div class="panel" id="ceviches" role="tabpanel" aria-labelledby="tab-ceviches"><div class="menu">
+        <div class="dish" data-id="cev-cam" data-p="7.50"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-shrimp"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d1">Ceviche de camarón</span> <span class="tag">Top</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$7.50</div></div><p data-i="d1p">Camarón, limón, tomate, cebolla curtida. Con chifles y canguil.</p></div><button class="add" type="button">+</button></div>
+        <div class="dish" data-id="cev-con" data-p="8.50"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-shell"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d2">Ceviche de concha</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$8.50</div></div><p data-i="d2p">Concha negra con limón, cebolla y cilantro.</p></div><button class="add" type="button">+</button></div>
+        <div class="dish" data-id="cev-pes" data-p="6.50"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-fish"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d3">Ceviche de pescado</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$6.50</div></div><p data-i="d3p">Pescado blanco curtido en limón con ají de la casa.</p></div><button class="add" type="button">+</button></div>
+        <div class="dish" data-id="cev-mix" data-p="9.00"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-squid"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d4">Ceviche mixto</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$9.00</div></div><p data-i="d4p">Camarón, pescado y calamar en un solo plato.</p></div><button class="add" type="button">+</button></div>
+      </div></div>
+      <div class="panel" id="sopas" role="tabpanel" aria-labelledby="tab-sopas" hidden><div class="menu">
+        <div class="dish" data-id="enc" data-p="4.00"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-bowl"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d5">Encebollado</span> <span class="tag">Top</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$4.00</div></div><p data-i="d5p">Caldo de albacora con yuca y cebolla curtida.</p></div><button class="add" type="button">+</button></div>
+        <div class="dish" data-id="vic" data-p="6.00"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-viche"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d6">Viche de pescado</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$6.00</div></div><p data-i="d6p">Sopa espesa de maní, verde y mariscos.</p></div><button class="add" type="button">+</button></div>
+      </div></div>
+      <div class="panel" id="fuertes" role="tabpanel" aria-labelledby="tab-fuertes" hidden><div class="menu">
+        <div class="dish" data-id="arr" data-p="9.00"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-rice"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d7">Arroz marinero</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$9.00</div></div><p data-i="d7p">Arroz con camarón, calamar, concha y pescado.</p></div><button class="add" type="button">+</button></div>
+        <div class="dish" data-id="cap" data-p="8.00"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-fried"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d8">Camarón apanado</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$8.00</div></div><p data-i="d8p">Con arroz, menestra y patacones.</p></div><button class="add" type="button">+</button></div>
+        <div class="dish" data-id="pfr" data-p="8.50"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-grill"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d9">Pescado frito</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$8.50</div></div><p data-i="d9p">Pescado entero con patacones y ensalada.</p></div><button class="add" type="button">+</button></div>
+        <div class="dish" data-id="ban" data-p="28.00"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-platter"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d10">Bandeja familiar</span> <span class="tag" data-i="d10t">4 pers.</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$28.00</div></div><p data-i="d10p">Mixto de ceviches, arroz marinero y patacones.</p></div><button class="add" type="button">+</button></div>
+      </div></div>
+      <div class="panel" id="bebidas" role="tabpanel" aria-labelledby="tab-bebidas" hidden><div class="menu">
+        <div class="dish" data-id="jug" data-p="1.50"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-juice"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d11">Jugo natural</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$1.50</div></div><p data-i="d11p">Maracuyá, naranjilla, mora o piña.</p></div><button class="add" type="button">+</button></div>
+        <div class="dish" data-id="coc" data-p="2.00"><div class="ic" aria-hidden="true"><svg class="i"><use href="#i-coco"/></svg></div><div class="row"><div class="ln"><h3><span class="dn" data-i="d12">Agua de coco</span></h3><i class="dots" aria-hidden="true"></i><div class="price">$2.00</div></div><p data-i="d12p">Fría, directo del coco.</p></div><button class="add" type="button">+</button></div>
+      </div></div>
+      <p class="hint"><svg class="i" aria-hidden="true"><use href="#i-chalk"/></svg><span data-i="hint">Precios referenciales de ejemplo, en dólares.</span></p>
     </div>
   </div>
 </section>
 
-<section id="pedir" style="padding-top:0" aria-labelledby="how-t">
+<section id="nosotros" style="padding-top:24px" aria-labelledby="about-t">
   <div class="wrap">
-    <div class="head rv"><div><div class="kicker" data-i="sK">Pedidos a domicilio</div><h2 id="how-t" data-i="sH">Tu antojo, en 3 pasos.</h2></div></div>
+    <div class="head"><h2 id="about-t" data-i="aH">Frescura que se nota en cada bocado.</h2></div>
+    <ul class="about">
+      <li><div class="ico" aria-hidden="true"><svg class="i"><use href="#i-boat"/></svg></div><h3 data-i="a1">Directo del puerto</h3><p data-i="a1p">Compramos los mariscos cada mañana, así que lo que llega a tu mesa es lo más fresco del día.</p></li>
+      <li><div class="ico" aria-hidden="true"><svg class="i"><use href="#i-aji"/></svg></div><h3 data-i="a2">Recetas de la casa</h3><p data-i="a2p">Sazón costeña con ají y curtidos preparados por nosotros.</p></li>
+      <li><div class="ico" aria-hidden="true"><svg class="i"><use href="#i-clean"/></svg></div><h3 data-i="a3">Higiene garantizada</h3><p data-i="a3p">Cocina limpia y procesos cuidados para que comas tranquilo.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="pedir" class="steps-s" aria-labelledby="how-t">
+  <div class="wrap">
+    <div class="head"><h2 id="how-t" data-i="sH">Tu antojo, en 3 pasos.</h2><p class="sub" data-i="sK">Pedidos a domicilio por WhatsApp, sin apps ni registros.</p></div>
     <ol class="steps">
-      <li class="step rv"><h3 data-i="s1">Elige tus platos</h3><p data-i="s1p">Revisa el menú y toca + en lo que se te antoja hoy.</p></li>
-      <li class="step rv"><h3 data-i="s2">Envíalo por WhatsApp</h3><p data-i="s2p">Completa tus datos y te abrimos WhatsApp con el pedido ya escrito.</p></li>
-      <li class="step rv"><h3 data-i="s3">Recíbelo caliente</h3><p data-i="s3p">Lo llevamos a tu puerta en unos 30 minutos.</p></li>
+      <li class="step"><h3 data-i="s1">Elige tus platos</h3><p data-i="s1p">Revisa el menú y toca + en lo que se te antoja hoy.</p></li>
+      <li class="step"><h3 data-i="s2">Envíalo por WhatsApp</h3><p data-i="s2p">Completa tus datos y te abrimos WhatsApp con el pedido ya escrito.</p></li>
+      <li class="step"><h3 data-i="s3">Recíbelo caliente</h3><p data-i="s3p">Lo llevamos a tu puerta en unos 30 minutos.</p></li>
     </ol>
   </div>
 </section>
 
-<section id="visitanos" style="padding-top:0" aria-labelledby="visit-t">
+<section id="visitanos" aria-labelledby="visit-t">
   <div class="wrap">
-    <div class="head rv"><div><div class="kicker" data-i="vK">Visítanos</div><h2 id="visit-t" data-i="vH">Te esperamos con la mesa lista.</h2></div></div>
+    <div class="head"><h2 id="visit-t" data-i="vH">Te esperamos con la mesa lista.</h2></div>
     <div class="visit">
       <div class="info">
-        <div class="inf rv"><span class="badge" aria-hidden="true">🕗</span><div data-i="v1"><b>Horario</b><span>Lunes a domingo · 7:30 a 16:00</span></div></div>
-        <div class="inf rv"><span class="badge" aria-hidden="true">📍</span><div data-i="v2"><b>Dirección</b><span>Av. del Malecón y calle Primera (dirección de ejemplo)</span></div></div>
-        <div class="inf rv"><span class="badge" aria-hidden="true">🛵</span><div data-i="v3"><b>Domicilio</b><span>Entregas dentro de la ciudad en 30–40 minutos</span></div></div>
-        <div class="inf rv"><span class="badge" aria-hidden="true">💳</span><div data-i="v4"><b>Formas de pago</b><span>Efectivo, transferencia y tarjeta</span></div></div>
+        <div class="inf"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg><div data-i="v1"><b>Horario</b><span>Lunes a domingo · 7:30 a 16:00</span></div></div>
+        <div class="inf"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><div data-i="v2"><b>Dirección</b><span>Av. del Malecón y calle Primera (dirección de ejemplo)</span></div></div>
+        <div class="inf"><svg class="i" aria-hidden="true"><use href="#i-moto"/></svg><div data-i="v3"><b>Domicilio</b><span>Entregas dentro de la ciudad en 30–40 minutos</span></div></div>
+        <div class="inf"><svg class="i" aria-hidden="true"><use href="#i-card"/></svg><div data-i="v4"><b>Formas de pago</b><span>Efectivo, transferencia y tarjeta</span></div></div>
       </div>
-      <div class="map rv" role="img" aria-label="Mapa ilustrativo: el local está junto al malecón, frente al mar" data-ia="aria-label:mapAlt">
+      <div class="map" role="img" aria-label="Mapa ilustrativo: el local está junto al malecón, frente al mar" data-ia="aria-label:mapAlt">
         <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <rect width="400" height="320" fill="#0a2c37"/>
-          <path d="M0 230 Q120 200 220 240 T400 220 V320 H0Z" fill="#0f4b5b"/>
-          <g stroke="#164c5a" stroke-width="10" fill="none" stroke-linecap="round"><path d="M-10 90 H410"/><path d="M-10 170 H410"/><path d="M90 -10 V240"/><path d="M250 -10 V240"/><path d="M330 -10 L170 240"/></g>
-          <g stroke="#1d6070" stroke-width="2" fill="none" stroke-dasharray="6 8"><path d="M-10 90 H410"/><path d="M-10 170 H410"/></g>
-          <g fill="#11404c"><rect x="110" y="20" width="120" height="55" rx="8"/><rect x="270" y="20" width="110" height="55" rx="8"/><rect x="10" y="105" width="65" height="50" rx="8"/><rect x="110" y="105" width="120" height="50" rx="8"/></g>
+          <rect width="400" height="320" fill="#ece0c4"/>
+          <g fill="#e0cfa8"><rect x="14" y="14" width="76" height="62" rx="4"/><rect x="112" y="14" width="124" height="62" rx="4"/><rect x="258" y="14" width="130" height="62" rx="4"/><rect x="14" y="100" width="76" height="66" rx="4"/><rect x="112" y="100" width="124" height="66" rx="4"/><rect x="258" y="100" width="130" height="66" rx="4"/></g>
+          <g fill="#8fb832" opacity=".55"><circle cx="300" cy="134" r="16"/><circle cx="328" cy="128" r="12"/><circle cx="352" cy="140" r="14"/></g>
+          <g stroke="#fbf6ea" stroke-width="12" fill="none"><path d="M-10 88H410"/><path d="M101-10V200"/><path d="M247-10V200"/></g>
+          <path d="M-10 186H410" stroke="#c7361f" stroke-width="7"/>
+          <path d="M-10 186H410" stroke="#f6eedd" stroke-width="2" stroke-dasharray="8 8"/>
+          <path d="M0 204q25-12 50 0t50 0 50 0 50 0 50 0 50 0 50 0 50 0V320H0z" fill="#1f6f8b"/>
+          <path d="M0 236q25-12 50 0t50 0 50 0 50 0 50 0 50 0 50 0 50 0V320H0z" fill="#0b2e4f"/>
+          <g fill="none" stroke="#f6eedd" stroke-width="2.4" stroke-linecap="round" opacity=".75"><path d="M40 270q10-7 20 0t20 0"/><path d="M220 284q10-7 20 0t20 0"/><path d="M310 258q10-7 20 0t20 0"/></g>
+          <g transform="translate(120 250)"><path d="M-22 0h44l-7 9h-30z" fill="#f6eedd"/><path d="M0 0v-22l14 18z" fill="#f2c230"/></g>
         </svg>
-        <div class="pin" aria-hidden="true"><svg width="44" height="56" viewBox="0 0 44 56"><path d="M22 0C10 0 0 10 0 22c0 16 22 34 22 34s22-18 22-34C44 10 34 0 22 0z" fill="#f3b94d"/><circle cx="22" cy="21" r="8" fill="#04141b"/></svg></div>
+        <div class="pin" aria-hidden="true"><svg width="46" height="58" viewBox="0 0 44 56"><path d="M22 0C10 0 0 10 0 22c0 16 22 34 22 34s22-18 22-34C44 10 34 0 22 0z" fill="#c7361f"/><circle cx="22" cy="21" r="9" fill="#f6eedd"/><circle cx="22" cy="21" r="4.5" fill="#f2c230"/></svg></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="pedido" style="padding-top:0" aria-labelledby="order-t">
+<section id="pedido" class="order-s" aria-labelledby="order-t">
   <div class="wrap">
-    <div class="cta rv">
-      <div class="kicker" data-i="oK">¿Se te antojó?</div>
+    <div class="head">
       <h2 id="order-t" data-i="oH">Arma tu pedido y envíalo por WhatsApp.</h2>
       <p class="cp" data-i="oP">Revisa tus platos, completa tus datos y te abrimos WhatsApp con el pedido ya escrito. Solo tienes que tocar enviar.</p>
-      <form class="order" id="orderForm" novalidate>
-        <div class="box">
-          <h3 data-i="cartH">Tu pedido</h3>
-          <ul class="cart" id="cart" aria-live="polite"></ul>
-          <p class="empty" id="empty" data-i="empty">Aún no agregas platos. <a href="#menu">Ve al menú</a> y toca <b>+</b>.</p>
-          <div class="total"><span data-i="totalL">Total referencial</span><b id="total">$0.00</b></div>
-          <p class="fine" data-i="fine">El precio final y el costo de envío se confirman por WhatsApp.</p>
-        </div>
-        <div class="box fields">
-          <div class="two">
-            <label class="fl"><span data-i="lName">Nombre *</span><input name="cname" id="o-name" required autocomplete="name" placeholder="Tu nombre" data-ia="placeholder:phName"></label>
-            <label class="fl"><span data-i="lPhone">Teléfono</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="09xx xxx xxx" data-ia="placeholder:phPhone"></label>
-          </div>
-          <fieldset>
-            <legend data-i="lMode">¿Cómo lo quieres?</legend>
-            <div class="seg">
-              <label><input type="radio" name="mode" value="delivery" checked><span data-i="mDel">A domicilio</span></label>
-              <label><input type="radio" name="mode" value="pickup"><span data-i="mPick">Retiro en el local</span></label>
-            </div>
-          </fieldset>
-          <label class="fl" id="addrWrap"><span data-i="lAddr">Dirección de entrega *</span><input name="addr" id="o-addr" autocomplete="street-address" placeholder="Calle, número y referencia" data-ia="placeholder:phAddr"></label>
-          <label class="fl"><span data-i="lPay">Forma de pago</span><select name="pay" id="o-pay"><option value="cash" data-i="pCash">Efectivo</option><option value="transfer" data-i="pTr">Transferencia</option><option value="card" data-i="pCard">Tarjeta</option></select></label>
-          <label class="fl"><span data-i="lNotes">Notas (opcional)</span><textarea name="notes" rows="2" placeholder="Sin cebolla, poco ají, timbre dañado..." data-ia="placeholder:phNotes"></textarea></label>
-          <p class="msg" id="oMsg" role="status" aria-live="polite"></p>
-          <button class="btn wa" type="submit">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
-            <span data-i="send">Pedir por WhatsApp</span>
-          </button>
-        </div>
-      </form>
     </div>
+    <form class="order" id="orderForm" novalidate>
+      <div class="ticket">
+        <h3><svg class="i" aria-hidden="true"><use href="#i-basket"/></svg><span data-i="cartH">Tu pedido</span></h3>
+        <ul class="cart" id="cart" aria-live="polite"></ul>
+        <p class="empty" id="empty" data-i="empty">Aún no agregas platos. <a href="#menu">Ve al menú</a> y toca <b>+</b>.</p>
+        <div class="total"><span data-i="totalL">Total referencial</span><b id="total">$0.00</b></div>
+        <p class="fine" data-i="fine">El precio final y el costo de envío se confirman por WhatsApp.</p>
+      </div>
+      <div class="fields">
+        <div class="two">
+          <label class="fl"><span data-i="lName">Nombre *</span><input name="cname" id="o-name" required autocomplete="name" placeholder="Tu nombre" data-ia="placeholder:phName"></label>
+          <label class="fl"><span data-i="lPhone">Teléfono</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="09xx xxx xxx" data-ia="placeholder:phPhone"></label>
+        </div>
+        <fieldset>
+          <legend data-i="lMode">¿Cómo lo quieres?</legend>
+          <div class="seg">
+            <label><input type="radio" name="mode" value="delivery" checked><span data-i="mDel">A domicilio</span></label>
+            <label><input type="radio" name="mode" value="pickup"><span data-i="mPick">Retiro en el local</span></label>
+          </div>
+        </fieldset>
+        <label class="fl" id="addrWrap"><span data-i="lAddr">Dirección de entrega *</span><input name="addr" id="o-addr" autocomplete="street-address" placeholder="Calle, número y referencia" data-ia="placeholder:phAddr"></label>
+        <label class="fl"><span data-i="lPay">Forma de pago</span><select name="pay" id="o-pay"><option value="cash" data-i="pCash">Efectivo</option><option value="transfer" data-i="pTr">Transferencia</option><option value="card" data-i="pCard">Tarjeta</option></select></label>
+        <label class="fl"><span data-i="lNotes">Notas (opcional)</span><textarea name="notes" rows="2" placeholder="Sin cebolla, poco ají, timbre dañado..." data-ia="placeholder:phNotes"></textarea></label>
+        <p class="msg" id="oMsg" role="status" aria-live="polite"></p>
+        <button class="btn wa" type="submit">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
+          <span data-i="send">Pedir por WhatsApp</span>
+        </button>
+      </div>
+    </form>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap foot">
-    <a href="#" class="brand" aria-label="La Ola Dorada, volver arriba" data-ia="aria-label:top"><i aria-hidden="true">🌊</i>La Ola <span>Dorada</span></a>
+    <a href="#" class="brand" aria-label="La Ola Dorada, volver arriba" data-ia="aria-label:top"><svg aria-hidden="true" viewBox="0 0 40 40"><use href="#logo"/></svg>La Ola <span>Dorada</span></a>
     <span data-i="foot">© La Ola Dorada · marca ficticia de demostración</span>
   </div>
 </footer>
 
-<a class="cartbar" id="cartbar" href="#pedido" tabindex="-1" aria-hidden="true"><span aria-hidden="true">🧺</span><span id="cbText"></span></a>
+<a class="cartbar" id="cartbar" href="#pedido" tabindex="-1" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-basket"/></svg><span id="cbText"></span></a>
 <a class="fab" id="fab" href="https://wa.me/" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" data-ia="aria-label:fab">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="#05261a" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
 </a>
@@ -458,14 +544,14 @@ footer{border-top:1px solid var(--line);padding:46px 0 90px;color:var(--mute);fo
     metaDesc:'Coastal ceviche bar with ceviches, encebollado soup and fresh seafood. See the menu and order delivery via WhatsApp. Sample project with a fictional business.',
     skip:'Skip to content',demoEn:' · Sample project, fictional business',navMain:'Main',home:'La Ola Dorada, home',top:'La Ola Dorada, back to top',
     nMenu:'Menu',nAbout:'About',nHow:'How to order',nVisit:'Visit us',orderNow:'Order now',openMenu:'Open menu',
-    new:'NEW',eyebrow:'Catch of the day, every day',h1:'The taste of the sea, <em>served in gold.</em>',
+    stamp:'Catch of the day · every day ·',h1:'The taste of the sea, <em>served in gold.</em>',
     lead:'Coastal ceviche bar with house recipes, hearty encebollado and fresh seafood. Come and enjoy it or get it delivered.',
     ctaOrder:'Place my order →',ctaMenu:'See the menu',
     f1:'<strong>30 min</strong>average delivery',f2:'<strong>100%</strong>fresh seafood',f3:'<strong>7 days</strong>open every week',
     plateAlt:'Illustration of a ceviche bowl with lime',
     chip1:'<b>House ceviche</b><small>The coast’s favorite</small>',chip2:'<b>Fast delivery</b><small>Arrives fresh at your door</small>',
     track:'<span>Shrimp ceviche</span><span>Tuna encebollado</span><span>Seafood rice</span><span>Fresh juices</span><span>Plantain chips &amp; popcorn</span><span>Family platter</span><span>Shrimp ceviche</span><span>Tuna encebollado</span><span>Seafood rice</span><span>Fresh juices</span><span>Plantain chips &amp; popcorn</span><span>Family platter</span>',
-    mK:'Our menu',mH:'Made to order, just like home.',mSub:'Pick a category and tap <b>+</b> to build your order. Everything is made with the day’s fresh seafood.',
+    mH:'Made to order, <b>just like home.</b>',mSub:'Pick a category and tap <b>+</b> to build your order. Everything is made with the day’s fresh seafood.',
     tabsLabel:'Menu categories',tCev:'Ceviches',tSop:'Soups',tFue:'Main dishes',tBeb:'Drinks',
     d1:'Shrimp ceviche',d1p:'Shrimp, lime, tomato, pickled onion. Served with plantain chips and popcorn.',
     d2:'Black clam ceviche',d2p:'Black clams with lime, onion and cilantro.',
@@ -480,21 +566,21 @@ footer{border-top:1px solid var(--line);padding:46px 0 90px;color:var(--mute);fo
     d11:'Fresh juice',d11p:'Passion fruit, naranjilla, blackberry or pineapple.',
     d12:'Coconut water',d12p:'Ice cold, straight from the coconut.',
     hint:'Sample reference prices, in US dollars.',
-    aK:'Why choose us',aH:'Freshness you can taste in every bite.',
+    aH:'Freshness you can taste in every bite.',
     a1:'Straight from the port',a1p:'We buy seafood every morning, so what reaches your table is the freshest of the day.',
     a2:'House recipes',a2p:'Coastal seasoning with chili and pickles made in-house.',
     a3:'Guaranteed hygiene',a3p:'A clean kitchen and careful processes so you can eat with peace of mind.',
-    sK:'Home delivery',sH:'Your craving, in 3 steps.',
+    sK:'Home delivery on WhatsApp, no apps or sign-ups.',sH:'Your craving, in 3 steps.',
     s1:'Pick your dishes',s1p:'Browse the menu and tap + on whatever you’re craving today.',
     s2:'Send it on WhatsApp',s2p:'Fill in your details and we open WhatsApp with your order already written.',
     s3:'Get it hot',s3p:'We bring it to your door in about 30 minutes.',
-    vK:'Visit us',vH:'Your table is ready and waiting.',
+    vH:'Your table is ready and waiting.',
     v1:'<b>Opening hours</b><span>Monday to Sunday · 7:30 am to 4:00 pm</span>',
     v2:'<b>Address</b><span>Malecón Ave. & First St. (sample address)</span>',
     v3:'<b>Delivery</b><span>Citywide delivery in 30–40 minutes</span>',
     v4:'<b>Payment methods</b><span>Cash, bank transfer and card</span>',
     mapAlt:'Illustrated map: the restaurant is by the boardwalk, facing the sea',
-    oK:'Craving it?',oH:'Build your order and send it on WhatsApp.',
+    oH:'Build your order and send it on WhatsApp.',
     oP:'Check your dishes, fill in your details and we’ll open WhatsApp with your order already written. Just tap send.',
     cartH:'Your order',empty:'No dishes yet. <a href="#menu">Go to the menu</a> and tap <b>+</b>.',totalL:'Estimated total',
     fine:'Final price and delivery fee are confirmed on WhatsApp.',
@@ -539,8 +625,8 @@ footer{border-top:1px solid var(--line);padding:46px 0 90px;color:var(--mute);fo
 
   /* menú móvil */
   var b=document.getElementById('burger'),m=document.getElementById('mobile');
-  function closeMenu(){m.classList.remove('open');b.textContent='☰';b.setAttribute('aria-expanded','false');}
-  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.textContent=o?'✕':'☰';});
+  function closeMenu(){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));});
   m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open')){closeMenu();b.focus();}});
 
@@ -634,11 +720,6 @@ footer{border-top:1px solid var(--line);padding:46px 0 90px;color:var(--mute);fo
   try{s=localStorage.getItem('lang');}catch(e){}
   applyLang(q||s||((navigator.language||'es').toLowerCase().indexOf('en')===0?'en':'es'));
 
-  /* animación al hacer scroll */
-  var els=document.querySelectorAll('.rv');
-  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
-  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
-  els.forEach(function(e,i){e.style.transitionDelay=(i%4)*70+'ms';io.observe(e);});
 })();
 </script>
 </body>
