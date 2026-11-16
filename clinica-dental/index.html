@@ -100,9 +100,9 @@ nav{height:72px;display:flex;align-items:center;justify-content:space-between;ga
 .hero h1 span{font-style:italic;color:var(--pet6);white-space:nowrap}
 .lead{font-size:clamp(17px,1.5vw,19.5px);color:var(--soft);max-width:34em}
 .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:34px 0 44px}
-.trust{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:0;list-style:none;border-top:1px solid var(--line);font-size:14.5px;color:var(--soft)}
-.trust li{display:flex;align-items:center;gap:10px;padding:16px 26px 0 0;margin-right:26px}
-.trust li+li{border-left:1px solid var(--line);padding-left:26px}
+.trust{display:flex;flex-wrap:wrap;list-style:none;border-top:1px solid var(--line);font-size:14.5px;color:var(--soft)}
+.trust li{display:flex;align-items:center;gap:10px;padding:16px 24px 0 0;margin-right:24px;white-space:nowrap}
+.trust li+li{border-left:1px solid var(--line);padding-left:24px}
 .trust svg{flex:none;color:var(--cu)}
 .art{position:relative;padding:0 18px}
 .arch{position:relative;aspect-ratio:4/5;border-radius:999px 999px 16px 16px;overflow:hidden;background:var(--pet)}
@@ -119,7 +119,7 @@ nav{height:72px;display:flex;align-items:center;justify-content:space-between;ga
 .js .fc1{animation-delay:.35s}.js .fc2{animation-delay:.5s}
 @keyframes rise{from{opacity:0;transform:translateY(28px)}}
 @media(max-width:940px){.hgrid{grid-template-columns:1fr}.art{max-width:440px;margin:0 auto;width:100%}.fc1{left:0}.fc2{right:0}}
-@media(max-width:640px){.trust{grid-template-columns:1fr}.trust li,.trust li+li{border-left:none;padding:13px 0;margin:0;border-bottom:1px solid var(--line)}.ctas .btn{flex:1 1 220px}}
+@media(max-width:640px){.trust{display:grid}.trust li,.trust li+li{border-left:none;padding:13px 0;margin:0;border-bottom:1px solid var(--line)}.ctas .btn{flex:1 1 220px}}
 
 /* intl band */
 .intl{background:var(--pet9);color:#e6efec}
@@ -253,6 +253,7 @@ details p{color:var(--soft);font-size:16px;padding:0 56px 24px 0;max-width:40em}
 /* location */
 .loc{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(28px,5vw,64px);align-items:start}
 @media(max-width:900px){.loc{grid-template-columns:1fr}}
+@media(max-width:600px){.map{min-height:0;min-width:0;width:100%;aspect-ratio:4/3}}
 .map{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);min-height:380px;background:#eeeae1}
 .map>svg{width:100%;height:100%;position:absolute;inset:0}
 .pin{position:absolute;left:50%;top:47%;transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center;pointer-events:none}
