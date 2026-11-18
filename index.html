@@ -49,7 +49,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:800;letter-spacing:-.028em;line-hei
 .top{display:flex;align-items:center;gap:20px;padding:18px 0}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto;min-height:44px}
 .mono{display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:var(--signal);color:var(--paper);font:800 16px/1 var(--disp);letter-spacing:-.02em}
-.brand b{display:block;font:800 18px/1.1 var(--disp);letter-spacing:-.02em}
+.brand b{display:block;white-space:nowrap;font:800 18px/1.1 var(--disp);letter-spacing:-.02em}
 .brand small{display:block;font-size:13px;color:var(--ink-2)}
 .nav{display:flex;gap:4px;list-style:none}
 .nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px}
@@ -149,6 +149,13 @@ h1,h2,h3{font-family:var(--disp);font-weight:800;letter-spacing:-.028em;line-hei
 .ask li:first-child{border-top:0}
 .ask svg{width:20px;height:20px;color:var(--signal);margin-top:3px}
 @media(max-width:820px){.close{grid-template-columns:1fr}}
+p,li{text-wrap:pretty}
+.do{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start;margin-top:28px;max-width:46ch;padding:18px 20px;border-radius:var(--r);background:var(--ink);color:var(--paper);font:600 19px/1.35 var(--disp)}
+.do svg{width:26px;height:26px;color:var(--signal-soft)}
+.back{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-top:14px;font-size:15px;color:var(--ink-2);text-decoration:underline;text-decoration-color:var(--line)}
+.back:hover{color:var(--ink);text-decoration-color:var(--signal)}
+.back svg{width:16px;height:16px;transform:rotate(-90deg)}
+@media(max-width:640px){.hero .acts{display:grid;grid-template-columns:1fr}.hero .btn{justify-content:center}}
 footer{border-top:1px solid var(--line);padding:26px 0 48px;color:var(--ink-2);font-size:14.5px}
 footer .w{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
@@ -156,10 +163,11 @@ footer .w{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between
 </head>
 <body>
 <a class="skip" href="#trabajos" data-i="skip">Saltar a los proyectos</a>
-<div class="demo">Proyecto de muestra · negocio ficticio · diseño y desarrollo: William Ruiz<span data-i="demoEn"></span></div>
+<div class="demo">Proyecto de muestra · negocio ficticio · diseño y desarrollo: William&nbsp;Ruiz<span data-i="demoEn"></span></div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 9.5h8M8 12.5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 <div class="w">
@@ -177,10 +185,10 @@ footer .w{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between
     <nav class="idx" aria-label="Proyectos de muestra" data-ia="aria-label:idxLabel">
       <p data-i="idxNote">4 proyectos de muestra · negocios ficticios</p>
       <ol>
-        <li style="--pc:#b7c3d6"><a href="#altavista"><i class="dot"></i><b>Altavista Residencias</b><span data-i="k4">Inmobiliaria</span></a></li>
-        <li style="--pc:#a6d6cf"><a href="#sonrisa-clara"><i class="dot"></i><b>Sonrisa Clara</b><span data-i="k3">Clínica dental</span></a></li>
-        <li style="--pc:#f0c56a"><a href="#la-ola-dorada"><i class="dot"></i><b>La Ola Dorada</b><span data-i="k1">Cevichería</span></a></li>
-        <li style="--pc:#b9d08c"><a href="#agrosurco"><i class="dot"></i><b>AgroSurco</b><span data-i="k2">Insumos agrícolas</span></a></li>
+        <li style="--pc:#d99a76"><a href="#altavista"><i class="dot"></i><b>Altavista Residencias</b><span data-i="k4">Inmobiliaria</span></a></li>
+        <li style="--pc:#bcdcd3"><a href="#sonrisa-clara"><i class="dot"></i><b>Sonrisa Clara</b><span data-i="k3">Clínica dental</span></a></li>
+        <li style="--pc:#1f6f8b"><a href="#la-ola-dorada"><i class="dot"></i><b>La Ola Dorada</b><span data-i="k1">Cevichería</span></a></li>
+        <li style="--pc:#a3bb78"><a href="#agrosurco"><i class="dot"></i><b>AgroSurco</b><span data-i="k2">Insumos agrícolas</span></a></li>
       </ol>
     </nav>
   </header>
@@ -192,7 +200,7 @@ footer .w{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between
       <p data-i="workLead">Cuatro negocios ficticios de cuatro rubros, con ilustraciones propias y sin fotos de stock. Cada página funciona: ábrela y prueba el menú, el formulario o el simulador.</p>
     </div>
     <ol class="works">
-      <li class="work" id="altavista" style="--pc:#b7c3d6">
+      <li class="work" id="altavista" style="--pc:#d99a76">
         <div class="plate"><small class="new" data-i="new">Nuevo</small><img src="capturas/altavista-1024x768.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Captura de la landing page del proyecto inmobiliario Altavista Residencias" data-ia="alt:img4"></div>
         <div class="info">
           <h3><a href="inmobiliaria/">Altavista Residencias</a></h3>
@@ -202,7 +210,7 @@ footer .w{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between
           <span class="go" aria-hidden="true"><span data-i="see">Ver proyecto</span><svg><use href="#i-arrow"/></svg></span>
         </div>
       </li>
-      <li class="work" id="sonrisa-clara" style="--pc:#a6d6cf">
+      <li class="work" id="sonrisa-clara" style="--pc:#bcdcd3">
         <div class="plate"><img src="capturas/sonrisa-clara-1024x768.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Captura de la landing page de la clínica dental Sonrisa Clara" data-ia="alt:img3"></div>
         <div class="info">
           <h3><a href="clinica-dental/">Sonrisa Clara</a></h3>
@@ -212,7 +220,7 @@ footer .w{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between
           <span class="go" aria-hidden="true"><span data-i="see">Ver proyecto</span><svg><use href="#i-arrow"/></svg></span>
         </div>
       </li>
-      <li class="work" id="la-ola-dorada" style="--pc:#f0c56a">
+      <li class="work" id="la-ola-dorada" style="--pc:#1f6f8b">
         <div class="plate"><img src="capturas/la-ola-dorada-1024x768.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Captura de la landing page de la cevichería La Ola Dorada" data-ia="alt:img1"></div>
         <div class="info">
           <h3><a href="la-ola-dorada/">La Ola Dorada</a></h3>
@@ -222,7 +230,7 @@ footer .w{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between
           <span class="go" aria-hidden="true"><span data-i="see">Ver proyecto</span><svg><use href="#i-arrow"/></svg></span>
         </div>
       </li>
-      <li class="work" id="agrosurco" style="--pc:#b9d08c">
+      <li class="work" id="agrosurco" style="--pc:#a3bb78">
         <div class="plate"><img src="capturas/agrosurco-1024x768.jpg" width="1024" height="768" loading="lazy" decoding="async" alt="Captura de la landing page de insumos agrícolas AgroSurco" data-ia="alt:img2"></div>
         <div class="info">
           <h3><a href="agrosurco/">AgroSurco</a></h3>
@@ -261,8 +269,9 @@ footer .w{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between
   <section class="w close" id="contacto" aria-labelledby="h-close">
     <div>
       <h2 id="h-close" data-i="closeH">Una landing page para tu negocio</h2>
-      <p class="l" data-i="closeP">Escríbeme por Fiverr o Workana, desde el perfil donde encontraste este portafolio. Te respondo con una propuesta para tu caso.</p>
-      <div class="acts"><a class="btn sec" href="#trabajos" data-i="ctaBack">Volver a los proyectos</a></div>
+      <p class="l" data-i="closeP">Cuéntame tu caso con los datos de la lista y te respondo con una propuesta pensada para tu negocio.</p>
+      <p class="do"><svg aria-hidden="true"><use href="#i-chat"/></svg><span data-i="doLine">Escríbeme por Fiverr o Workana, desde el perfil donde encontraste este portafolio.</span></p>
+      <a class="back" href="#trabajos"><svg aria-hidden="true"><use href="#i-arrow"/></svg><span data-i="ctaBack">Volver a los proyectos</span></a>
     </div>
     <div class="ask">
       <h3 data-i="askH">Para empezar, cuéntame</h3>
@@ -315,7 +324,8 @@ footer .w{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between
     s2t:'You review a first version',s2:'I share the page as a link so you can try it on your phone.',
     s3t:'We refine it and I deliver',s3:'We polish copy and details, and it’s ready to publish on your domain.',
     closeH:'A landing page for your business',
-    closeP:'Message me on Fiverr or Workana, from the profile where you found this portfolio. I’ll reply with a proposal for your case.',
+    closeP:'Tell me about your case using the list, and I’ll reply with a proposal built for your business.',
+    doLine:'Message me on Fiverr or Workana, from the profile where you found this portfolio.',
     ctaBack:'Back to the projects',
     askH:'To get started, tell me',
     a1:'Your industry and the city or country of your business.',
